@@ -851,7 +851,7 @@ class PyMapperFrameCore ( wx.Frame ):
 		
 		self.SetSizer( bSizer175 )
 		self.Layout()
-		self.sbStatusBar = self.CreateStatusBar( 3, wx.ST_SIZEGRIP, wx.ID_ANY )
+		self.sbStatusBar = self.CreateStatusBar( 3, wx.STB_SIZEGRIP, wx.ID_ANY )
 		
 		self.Centre( wx.BOTH )
 		
