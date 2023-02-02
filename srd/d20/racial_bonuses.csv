@@ -1,0 +1,234 @@
+RACIAL_BONUSES,,
+RACIALBONUS,Dwarf,
+Ability,CON,2
+Ability,CHA,-2
+Skill,Craft Armorsmithing,2
+Skill,Craft Blacksmithing,2
+Skill,Craft Stonemasonry,2
+Skill,Craft Trapmaking,2
+Skill,Craft Weaponsmithing,2
+ENDRACE,,
+RACIALBONUS,Elf,
+Ability,DEX,2
+Ability,CON,-2
+Skill,Listen,2
+Skill,Search,2
+Skill,Spot,2
+ENDRACE,,
+RACIALBONUS,Gnome,
+Ability,CON,2
+Ability,STR,-2
+Skill,Listen,2
+Skill,Craft Alchemy,2
+ENDRACE,,
+RACIALBONUS,HalfElf,
+Skill,Listen,1
+Skill,Search,1
+Skill,Spot,1
+Skill,Gather Information,2
+Skill,Diplomacy,2
+ENDRACE,,
+RACIALBONUS,Halfling,
+Ability,DEX,2
+Ability,STR,-2
+Skill,Climb,2
+Skill,Jump,2
+Skill,Move Silently,2
+Skill,Listen,2
+Save,FORT,1
+Save,REF,1
+Save,WILL,1
+ENDRACE,,
+RACIALBONUS,HalfOrc,
+Ability,STR,2
+Ability,INT,-2
+Ability,CHA,-2
+ENDRACE,,
+RACIALBONUS,Svirfneblin,
+Ability,DEX,2
+Ability,WIS,2
+Ability,CHA,-4
+Skill,Hide,2
+Save,FORT,2
+Save,REF,2
+Save,WILL,2
+AC,,4
+ENDRACE,,
+RACIALBONUS,Lizardfolk,
+Ability,STR,2
+Ability,CON,2
+Ability,INT,-2
+Attack,,1
+Save,REF,3
+AC,,5
+Skill,Jump,6
+Skill,Swim,8
+Skill,Balance,4
+ENDRACE,,
+RACIALBONUS,Goblin,
+Ability,STR,-2
+Ability,DEX,2
+Ability,CHA,-2
+Skill,Move Silently,4
+RACIALBONUS,Hobgoblin,
+Ability,DEX,2
+Ability,CON,2
+Skill,Move Silently,4
+ENDRACE,,
+RACIALBONUS,Kobold,
+Ability,STR,-4
+Ability,DEX,2
+AC,,1
+Skill,Craft Alchemy,2
+Skill,Craft Armorsmithing,2
+Skill,Craft Bowmaking,2
+Skill,Craft Blacksmithing,2
+Skill,Craft Carpentry,2
+Skill,Craft Leatherworking,2
+Skill,Craft Painting,2
+Skill,Craft Pottery,2
+Skill,Craft Sculpting,2
+Skill,Craft  Shipmaking,2
+Skill,Craft Stonemasonry,2
+Skill,Craft Trapmaking,2
+Skill,Craft Weaponsmithing,2
+Skill,Craft Woodworking,2
+Skill,Profession Hunter,2
+Skill,Profession Miner,2
+Skill,Search,2
+ENDRACE,,
+RACIALBONUS,Orc,
+Ability,STR,4
+Ability,INT,-2
+Ability,WIS,-2
+Ability,CHA,-2
+ENDRACE,,
+RACIALBONUS,Tiefling,
+Ability,DEX,2
+Ability,INT,2
+Ability,CHA,-2
+Skill,Bluff,2
+Skill,Hide,2
+ENDRACE,,
+RACIALBONUS,Drow,
+Ability,DEX,2
+Ability,CON,-2
+Ability,INT,2
+Ability,CHA,-2
+Skill,Listen,2
+Skill,Search,2
+Skill,Spot,2
+ENDRACE,,
+RACIALBONUS,Duergar,
+Ability,CON,2
+Ability,CHA,-4
+Skill,Listen,1
+Skill,Move Silently,4
+Skill,Spot,1
+Feat,Alertness,
+ENDRACE,,
+RACIALBONUS,Gnoll,
+Ability,STR,4
+Ability,CON,2
+Ability,INT,-2
+Ability,CHA,-2
+Attack,,1
+Save,FORT,3
+AC,,1
+Skill,Listen,3
+Skill,Spot,3
+Feat,Power Attack,
+ENDRACE,,
+RACIALBONUS,Troglodyte,
+Ability,DEX,-2
+Ability,CON,4
+Ability,INT,-2
+Save,FORT,3
+Attack,,1
+AC,,6
+Skill,Hide,7
+Skill,Listen,3
+Feat,MultiAttack,
+ENDRACE,,
+RACIALBONUS,Bugbear,
+Ability,STR,4
+Ability,DEX,2
+Ability,CON,2
+Ability,CHA,-2
+Save,FORT,1
+Save,REF,3
+Save,WILL,1
+Attack,,2
+AC,,3
+Skill,Climb,2
+Skill,Hide,2
+Skill,Listen,1
+Skill,Move Silently,2
+Skill,Spot,1
+Feat,Alertness,
+ENDRACE,,
+RACIALBONUS,Kuotoa,
+Ability,STR,2
+Ability,CON,2
+Ability,INT,2
+Ability,WIS,4
+Ability,CHA,-2
+AC,,6
+Attack,,2
+Save,REF,3
+Save,WILL,3
+Skill,Escape Artist,18
+Skill,Knowledge Arcana,5
+Skill,Knowledge Architecture and Engineering,5
+Skill,Knowledge Dungeoneering,5
+Skill,Knowledge Geography,5
+Skill,Knowledge  History,5
+Skill,Knowledge Local,5
+Skill,Knowledge Nature,5
+Skill,Knowledge Nobility and Royalty,5
+Skill,Knowledge Religion,5
+Skill,Knowledge The Planes,5
+Skill,Listen,5
+Skill,Move Silently,3
+Skill,Search,9
+Skill,Spot,7
+Feat,Alertness,
+Feat,Great Fortitude,
+ENDRACE,,
+RACIALBONUS,Sahuagin,
+Ability,STR,4
+Ability,DEX,2
+Ability,CON,2
+Ability,INT,4
+Ability,WIS,2
+Ability,CHA,-2
+AC,,5
+Attack,,1
+Save,FORT,3
+Skill,Handle Animal,3
+Skill,Hide,5
+Skill,Listen,6
+Skill,Profession Hunter,1
+Skill,Profession Miner,1
+Skill,Spot,6
+Skill,Survival,-1
+Feat,MultiAttack,
+ENDRACE,,
+RACIALBONUS,Troll,
+Ability,STR,12
+Ability,DEX,4
+Ability,CON,12
+Ability,INT,-4
+Ability,WIS,-2
+Ability,CHA,-4
+AC,,7
+Attack,,6
+Save,FORT,5
+Save,REF,2
+Save,WILL,2
+Skill,Listen,4
+Skill,Spot,4
+Feat,Alertness,
+Feat,Iron Will,
+ENDRACE,,
+ENDFILE,,

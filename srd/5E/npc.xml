@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PymapperNPC>
+<npc>
+	<name>Chaster the Halfling</name>
+	<version>5E_NPC</version>
+	<uniqueID>0</uniqueID>
+	<user_defined>0</user_defined>
+	<race>1</race>
+	<class>11</class>
+	<alignment>CN</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>None</HD>
+	<init></init>
+	<speed>20</speed>
+	<AC>13</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>Wand of Sleep (2 charges): Put up to 40 HP of creatures to sleep</action>
+		<action>Wand of Burning Hands (3 charges): Create a 15' cone of fire, dealing 3d6 fire damage. </action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>13</STR>
+	<INT>16</INT>
+	<DEX>15</DEX>
+	<CON>14</CON>
+	<WIS>13</WIS>
+	<CHA>9</CHA>
+	<spellList>
+		<spells>Level0:Acid Splash,Chill Touch,Druidcraft,</spells>
+		<spells>Level1:Animal Friendship,Chromatic Orb,</spells>
+		<spells>Level2:Barkskin,</spells>
+		<spells>Level3:</spells>
+		<spells>Level4:</spells>
+		<spells>Level5:</spells>
+		<spells>Level6:</spells>
+		<spells>Level7:</spells>
+		<spells>Level8:</spells>
+		<spells>Level9:</spells>
+	</spellList>
+	<spellSlots>
+		<slots>Slot9:0</slots>
+		<slots>Slot8:0</slots>
+		<slots>Slot1:3</slots>
+		<slots>Slot0:0</slots>
+		<slots>Slot3:0</slots>
+		<slots>Slot2:2</slots>
+		<slots>Slot5:0</slots>
+		<slots>Slot4:0</slots>
+		<slots>Slot7:0</slots>
+		<slots>Slot6:0</slots>
+	</spellSlots>
+	<CR>3</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>29</HP>
+	<StartHP>29</StartHP>
+	<PP>14</PP>
+	<dist>0</dist>
+	<other>Potion of See Invisibility, Scroll of Invisibility, Keys to area 42, area 58, Alchemical repellent for area 56.  20 GP.
+</other>
+</npc>
+<npc>
+	<name>Narcus the Torturer</name>
+	<version>5E_NPC</version>
+	<uniqueID>1</uniqueID>
+	<user_defined>0</user_defined>
+	<race>0</race>
+	<class>0</class>
+	<alignment>CN</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>None</HD>
+	<init></init>
+	<speed>30</speed>
+	<AC>16</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>Bash: If the target is a medium or smaller creature, it must succeed on a STR 15 saving throw or be knocked prone. Melee +7, 9 (2d4) bludgeoning.</action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>18</STR>
+	<INT>10</INT>
+	<DEX>15</DEX>
+	<CON>16</CON>
+	<WIS>12</WIS>
+	<CHA>15</CHA>
+	<CR>5</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>112</HP>
+	<StartHP>112</StartHP>
+	<PP>0</PP>
+	<dist>0</dist>
+</npc>
+<npc>
+	<name>Guard</name>
+	<version>5E_NPC</version>
+	<uniqueID>2</uniqueID>
+	<user_defined>0</user_defined>
+	<race>0</race>
+	<class>4</class>
+	<alignment>CN</alignment>
+	<family></family>
+	<size>4</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>6d10+3</HD>
+	<init></init>
+	<speed>30</speed>
+	<AC>16</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>Coordinated Tactics:~   While a sergeant is within 50', this NPC may take the disengage action as a bonus action.</action>
+		<action>Superior Training:~ The guard makes two melee attacks.</action>
+		<action>Longsword:~ +6 melee, 1d8+2 slashing.</action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>16</STR>
+	<INT>10</INT>
+	<DEX>13</DEX>
+	<CON>12</CON>
+	<WIS>11</WIS>
+	<CHA>10</CHA>
+	<CR>6</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>60</HP>
+	<StartHP>60</StartHP>
+	<PP>12</PP>
+	<dist>0</dist>
+	<trait>Riposte:~ When an other creature misses with a melee attack, the Guard may use its reaction to make one melee attack.
+
+</trait>
+	<other>Perception +2
+The guards are wearing scale mail and have shields.
+
+
+
+</other>
+</npc>
+<npc>
+	<name>Alghul the Skeleton</name>
+	<version>5E_NPC</version>
+	<uniqueID>3</uniqueID>
+	<user_defined>0</user_defined>
+	<race>10</race>
+	<class>4</class>
+	<alignment>CN</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>None</HD>
+	<init></init>
+	<speed>30</speed>
+	<AC>17</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>None</action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>10</STR>
+	<INT>16</INT>
+	<DEX>14</DEX>
+	<CON>15</CON>
+	<WIS>12</WIS>
+	<CHA>5</CHA>
+	<CR>3</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>20</HP>
+	<StartHP>20</StartHP>
+	<PP>12</PP>
+	<dist>0</dist>
+	<other>Darkvision 60'
+Immune Poison
+Vunerable Bludgeoning
+
+</other>
+</npc>
+<npc>
+	<name>Salas the Troglodyte</name>
+	<version>5E_NPC</version>
+	<uniqueID>4</uniqueID>
+	<user_defined>0</user_defined>
+	<race>10</race>
+	<class>4</class>
+	<alignment>CN</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>None</HD>
+	<init></init>
+	<speed>30</speed>
+	<AC>18</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>None</action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>10</STR>
+	<INT>11</INT>
+	<DEX>12</DEX>
+	<CON>15</CON>
+	<WIS>9</WIS>
+	<CHA>16</CHA>
+	<CR>4</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>30</HP>
+	<StartHP>30</StartHP>
+	<PP>10</PP>
+	<dist>0</dist>
+	<other>Stench 30' (DC 14 CON or have disadvantage on all rolls while within 30')
+
+</other>
+</npc>
+<npc>
+	<name>Gintera Gunth</name>
+	<version>5E_NPC</version>
+	<uniqueID>5</uniqueID>
+	<user_defined>0</user_defined>
+	<race>1</race>
+	<class>8</class>
+	<alignment>CN</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>None</HD>
+	<init></init>
+	<speed>30</speed>
+	<AC>19</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>None</action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>10</STR>
+	<INT>11</INT>
+	<DEX>14</DEX>
+	<CON>13</CON>
+	<WIS>16</WIS>
+	<CHA>14</CHA>
+	<CR>5</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>36</HP>
+	<StartHP>36</StartHP>
+	<PP>16</PP>
+	<dist>0</dist>
+	<other>Possessions: +1 breastplate, +1 heavy mace, rope of climbing, potions of cure moderate wounds, invisibility, and lesser restoration, 34 cp
+
+Markie, Riding Dog: hp 14; AC 15;  Bite +4, 4 (1d8) piercing
+
+</other>
+</npc>
+<npc>
+	<name>Durstam the Cold</name>
+	<version>5E_NPC</version>
+	<uniqueID>6</uniqueID>
+	<user_defined>0</user_defined>
+	<race>10</race>
+	<class>4</class>
+	<alignment>CN</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>None</HD>
+	<init></init>
+	<speed>30</speed>
+	<AC>15</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>Life Drain: The target must succeed on a DC-10 CON save or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. Melee+6 to hit, 11 (2d8 + 1) necrotic damage.</action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>16</STR>
+	<INT>16</INT>
+	<DEX>12</DEX>
+	<CON>16</CON>
+	<WIS>12</WIS>
+	<CHA>8</CHA>
+	<CR>3</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>30</HP>
+	<StartHP>30</StartHP>
+	<PP>11</PP>
+	<dist>0</dist>
+	<other>Incorporeal Movement. The wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.
+Sunlight Sensitivity. While in sunlight, the wraith has disadvantage on attack rolls, as well as on WIS (Perception) checks that rely on sight.
+Resist acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from non magical weapons that aren't silvered 
+Immune necrotic, charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained
+Darkvision 60'
+</other>
+</npc>
+<npc>
+	<name>Jarla the Blackguard</name>
+	<version>5E_NPC</version>
+	<uniqueID>7</uniqueID>
+	<user_defined>0</user_defined>
+	<race>0</race>
+	<class>6</class>
+	<alignment>CN</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>None</HD>
+	<init></init>
+	<speed>30</speed>
+	<AC>17</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>Extra Attack:~ The blackguard makes two attacks.</action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>16</STR>
+	<INT>12</INT>
+	<DEX>13</DEX>
+	<CON>15</CON>
+	<WIS>11</WIS>
+	<CHA>11</CHA>
+	<CR>5</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>72</HP>
+	<StartHP>72</StartHP>
+	<PP>14</PP>
+	<dist>0</dist>
+	<other>Unholy Smite:  After hitting with a melee attack, the blackguard may expend spell slots to inflict 1d8 necrotic damage per slot expended.
+
+
+
+</other>
+</npc>
+<npc>
+	<name>Barzonyn DuMair</name>
+	<version>5E_NPC</version>
+	<uniqueID>8</uniqueID>
+	<user_defined>0</user_defined>
+	<race>0</race>
+	<class>4</class>
+	<alignment>CN</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>None</HD>
+	<init></init>
+	<speed>30</speed>
+	<AC>10</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>None</action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>14</STR>
+	<INT>14</INT>
+	<DEX>10</DEX>
+	<CON>12</CON>
+	<WIS>16</WIS>
+	<CHA>16</CHA>
+	<CR>5</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>32</HP>
+	<StartHP>32</StartHP>
+	<PP>16</PP>
+	<dist>0</dist>
+	<other>Concentration +7
+</other>
+</npc>
+<npc>
+	<name>Bartok, Millstone Initiate</name>
+	<version>5E_NPC</version>
+	<uniqueID>100000</uniqueID>
+	<user_defined>0</user_defined>
+	<race>0</race>
+	<class>3</class>
+	<alignment>CE</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>1d8</HD>
+	<init></init>
+	<speed>30 ft</speed>
+	<AC>16</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>Maul:~+3 melee, 2d6 bludgeoning</action>
+		<action>Multiattack:~Bartok may make two maul attacks each round, against separate targets that are within 5'</action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>12</STR>
+	<INT>14</INT>
+	<DEX>14</DEX>
+	<CON>15</CON>
+	<WIS>12</WIS>
+	<CHA>9</CHA>
+	<spellList>
+		<spells>Level0:Poison Spray,Produce Flame,Thorn Whip,</spells>
+		<spells>Level1:Fog Cloud,Entangle,Cure Wounds,</spells>
+		<spells>Level2:</spells>
+		<spells>Level3:</spells>
+		<spells>Level4:</spells>
+		<spells>Level5:</spells>
+		<spells>Level6:</spells>
+		<spells>Level7:</spells>
+		<spells>Level8:</spells>
+		<spells>Level9:</spells>
+	</spellList>
+	<spellSlots>
+		<slots>Slot9:0</slots>
+		<slots>Slot8:0</slots>
+		<slots>Slot1:3</slots>
+		<slots>Slot0:0</slots>
+		<slots>Slot3:0</slots>
+		<slots>Slot2:0</slots>
+		<slots>Slot5:0</slots>
+		<slots>Slot4:0</slots>
+		<slots>Slot7:0</slots>
+		<slots>Slot6:0</slots>
+	</spellSlots>
+	<CR>4</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>65</HP>
+	<StartHP>65</StartHP>
+	<PP>12</PP>
+	<dist>0</dist>
+	<ideals>Domination through change in the natural order of things.</ideals>
+	<other>Bartok is mean spirited, and has embraced the ideals of the Millstone Brotherhood with a zeal that worries even some of the local leadership.  He is not above torture for the sake of torture, and looks for opportunities to destroy living things.  He is irritable, but patient in planning.
+
+He has three tattoos above his right eye, runic markings that only he knows the meaning of.
+</other>
+</npc>
+<npc>
+	<name>Acolyte</name>
+	<version>5E_NPC</version>
+	<uniqueID>100001</uniqueID>
+	<user_defined>0</user_defined>
+	<race>0</race>
+	<class>2</class>
+	<alignment>Any</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>2d8</HD>
+	<init></init>
+	<speed>30 ft</speed>
+	<AC>10</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>Club:~ Melee Weapon Attack: +2 to hit , reach 5 ft., one target; Hit: 2 (1d4) bludgeoning damage. </action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>10</STR>
+	<INT>10</INT>
+	<DEX>10</DEX>
+	<CON>10</CON>
+	<WIS>14</WIS>
+	<CHA>11</CHA>
+	<spellList>
+		<spells>Level0:Light,Sacred Flame,Thaumaturgy,</spells>
+		<spells>Level1:Bless,Cure Wounds,Sanctuary,</spells>
+		<spells>Level2:</spells>
+		<spells>Level3:</spells>
+		<spells>Level4:</spells>
+		<spells>Level5:</spells>
+		<spells>Level6:</spells>
+		<spells>Level7:</spells>
+		<spells>Level8:</spells>
+		<spells>Level9:</spells>
+	</spellList>
+	<spellSlots>
+		<slots>Slot9:0</slots>
+		<slots>Slot8:0</slots>
+		<slots>Slot1:0</slots>
+		<slots>Slot0:0</slots>
+		<slots>Slot3:0</slots>
+		<slots>Slot2:0</slots>
+		<slots>Slot5:0</slots>
+		<slots>Slot4:0</slots>
+		<slots>Slot7:0</slots>
+		<slots>Slot6:0</slots>
+	</spellSlots>
+	<CR>1/4</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>9</HP>
+	<StartHP>9</StartHP>
+	<PP>10</PP>
+	<dist>0</dist>
+	<trait>Spellcasting:~ The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks) . The acolyte has cleric spells prepared.
+</trait>
+	<skills>Medicine +4, Religion +2
+Speaks/Reads/Writes any one language</skills>
+	<other>Acolytes are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.</other>
+</npc>
+<npc>
+	<name>Cultist</name>
+	<version>5E_NPC</version>
+	<uniqueID>100002</uniqueID>
+	<user_defined>0</user_defined>
+	<race>0</race>
+	<class>2</class>
+	<alignment>Any Evil</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>2d8</HD>
+	<init></init>
+	<speed>30 ft.</speed>
+	<AC>12</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>Scimitar:~ Melee Weapon Attack: +3 to hit , reach 5 ft. , one creature . Hit : 4 (1d6 + 1) slashing damage.</action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>11</STR>
+	<INT>10</INT>
+	<DEX>12</DEX>
+	<CON>10</CON>
+	<WIS>11</WIS>
+	<CHA>10</CHA>
+	<CR>1/8</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>9</HP>
+	<StartHP>9</StartHP>
+	<PP>10</PP>
+	<dist>0</dist>
+	<trait>Dark Devotion:~ The cultist has advantage on saving throws against being charmed or frightened.
+</trait>
+	<skills>Medicine +4, Religion +2
+Speaks/Reads/Writes any one language
+</skills>
+	<other>Cultists swear allegiance to dark powers such as elemental princes, demon lords, or archdevils. Most conceal their loyalties to avoid being ostracized, imprisoned , or executed for their beliefs. Unlike evil acolytes , cultists often show signs of insanity in their beliefs and practices .
+
+</other>
+</npc>
+<npc>
+	<name>Cult Fanatic</name>
+	<version>5E_NPC</version>
+	<uniqueID>100003</uniqueID>
+	<user_defined>0</user_defined>
+	<race>0</race>
+	<class>2</class>
+	<alignment>LE</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>6d8+6</HD>
+	<init></init>
+	<speed>30 ft</speed>
+	<AC>13</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>Multiattack:~ The fanatic makes two melee attacks. </action>
+		<action>Dagger:~ Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one creature. Hit : 4 (1d4 + 2) piercing damage. </action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>11</STR>
+	<INT>10</INT>
+	<DEX>14</DEX>
+	<CON>12</CON>
+	<WIS>13</WIS>
+	<CHA>14</CHA>
+	<spellList>
+		<spells>Level0:Light,Sacred Flame,Thaumaturgy,</spells>
+		<spells>Level1:Command,Inflict Wounds,Shield Of Faith,</spells>
+		<spells>Level2:Spiritual Weapon,Hold Person,</spells>
+		<spells>Level3:Aura Of Vitality,</spells>
+		<spells>Level4:</spells>
+		<spells>Level5:</spells>
+		<spells>Level6:</spells>
+		<spells>Level7:</spells>
+		<spells>Level8:</spells>
+		<spells>Level9:</spells>
+	</spellList>
+	<spellSlots>
+		<slots>Slot9:0</slots>
+		<slots>Slot8:0</slots>
+		<slots>Slot1:3</slots>
+		<slots>Slot0:0</slots>
+		<slots>Slot3:0</slots>
+		<slots>Slot2:2</slots>
+		<slots>Slot5:0</slots>
+		<slots>Slot4:0</slots>
+		<slots>Slot7:0</slots>
+		<slots>Slot6:0</slots>
+	</spellSlots>
+	<CR>2</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>60</HP>
+	<StartHP>60</StartHP>
+	<PP>10</PP>
+	<dist>0</dist>
+	<trait>Dark Devotion:~ The cultist has advantage on saving throws against being charmed or frightened.
+Spellcasting:~ The fanatic is a 4th-level spellcaster. Its spell casting ability is Wisdom (spell save DC 11, +3 to hit with spell attacks). The fanatic has cleric spells prepared: 
+
+
+
+
+
+
+</trait>
+	<skills>Deception +4, Persuasion +4, Religion +2
+Speaks/Reads/Writes any one language
+</skills>
+	<ideals>Domination through change in the natural order of things.</ideals>
+	<other>Fanatics are often part of a cult's leadership , using their charisma and dogma to influence and prey on those of weak will.  Most are interested in personal power above all else.
+
+
+
+
+
+</other>
+</npc>
+<npc>
+	<name>Guard Archer</name>
+	<version>5E_NPC</version>
+	<uniqueID>100006</uniqueID>
+	<user_defined>0</user_defined>
+	<race>0</race>
+	<class>4</class>
+	<alignment>LE</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>2d10+3</HD>
+	<init></init>
+	<speed>30</speed>
+	<AC>16</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>Trained Archer:~  This NPC makes two ranged attacks</action>
+		<action>Ranged:~  +5 Crossbow, 1d10+3</action>
+		<action>Melee:~  +3 Shortsword (1d6+3) AND +1 dagger (1d4+1)</action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>13</STR>
+	<INT>10</INT>
+	<DEX>18</DEX>
+	<CON>12</CON>
+	<WIS>11</WIS>
+	<CHA>10</CHA>
+	<CR>3</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>48</HP>
+	<StartHP>48</StartHP>
+	<PP>12</PP>
+	<dist>0</dist>
+	<trait>Riposte:~ When a creature misses with a melee attack, the Guard can use a reaction to make a melee attack against that creature.</trait>
+	<other>Perception +2
+
+
+
+
+
+</other>
+</npc>
+<npc>
+	<name>Bruenor Bloodforge</name>
+	<version>5E_NPC</version>
+	<uniqueID>100007</uniqueID>
+	<user_defined>0</user_defined>
+	<race>6</race>
+	<class>4</class>
+	<alignment>N</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>1d10</HD>
+	<init></init>
+	<speed>0</speed>
+	<AC>10</AC>
+	<AC_Type></AC_Type>
+	<space></space>
+	<reach></reach>
+	<STR>19</STR>
+	<INT>10</INT>
+	<DEX>14</DEX>
+	<CON>18</CON>
+	<WIS>10</WIS>
+	<CHA>4</CHA>
+	<CR>5</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>10</HP>
+	<StartHP>10</StartHP>
+	<PP>8</PP>
+	<dist>0</dist>
+</npc>
+<npc>
+	<name>Karlan Roos (Wizard)</name>
+	<version>5E_NPC</version>
+	<uniqueID>100008</uniqueID>
+	<user_defined>0</user_defined>
+	<race>0</race>
+	<class>11</class>
+	<alignment>N</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>1d10</HD>
+	<init></init>
+	<speed>30</speed>
+	<AC>12</AC>
+	<AC_Type></AC_Type>
+	<space></space>
+	<reach></reach>
+	<STR>11</STR>
+	<INT>19</INT>
+	<DEX>16</DEX>
+	<CON>15</CON>
+	<WIS>13</WIS>
+	<CHA>11</CHA>
+	<spellList>
+		<spells>Level0:Mage Hand,Fire Bolt,Shocking Grasp,Blade Ward,</spells>
+		<spells>Level1:Witch Bolt,Tasha's Hideous Laughter,Charm Person,Mage Armor,Ice Knife,</spells>
+		<spells>Level2:Blindness/deafness,Enlarge/reduce,Melf's Acid Arrow,Hold Person,</spells>
+		<spells>Level3:Counterspell,Water Breathing,Slow,</spells>
+		<spells>Level4:</spells>
+		<spells>Level5:</spells>
+		<spells>Level6:</spells>
+		<spells>Level7:</spells>
+		<spells>Level8:</spells>
+		<spells>Level9:</spells>
+	</spellList>
+	<spellSlots>
+		<slots>Slot9:0</slots>
+		<slots>Slot8:0</slots>
+		<slots>Slot1:4</slots>
+		<slots>Slot0:0</slots>
+		<slots>Slot3:3</slots>
+		<slots>Slot2:3</slots>
+		<slots>Slot5:0</slots>
+		<slots>Slot4:0</slots>
+		<slots>Slot7:0</slots>
+		<slots>Slot6:0</slots>
+	</spellSlots>
+	<CR>6</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>46</HP>
+	<StartHP>46</StartHP>
+	<PP>8</PP>
+	<dist>0</dist>
+	<trait>Spell Attack: +7
+Spell DC: 15
+
+</trait>
+</npc>
+<npc>
+	<name>Trimik (Sea Druid)</name>
+	<version>5E_NPC</version>
+	<uniqueID>100009</uniqueID>
+	<user_defined>0</user_defined>
+	<race>4</race>
+	<class>3</class>
+	<alignment>Any</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>1d8</HD>
+	<init></init>
+	<speed>30</speed>
+	<AC>16</AC>
+	<AC_Type></AC_Type>
+	<space></space>
+	<reach></reach>
+	<STR>12</STR>
+	<INT>14</INT>
+	<DEX>15</DEX>
+	<CON>14</CON>
+	<WIS>19</WIS>
+	<CHA>13</CHA>
+	<spellList>
+		<spells>Level0:Poison Spray,Shape Water,Thunderclap,</spells>
+		<spells>Level1:Fog Cloud,Absorb Elements,Cure Wounds,</spells>
+		<spells>Level2:Gust Of Wind,Flaming Sphere,Dust Devil,</spells>
+		<spells>Level3:Conjure Animals,Water Walk,Tidal Wave,</spells>
+		<spells>Level4:</spells>
+		<spells>Level5:</spells>
+		<spells>Level6:</spells>
+		<spells>Level7:</spells>
+		<spells>Level8:</spells>
+		<spells>Level9:</spells>
+	</spellList>
+	<spellSlots>
+		<slots>Slot9:0</slots>
+		<slots>Slot8:0</slots>
+		<slots>Slot1:4</slots>
+		<slots>Slot0:3</slots>
+		<slots>Slot3:2</slots>
+		<slots>Slot2:3</slots>
+		<slots>Slot5:0</slots>
+		<slots>Slot4:0</slots>
+		<slots>Slot7:0</slots>
+		<slots>Slot6:0</slots>
+	</spellSlots>
+	<CR>5</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>1</HP>
+	<StartHP>1</StartHP>
+	<PP>10</PP>
+	<dist>0</dist>
+	<trait>Spell Attack +7
+Spell DC: 15
+
+
+</trait>
+</npc>
+<npc>
+	<name>Guard Sergeant</name>
+	<version>5E_NPC</version>
+	<uniqueID>100010</uniqueID>
+	<user_defined>0</user_defined>
+	<race>0</race>
+	<class>4</class>
+	<alignment>Any</alignment>
+	<family></family>
+	<size>2</size>
+	<subtype></subtype>
+	<desc></desc>
+	<HD>12d10</HD>
+	<init></init>
+	<speed>30</speed>
+	<AC>17</AC>
+	<AC_Type></AC_Type>
+	<actions>
+		<action>Superior Training:~  The sergeant makes two melee attacks (sword and dagger)</action>
+		<action>Shortsword:~ +6 melee, 1d6+5 slashing</action>
+		<action>Dagger:~ +5 melee, 1d4 piercing + Disarm</action>
+	</actions>
+	<space></space>
+	<reach></reach>
+	<STR>17</STR>
+	<INT>14</INT>
+	<DEX>15</DEX>
+	<CON>12</CON>
+	<WIS>12</WIS>
+	<CHA>13</CHA>
+	<CR>7</CR>
+	<XP>10</XP>
+	<treasure></treasure>
+	<HP>120</HP>
+	<StartHP>120</StartHP>
+	<PP>13</PP>
+	<dist>0</dist>
+	<trait>Riposte:~  When a creature misses with a melee attack, the Sergeant may use a reaction to make an melee attack against that creature
+
+Disarm:~  A creature that is hit with the dagger must make a DC-13 DEX save or have a weapon it is holding knocked 5' away in a random direction.
+</trait>
+</npc>
+</PymapperNPC>

@@ -1,0 +1,16 @@
+# <comment line>
+TILESET				Leading tag for tileset files.  Must be the first tag
+VERSION	<versionNumber>		Denotes the version of the tileset file.
+NAME <TilesetName>
+SET_ID <TilesetID>
+NUM_SETS <NumSets>
+TILE <tileID>
+IMAGE_A <filenamepath>
+IMAGE_B <filenamepath>
+XSIZE <xsize>
+YSIZE <ysize>
+TILE_COUNT <count>
+TILE_NAME_A <tilenameA>
+TILE_NAME_B <tilenameB>
+ENDTILE
+END

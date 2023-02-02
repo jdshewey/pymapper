@@ -1,0 +1,2062 @@
+<TRAP_FILE>
+<TRAP>
+<DESC>; Basic Arrow Trap
+<CR>; 1
+<TYPE>;  mechanical
+<TRIGGER>; Proximity
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 10
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; (1d6x3, arrow)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 0
+<SAVE_DC>; 20
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 2000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Camouflaged Pit Trap
+<CR>; 1
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; n/a
+<DAMAGE>; 10 ft. deep (1d6, fall)
+<SEARCH_DC>; 24
+<DISABLE_DC>; 20
+<SAVE_DC>; 20
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 1800
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Deeper Pit Trap
+<CR>; 1
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; hidden switch bypass (25)
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; n/a
+<DAMAGE>; 20 ft. deep (2d6, fall) multiple targets (first target in each of two adjacent 5-ft. squares)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 23
+<SAVE_DC>; 15
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 1300
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Fusillade of Darts
+<CR>; 1
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 10
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; (1d4+1, dart) multiple targets (fires 1d4 darts at each target in two adjacent 5-ft. squares)
+<SEARCH_DC>; 14
+<DISABLE_DC>; 20
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 500
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Poison Dart Trap
+<CR>; 1
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 8
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; 1d4 plus poison dart (bloodroot poison, DC12 Fort save resists, 0/1d4 Con plus 1d3 Wis)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 18
+<SAVE_DC>; 12
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 700
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Poison Needle Trap
+<CR>; 1
+<TYPE>;  mechanical
+<TRIGGER>; Touch
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 8
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; (1 plus greenblood oil poison)
+<SEARCH_DC>; 22
+<DISABLE_DC>; 20
+<SAVE_DC>; 20
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 1300
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Portcullis Trap
+<CR>; 1
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 10
+<ATTACK_TYPE>; Melee
+<DAMAGE>; 3d6
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 20
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 1400
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Razor-Wire across Hallway
+<CR>; 1
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; No
+<BYPASS>; n/a
+<ATTACK_BONUS>; 10
+<ATTACK_TYPE>; Melee
+<DAMAGE>; (2d6, wire) multiple targets (first target in each of two adjacent 5-ft. squares)
+<SEARCH_DC>; 22
+<DISABLE_DC>; 15
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 400
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Rolling Rock Trap
+<CR>; 1
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 10
+<ATTACK_TYPE>; Melee
+<DAMAGE>; 2d6, rock
+<SEARCH_DC>; 20
+<DISABLE_DC>; 22
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 1400
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Scything Blade Trap
+<CR>; 1
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 8
+<ATTACK_TYPE>; Melee
+<DAMAGE>; 1d8x3
+<SEARCH_DC>; 21
+<DISABLE_DC>; 20
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 1700
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Spear Trap
+<CR>; 1
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 12
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; 1d8x3, spear
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 1200
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Swinging Block Trap
+<CR>; 1
+<TYPE>;  mechanical
+<TRIGGER>; Touch
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 5
+<ATTACK_TYPE>; Melee
+<DAMAGE>; 4d6, stone block
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 500
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Wall Blade Trap
+<CR>; 1
+<TYPE>;  mechanical
+<TRIGGER>; Touch
+<RESET>; Automatic
+<BYPASS>; hidden switch bypass (25)
+<ATTACK_BONUS>; 10
+<ATTACK_TYPE>; Melee
+<DAMAGE>; 2d4x4, scythe
+<SEARCH_DC>; 22
+<DISABLE_DC>; 22
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 2500
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Box of Brown Mold
+<CR>; 2
+<TYPE>;  mechanical
+<TRIGGER>; Touch
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; n/a
+<DAMAGE>; 5 foot cold aura (3d6, cold nonlethal)
+<SEARCH_DC>; 22
+<DISABLE_DC>; 16
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 3000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Bricks from Ceiling
+<CR>; 2
+<TYPE>;  mechanical
+<TRIGGER>; Touch
+<RESET>; Repair
+<BYPASS>; n/a
+<ATTACK_BONUS>; 12
+<ATTACK_TYPE>; Melee
+<DAMAGE>; (2d6, bricks) multiple targets (all targets in two adjacent 5-ft. squares)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 2400
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Burning Hands Trap
+<CR>; 2
+<TYPE>;  magic
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (burning hands, 1st-level wizard, 1d4 fire, DC 11 Reflex save half damage)
+<SEARCH_DC>; 26
+<DISABLE_DC>; 26
+<SAVE_DC>; 11
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Half Damage
+<GP_COST>; 500
+<XP_COST>; 40
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Camouflaged Pit Trap
+<CR>; 2
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; pp
+<DAMAGE>; 20' pit, (2d6, fall) multiple targets (first target in each of two adjacent 5-ft. squares)
+<SEARCH_DC>; 24
+<DISABLE_DC>; 19
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 3400
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Inflict Light Wounds Trap
+<CR>; 2
+<TYPE>;  magic device
+<TRIGGER>; Touch
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (inflict light wounds, 1st-level cleric, 1d8+1, DC 11 Will save half damage)
+<SEARCH_DC>; 26
+<DISABLE_DC>; 26
+<SAVE_DC>; 11
+<SAVE_TYPE>; Will
+<SAVE_AMOUNT>; Half Damage
+<GP_COST>; 500
+<XP_COST>; 40
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Javelin Trap
+<CR>; 2
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 16
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; 1d6+4, javelin
+<SEARCH_DC>; 20
+<DISABLE_DC>; 18
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 4800
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Large Net Trap
+<CR>; 2
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 5
+<ATTACK_TYPE>; Melee
+<DAMAGE>; see note
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 14
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 3000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Pit Trap
+<CR>; 2
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 40' Pit, (4d6, fall)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 2000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Poison Needle Trap
+<CR>; 2
+<TYPE>;  mechanical
+<TRIGGER>; Touch
+<RESET>; Repair
+<BYPASS>; lock bypass (Open Lock DC 30)
+<ATTACK_BONUS>; 17
+<ATTACK_TYPE>; Melee
+<DAMAGE>; (1 plus poison, needle) poison (blue whinnis, DC 14 Fortitude save resists (poison only), 1 Con/unconsciousne
+<SEARCH_DC>; 22
+<DISABLE_DC>; 17
+<SAVE_DC>; 14
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 4720
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Spiked Pit Trap
+<CR>; 2
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 20' Pit, (2d6, fall) multiple targets (first target in each of two adjacent 5-ft. squares) pit spikes (Atk +10
+<SEARCH_DC>; 18
+<DISABLE_DC>; 15
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 1600
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Well-Camouflaged Pit Trap
+<CR>; 2
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>;  Repair 
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 10' Pit,  (1d6, fall)
+<SEARCH_DC>; 27
+<DISABLE_DC>; 20
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 4400
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Acid Arrow Trap
+<CR>; 3
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 2
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; acid arrow, 3rd-level wizard, 2d4 acid/round for 2 rounds
+<SEARCH_DC>; 27
+<DISABLE_DC>; 27
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 3000
+<XP_COST>; 240
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Burning Hands Trap
+<CR>; 3
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; burning hands, 5th-level wizard, 5d4 fire, DC 11 Reflex save half damage
+<SEARCH_DC>; 26
+<DISABLE_DC>; 26
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 2500
+<XP_COST>; 200
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Camouflaged Pit Trap
+<CR>; 3
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 30' Pit, (3d6, fall) multiple targets (first target in each of two adjacent squares)
+<SEARCH_DC>; 24
+<DISABLE_DC>; 18
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 4800
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Ceiling Pendulum
+<CR>; 3
+<TYPE>;  mechanical
+<TRIGGER>; Timed 
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 15
+<ATTACK_TYPE>; Melee
+<DAMAGE>; 1d12+8x3, greataxe
+<SEARCH_DC>; 15
+<DISABLE_DC>; 27
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 14100
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Extended Bane Trap
+<CR>; 3
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; extended bane, 3rd-level cleric, DC 13 Will save negates
+<SEARCH_DC>; 27
+<DISABLE_DC>; 27
+<SAVE_DC>; 13
+<SAVE_TYPE>; Will
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 3500
+<XP_COST>; 280
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Fire Trap
+<CR>; 3
+<TYPE>;  Spell
+<TRIGGER>; Spell 
+<RESET>; No
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; fire trap, 3rd-level druid, 1d4+3 fire, DC 13 Reflex save half damage
+<SEARCH_DC>; 27
+<DISABLE_DC>; 27
+<SAVE_DC>; 13
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Half Damage
+<GP_COST>; 0
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; 85 gp to hire NPC Spellcaster.
+<END_TRAP>;
+<TRAP>
+<DESC>; Ghoul Touch Trap
+<CR>; 3
+<TYPE>;  magic device
+<TRIGGER>; Touch
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (ghoul Touch, 3rd-level wizard, DC 13 Fortitude save negates)
+<SEARCH_DC>; 27
+<DISABLE_DC>; 27
+<SAVE_DC>; 13
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 3000
+<XP_COST>; 240
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Hail of Needles
+<CR>; 3
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 20
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; (2d4)
+<SEARCH_DC>; 22
+<DISABLE_DC>; 22
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 5400
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Pit Trap
+<CR>; 3
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 60' Pit, (6d6, fall)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 3000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Poisoned Arrow Trap
+<CR>; 3
+<TYPE>;  mechanical
+<TRIGGER>; Touch
+<RESET>; Manual
+<BYPASS>; lock bypass (Open Lock DC 30)
+<ATTACK_BONUS>; 12
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; (1d8 plus poison, arrow) poison (Large monstrous scorpion venom, DC 14 Fortitude save resists, 1d4 Con/1d4 Con)
+<SEARCH_DC>; 19
+<DISABLE_DC>; 15
+<SAVE_DC>; 14
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 2900
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Spiked Pit Trap
+<CR>; 3
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 20' Pit, (2d6, fall) multiple targets (first target in each of two adjacent 5-ft. squares) pit spikes (Atk +10
+<SEARCH_DC>; 21
+<DISABLE_DC>; 20
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 3600
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Stone Blocks from Ceiling
+<CR>; 3
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Repair
+<BYPASS>; n/a
+<ATTACK_BONUS>; 10
+<ATTACK_TYPE>; Melee
+<DAMAGE>; 4d6, stone blocks
+<SEARCH_DC>; 25
+<DISABLE_DC>; 20
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 5400
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Bestow Curse Trap
+<CR>; 4
+<TYPE>;  magic device
+<TRIGGER>; Touch
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>;  Spell
+<DAMAGE>; (bestow curse, 5th-level cleric, DC 14 Will save negates)
+<SEARCH_DC>; 28
+<DISABLE_DC>; 28
+<SAVE_DC>; 14
+<SAVE_TYPE>; Will
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 8000
+<XP_COST>; 640
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Camouflaged Pit Trap
+<CR>; 4
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 40 ft. deep (4d6, fall) multiple targets (first target in each of two adjacent 5-ft. squares)
+<SEARCH_DC>; 25
+<DISABLE_DC>; 17
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 6800
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Collapsing Column
+<CR>; 4
+<TYPE>;  mechanical
+<TRIGGER>; Touch
+<RESET>; No
+<BYPASS>; n/a
+<ATTACK_BONUS>; 15
+<ATTACK_TYPE>; Melee
+<DAMAGE>; 6d6, stone blocks
+<SEARCH_DC>; 20
+<DISABLE_DC>; 24
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 8800
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Glyph of Warding (Blast)
+<CR>; 4
+<TYPE>;  Spell
+<TRIGGER>; Spell 
+<RESET>; No
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>;  Spell
+<DAMAGE>; (glyph of warding [blast], 5th-level cleric, 2d8 acid, DC 14 Reflex save half damage) multiple targets (all targets within 5 ft.)
+<SEARCH_DC>; 28
+<DISABLE_DC>; 28
+<SAVE_DC>; 14
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Half Damage
+<GP_COST>; 0
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; 350 gp to hire NPC Spellcaster.
+<END_TRAP>;
+<TRAP>
+<DESC>; Lightning Bolt Trap
+<CR>; 4
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>;  Spell
+<DAMAGE>; lightning bolt, 5th-level wizard, 5d6 electricity, DC 14 Reflex save half damage
+<SEARCH_DC>; 28
+<DISABLE_DC>; 28
+<SAVE_DC>; 14
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Half Damage
+<GP_COST>; 7500
+<XP_COST>; 600
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Pit Trap
+<CR>; 4
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 80' Pit, (8d6, fall)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 4000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Poisoned Dart Trap
+<CR>; 4
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 15
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; (1d4+4 plus poison, dart) multiple targets (1 dart per target in a 10-ft.-by-10-ft. area) poison
+<SEARCH_DC>; 21
+<DISABLE_DC>; 22
+<SAVE_DC>; 10
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 12090
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Sepia Snake Sigil Trap
+<CR>; 4
+<TYPE>;  Spell
+<TRIGGER>; Spell 
+<RESET>; No
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (sepia snake sigil, 5th-level wizard, DC 14 Reflex save negates)
+<SEARCH_DC>; 28
+<DISABLE_DC>; 28
+<SAVE_DC>; 14
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 0
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; 650 gp to hire NPC Spellcaster.
+<END_TRAP>;
+<TRAP>
+<DESC>; Spiked Pit Trap
+<CR>; 4
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 60' Pit, (6d6, fall) pit spikes (Atk +10 melee, 1d4 spikes per target for 1d4+5 each)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 4000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Wall Scythe Trap
+<CR>; 4
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 20
+<ATTACK_TYPE>; Melee
+<DAMAGE>; 2d4+8x4, scythe
+<SEARCH_DC>; 21
+<DISABLE_DC>; 18
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 17200
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Water-Filled Room Trap
+<CR>; 4
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Other
+<DAMAGE>; multiple targets (all targets in a 10-ft.-by-10-ft. room) never miss onset delay (5 rounds) liquid
+<SEARCH_DC>; 17
+<DISABLE_DC>; 23
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 11200
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Wide-Mouth Spiked Pit Trap
+<CR>; 4
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 20 ft. deep (2d6, fall) multiple targets (first target in each of two adjacent 5-ft. squares)
+<SEARCH_DC>; 18
+<DISABLE_DC>; 25
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 7200
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Camouflaged Pit Trap
+<CR>; 5
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 50 ft. deep (5d6, fall) multiple targets (first target in each of two adjacent 5-ft. squares)
+<SEARCH_DC>; 25
+<DISABLE_DC>; 17
+<SAVE_DC>; 20
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 8500
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Doorknob Smeared with Contact Poison
+<CR>; 5
+<TYPE>;  mechanical
+<TRIGGER>; Touch
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Other
+<DAMAGE>; poison (nitharit, DC 13 Fortitude save resists, 0/3d6 Con)
+<SEARCH_DC>; 25
+<DISABLE_DC>; 19
+<SAVE_DC>; 13
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 9650
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Falling Block Trap
+<CR>; 5
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 15
+<ATTACK_TYPE>; Melee
+<DAMAGE>; 6d6, multiple targets, can strike all characters in two adjacent specified squares
+<SEARCH_DC>; 20
+<DISABLE_DC>; 25
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 15000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Fire Trap
+<CR>; 5
+<TYPE>;  Spell
+<TRIGGER>; Spell 
+<RESET>; No
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (fire trap, 7th-level wizard, 1d4+7 fire, DC 16 Reflex save half damage)
+<SEARCH_DC>; 29
+<DISABLE_DC>; 29
+<SAVE_DC>; 16
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Half Damage
+<GP_COST>; 0
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; 305 gp to hire NPC Spellcaster.
+<END_TRAP>;
+<TRAP>
+<DESC>; Fireball Trap
+<CR>; 5
+<TYPE>;  magic device
+<TRIGGER>; Touch
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (fireball, 8th-level wizard, 8d6 fire, DC 14 Reflex save half damage)
+<SEARCH_DC>; 28
+<DISABLE_DC>; 28
+<SAVE_DC>; 14
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Half Damage
+<GP_COST>; 12000
+<XP_COST>; 960
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Flooding Room Trap
+<CR>; 5
+<TYPE>;  mechanical
+<TRIGGER>;  Proximity 
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Other
+<DAMAGE>; no attack roll necessary (Room floods in 4 rounds)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 25
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 17500
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Fusillade of Darts
+<CR>; 5
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 18
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; (1d4+1, dart) multiple targets (1d8 darts per target in a 10-ft.-by-10-ft. area)
+<SEARCH_DC>; 19
+<DISABLE_DC>; 25
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 18000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Moving Executioner Statue
+<CR>; 5
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Automatic
+<BYPASS>; hidden switch bypass (25)
+<ATTACK_BONUS>; 16
+<ATTACK_TYPE>; Melee
+<DAMAGE>; (1d12+8x3, greataxe) multiple targets (both arms attack)
+<SEARCH_DC>; 25
+<DISABLE_DC>; 18
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 22500
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Phantasmal Killer Trap
+<CR>; 5
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (phantasmal killer, 7th-level wizard, DC 16 Will save for disbelief and DC 16 Fort save for partial effect)
+<SEARCH_DC>; 29
+<DISABLE_DC>; 29
+<SAVE_DC>; 16
+<SAVE_TYPE>; Will
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 14000
+<XP_COST>; 1120
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Pit Trap
+<CR>; 5
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 100 ft. deep (10d6, fall)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 5000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Poison Wall Spikes
+<CR>; 5
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 16
+<ATTACK_TYPE>; Melee
+<DAMAGE>; (1d8+4 plus poison, spike) multiple targets (closest target in each of two adjacent 5-ft. squares) poison
+<SEARCH_DC>; 17
+<DISABLE_DC>; 21
+<SAVE_DC>; 12
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 12650
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Spiked Pit Trap
+<CR>; 5
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 40 ft. deep (4d6, fall) multiple targets (first target in each of two adjacent 5-ft. squares) pit spikes
+<SEARCH_DC>; 21
+<DISABLE_DC>; 20
+<SAVE_DC>; 25
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 13500
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Spiked Pit Trap (80 Ft. Deep)
+<CR>; 5
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 10
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 80 ft. deep (8d6, fall), pit spikes (Atk +10 melee, 1d4 spikes for 1d4+5 each)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 5000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Ungol Dust Vapor Trap
+<CR>; 5
+<TYPE>;  mechanical
+<TRIGGER>;  Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Other
+<DAMAGE>; gas multiple targets (all targets in a 10-ft.-by-10-ft. room) never miss onset delay (2 rounds) poison (ungol dust, DC 15 Fortitude save resists, 1 Cha/1d6 Cha plus 1 Cha drain)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 16
+<SAVE_DC>; 15
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 9000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Built-to-Collapse Wall
+<CR>; 6
+<TYPE>;  mechanical
+<TRIGGER>; Proximity
+<RESET>; No
+<BYPASS>; n/a
+<ATTACK_BONUS>; 20
+<ATTACK_TYPE>; Melee
+<DAMAGE>; (8d6, stone blocks) multiple targets (all targets in a 10-ft.-by-10-ft. area)
+<SEARCH_DC>; 14
+<DISABLE_DC>; 16
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 15000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Compacting Room
+<CR>; 6
+<TYPE>;  mechanical
+<TRIGGER>; Timed 
+<RESET>; Automatic
+<BYPASS>; hidden switch bypass (25)
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Other
+<DAMAGE>; (12d6, crush) multiple targets (all targets in a 10-ft. by 10-ft. room) never miss onset delay (4 rounds)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 22
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 25200
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Flame Strike Trap
+<CR>; 6
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (flame strike, 9th-level cleric, 9d6 fire, DC 17 Reflex save half damage)
+<SEARCH_DC>; 30
+<DISABLE_DC>; 30
+<SAVE_DC>; 17
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Half Damage
+<GP_COST>; 22750
+<XP_COST>; 1820
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Fusillade of Spears
+<CR>; 6
+<TYPE>;  mechanical
+<TRIGGER>; Proximity
+<RESET>; Repair
+<BYPASS>; n/a
+<ATTACK_BONUS>; 21
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; (1d8, spear) multiple targets (1d6 spears per target in a 10 ft.-by-10-ft. area)
+<SEARCH_DC>; 26
+<DISABLE_DC>; 20
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 31200
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Glyph of Warding (Blast)
+<CR>; 6
+<TYPE>;  Spell
+<TRIGGER>; Spell 
+<RESET>; No
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (glyph of warding [blast], 16th-level cleric, 8d8 sonic, DC 14 Reflex save half damage) multiple targets (all targets within 5 ft.)
+<SEARCH_DC>; 28
+<DISABLE_DC>; 28
+<SAVE_DC>; 14
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Half Damage
+<GP_COST>; 0
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; 680 gp to hire NPC Spellcaster.
+<END_TRAP>;
+<TRAP>
+<DESC>; Lightning Bolt Trap
+<CR>; 6
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (lightning bolt, 10th-level wizard, 10d6 electricity, DC 14 Reflex save half damage)
+<SEARCH_DC>; 28
+<DISABLE_DC>; 28
+<SAVE_DC>; 14
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Half Damage
+<GP_COST>; 15000
+<XP_COST>; 1200
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Spiked Blocks from Ceiling
+<CR>; 6
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Repair
+<BYPASS>; n/a
+<ATTACK_BONUS>; 20
+<ATTACK_TYPE>; Melee
+<DAMAGE>; (6d6, spikes) multiple targets (all targets in a 10-ft.-by-10-ft. area)
+<SEARCH_DC>; 24
+<DISABLE_DC>; 20
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 21600
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Spiked Pit Trap (100 Ft. Deep)
+<CR>; 6
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 100' Pit, (10d6, fall) pit spikes (Atk +10 melee, 1d4 spikes per target for 1d4+5 each)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 6000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Whirling Poison Blades
+<CR>; 6
+<TYPE>;  mechanical
+<TRIGGER>; Timed 
+<RESET>; Automatic
+<BYPASS>; hidden lock bypass (Search DC 25, Open Lock DC 30)
+<ATTACK_BONUS>; 10
+<ATTACK_TYPE>; Melee
+<DAMAGE>; (1d4+4/19-20 plus poison, dagger) poison (purple worm poison, DC 24 Fortitude save resists, 1d6 Str/2d6 Str)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 24
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 30200
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Wide-Mouth Pit Trap
+<CR>; 6
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 40' Pit, (4d6, fall) multiple targets (all targets within a 10-ft.-by-10-ft. area)
+<SEARCH_DC>; 26
+<DISABLE_DC>; 25
+<SAVE_DC>; 25
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 28200
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Wyvern Arrow Trap
+<CR>; 6
+<TYPE>;  mechanical
+<TRIGGER>; Proximity
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 14
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; (1d8 plus poison, arrow) poison (wyvern poison, DC 17 Fortitude save resists, 2d6 Con/2d6 Con)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 16
+<SAVE_DC>; 17
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 17400
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Acid Fog Trap
+<CR>; 7
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (acid fog, 11th-level wizard, 2d6/round acid for 11 rounds)
+<SEARCH_DC>; 31
+<DISABLE_DC>; 31
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 33000
+<XP_COST>; 2640
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Black Tentacles Trap
+<CR>; 7
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; No
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (black tentacles, 7th-level wizard, 1d4+7 tentacles, Atk +7 melee [1d6+4, tentacle]) multiple targets (up to
+<SEARCH_DC>; 29
+<DISABLE_DC>; 29
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 1400
+<XP_COST>; 112
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Blade Barrier Trap
+<CR>; 7
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (blade barrier, 11th-level cleric, 11d6 slashing, DC 19 Reflex save half damage)
+<SEARCH_DC>; 31
+<DISABLE_DC>; 31
+<SAVE_DC>; 19
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 33000
+<XP_COST>; 2640
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Burnt Othur Vapor Trap
+<CR>; 7
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Repair
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Other
+<DAMAGE>; gas multiple targets (all targets in a 10-ft.-by-10-ft. room) never miss onset delay (3 rounds) poison (burnt
+<SEARCH_DC>; 21
+<DISABLE_DC>; 21
+<SAVE_DC>; 18
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 17500
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Chain Lightning Trap
+<CR>; 7
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (chain lightning, 11th-level wizard, 11d6 electricity to target nearest center of  area plus 5d6 electricity to each of up to eleven secondary targets
+<SEARCH_DC>; 31
+<DISABLE_DC>; 31
+<SAVE_DC>; 19
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Half Damage
+<GP_COST>; 33000
+<XP_COST>; 2640
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Fusillade of Greenblood Oil Darts
+<CR>; 7
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 18
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; (1d4+1 plus poison, dart) poison (greenblood oil, DC 13 Fortitude save resists, 1 Con/ 1d2 Con) multiple targets (1d8 darts per target in a 10-ft.-by-10-ft. area)
+<SEARCH_DC>; 25
+<DISABLE_DC>; 25
+<SAVE_DC>; 13
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 33000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Lock Covered in Dragon Bile
+<CR>; 7
+<TYPE>;  mechanical
+<TRIGGER>; Touch
+<RESET>; No
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>;  poison
+<DAMAGE>; (dragon bile, DC 26 Fortitude save resists, 3d6 Str/0)
+<SEARCH_DC>; 27
+<DISABLE_DC>; 16
+<SAVE_DC>; 26
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 11300
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Summon Monster VI Trap
+<CR>; 7
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; No
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (summon monster VI, 11th-level wizard)
+<SEARCH_DC>; 31
+<DISABLE_DC>; 31
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 3300
+<XP_COST>; 264
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Water-Filled Room
+<CR>; 7
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Other
+<DAMAGE>; multiple targets (all targets in a 10-ft.-by-10-ft. room) never miss onset delay (3 rounds) water
+<SEARCH_DC>; 20
+<DISABLE_DC>; 25
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 21000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Well-Camouflaged Pit Trap
+<CR>; 7
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Repair
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 70' Pit, (7d6, fall) multiple targets (first target in each of two adjacent 5-ft. squares)
+<SEARCH_DC>; 27
+<DISABLE_DC>; 18
+<SAVE_DC>; 25
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 24500
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Acid Arrow Trap
+<CR>; 8
+<TYPE>;  magic device
+<TRIGGER>; Visual
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 9
+<ATTACK_TYPE>; Ranged
+<DAMAGE>; Touch and +9 ranged Touch Spell effect (acid arrow, 18th-level wizard, 2d4 acid damage for 7 rounds)
+<SEARCH_DC>; 27
+<DISABLE_DC>; 27
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 83500
+<XP_COST>; 4680
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Deathblade Wall Scythe
+<CR>; 8
+<TYPE>;  mechanical
+<TRIGGER>; Touch
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 16
+<ATTACK_TYPE>; Melee
+<DAMAGE>; (2d4+8 plus poison, scythe) poison (deathblade, DC 20 Fortitude save resists, 1d6 Con/2d6 Con)
+<SEARCH_DC>; 24
+<DISABLE_DC>; 19
+<SAVE_DC>; 20
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 31400
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Destruction Trap
+<CR>; 8
+<TYPE>;  magic device
+<TRIGGER>; Touch
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (destruction, 13th-level cleric, DC 20 Fortitude save for 10d6 damage)
+<SEARCH_DC>; 32
+<DISABLE_DC>; 32
+<SAVE_DC>; 20
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 45500
+<XP_COST>; 3640
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Earthquake Trap
+<CR>; 8
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (earthquake, 13th-level cleric, 65-ft. radius, DC 15 or 20 Reflex save, depending on terrain)
+<SEARCH_DC>; 32
+<DISABLE_DC>; 32
+<SAVE_DC>; 15
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 45500
+<XP_COST>; 3640
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Insanity Mist Vapor Trap
+<CR>; 8
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Repair
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Other
+<DAMAGE>; gas( never miss, onset delay, (1 round multiple targets (all targets in a 10-ft.-by-10-ft. room)) poison (insanity mist, DC 15 Fortitude save resists, 1d4 Wis/2d6 Wis)
+<SEARCH_DC>; 25
+<DISABLE_DC>; 20
+<SAVE_DC>; 15
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 23900
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Power Word Stun Trap
+<CR>; 8
+<TYPE>;  magic device
+<TRIGGER>; Touch
+<RESET>; No
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (power word stun, 13th-level wizard)
+<SEARCH_DC>; 32
+<DISABLE_DC>; 32
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 4550
+<XP_COST>; 364
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Prismatic Spray Trap
+<CR>; 8
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (prismatic spray, 13th-level wizard, DC 20 Reflex, Fortitude, or Will save, depending on effect)
+<SEARCH_DC>; 32
+<DISABLE_DC>; 32
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 45500
+<XP_COST>; 3640
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Reverse Gravity Trap
+<CR>; 8
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (reverse gravity, 13th-level wizard, 6d6 fall [upon hitting the ceiling of the 60-ft.- high room], then 6d6 fall [upon falling 60 ft. to the floor when the spell ends]
+<SEARCH_DC>; 32
+<DISABLE_DC>; 32
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 45500
+<XP_COST>; 3640
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Well-Camouflaged Pit Trap
+<CR>; 8
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Repair
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; 10d6, fall
+<SEARCH_DC>; 27
+<DISABLE_DC>; 18
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 16000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Word of Chaos Trap
+<CR>; 8
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; word of chaos, 13th-level cleric
+<SEARCH_DC>; 32
+<DISABLE_DC>; 32
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 46000
+<XP_COST>; 3680
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Drawer Handle Smeared with Contact Poison
+<CR>; 9
+<TYPE>;  mechanical
+<TRIGGER>; Touch
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Other
+<DAMAGE>; poison (black lotus extract, DC 20 Fortitude save resists, 3d6 Con/3d6 Con)
+<SEARCH_DC>; 18
+<DISABLE_DC>; 26
+<SAVE_DC>; 20
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 21600
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Dropping Ceiling
+<CR>; 9
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Repair
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Other
+<DAMAGE>; (12d6, crush) multiple targets (all targets in a 10-ft.-by-10-ft. room) never miss onset delay (1 round)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 16
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 12600
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Incendiary Cloud Trap
+<CR>; 9
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (incendiary cloud, 15th-level wizard, 4d6/round for 15 rounds, DC 22 Reflex save half damage)
+<SEARCH_DC>; 33
+<DISABLE_DC>; 33
+<SAVE_DC>; 22
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Half Damage
+<GP_COST>; 60000
+<XP_COST>; 4800
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Wide-Mouth Pit Trap
+<CR>; 9
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 100' Pit, (10d6, fall) multiple targets (all targets within a 10-ft.-by-10-ft. area)
+<SEARCH_DC>; 25
+<DISABLE_DC>; 25
+<SAVE_DC>; 25
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 40500
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Wide-Mouth Spiked Pit with Poisoned Spikes
+<CR>; 9
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; hidden lock bypass (Search DC 25, Open Lock DC 30)
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 70' Pit (7d6, fall) multiple targets (all targets within a 10-ft.-by-10-ft. area) pit spikes (Atk +10 melee, 1d4 spikes per target for 1d4+5 plus poison each); poison (giant wasp poison, DC 14 Fortitude save resists, 1d6 Dex/1d6 Dex)
+<SEARCH_DC>; 20
+<DISABLE_DC>; 20
+<SAVE_DC>; 14
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 11910
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Crushing Room
+<CR>; 10
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Other
+<DAMAGE>; (16d6, crush) multiple targets (all targets in a 10-ft.-by-10-ft. room) never miss onset delay (2 rounds)
+<SEARCH_DC>; 22
+<DISABLE_DC>; 20
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 29000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Crushing Wall Trap
+<CR>; 10
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Other
+<DAMAGE>; 18d6, crush
+<SEARCH_DC>; 20
+<DISABLE_DC>; 25
+<SAVE_DC>; 0
+<SAVE_TYPE>; No Save
+<SAVE_AMOUNT>; No Save
+<GP_COST>; 25000
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Energy Drain Trap
+<CR>; 10
+<TYPE>;  magic device
+<TRIGGER>; Visual
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 8
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (energy drain, 17th-level wizard, 2d4 negative levels for 24 hours, DC 23 Fortitude save negates)
+<SEARCH_DC>; 34
+<DISABLE_DC>; 34
+<SAVE_DC>; 23
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 124000
+<XP_COST>; 7920
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Poisoned Spiked Pit Trap
+<CR>; 10
+<TYPE>;  mechanical
+<TRIGGER>; Location 
+<RESET>; Manual
+<BYPASS>; hidden lock bypass (Search DC 25, Open Lock DC 30)
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Pit
+<DAMAGE>; 50 ft. deep (5d6, fall) multiple targets (first target in each of two adjacent 5-ft. squares) pit spikes (Atk +10 melee, 1d4 spikes per target for 1d4+5 plus poison each); poison (purple worm poison, DC 24 Fortitude save resists, 1d6 Str/2d6 Str)
+<SEARCH_DC>; 16
+<DISABLE_DC>; 25
+<SAVE_DC>; 20
+<SAVE_TYPE>; Reflex
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 19700
+<XP_COST>; 0
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<TRAP>
+<DESC>; Wail of the Banshee Trap
+<CR>; 10
+<TYPE>;  magic device
+<TRIGGER>; Proximity
+<RESET>; Automatic
+<BYPASS>; n/a
+<ATTACK_BONUS>; 0
+<ATTACK_TYPE>; Spell
+<DAMAGE>; (wail of the banshee, 17th-level wizard, DC 23 Fortitude save negates) multiple targets (up to 17 creatures)
+<SEARCH_DC>; 34
+<DISABLE_DC>; 34
+<SAVE_DC>; 23
+<SAVE_TYPE>; Fortitude
+<SAVE_AMOUNT>; Avoid Effect
+<GP_COST>; 76500
+<XP_COST>; 6120
+<OPTIONAL>; n/a
+<OTHER>; n/a
+<END_TRAP>;
+<END_TRAP_FILE>

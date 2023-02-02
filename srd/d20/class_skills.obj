@@ -1,0 +1,2110 @@
+(lp0
+(isrd
+NPC_Skills_Record
+p1
+(dp2
+S'skills'
+p3
+(lp4
+S'Climb'
+p5
+aS' Craft'
+p6
+aS' Handle Animal'
+p7
+aS' Intimidate'
+p8
+aS' Jump'
+p9
+aS' Listen'
+p10
+aS' Ride'
+p11
+aS' Survival'
+p12
+aS' Swim'
+p13
+asS'ranks'
+p14
+(lp15
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asS'CCranks'
+p16
+(lp17
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asS'CCskills'
+p18
+(lp19
+S'Appraise'
+p20
+aS'Balance'
+p21
+aS'Bluff'
+p22
+aS'Concentration'
+p23
+aS'Decipher Script'
+p24
+aS'Diplomacy'
+p25
+aS'Disable Device'
+p26
+aS'Disguise'
+p27
+aS'Escape Artist'
+p28
+aS'Forgery'
+p29
+aS'Gather Information'
+p30
+aS'Heal'
+p31
+aS'Move Silently'
+p32
+aS'Open Lock'
+p33
+aS'Perform'
+p34
+aS'Profession'
+p35
+aS'Search'
+p36
+aS'Sense Motive'
+p37
+aS'Sleight Of Hand'
+p38
+aS'Speak Language'
+p39
+aS'Spellcraft'
+p40
+aS'Spot'
+p41
+aS'Tumble'
+p42
+aS'Use Magic Device'
+p43
+aS'Use Rope'
+p44
+asS'name'
+p45
+S'Barbarian'
+p46
+sba(isrd
+NPC_Skills_Record
+p47
+(dp48
+g3
+(lp49
+S'Appraise'
+p50
+aS' Balance'
+p51
+aS' Bluff'
+p52
+aS' Climb'
+p53
+aS' Concentration'
+p54
+aS' Craft'
+p55
+aS' Decipher Script'
+p56
+aS' Diplomacy'
+p57
+aS' Disguise'
+p58
+aS' Escape Artist'
+p59
+aS' Gather Information'
+p60
+aS' Hide'
+p61
+aS' Jump'
+p62
+aS' Knowledge all'
+p63
+aS' Listen'
+p64
+aS' Move Silently'
+p65
+aS' Perform'
+p66
+aS' Profession'
+p67
+aS' Sense Motive'
+p68
+aS' Sleight of Hand'
+p69
+aS' Speak Language'
+p70
+aS' Spellcraft'
+p71
+aS' Swim'
+p72
+aS' Tumble'
+p73
+aS' Use Magic Device'
+p74
+asg14
+(lp75
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp76
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp77
+S'Disable Device'
+p78
+aS'Forgery'
+p79
+aS'Handle Animal'
+p80
+aS'Heal'
+p81
+aS'Intimidate'
+p82
+aS'Open Lock'
+p83
+aS'Ride'
+p84
+aS'Search'
+p85
+aS'Spot'
+p86
+aS'Survival'
+p87
+aS'Use Rope'
+p88
+asg45
+S'Bard'
+p89
+sba(isrd
+NPC_Skills_Record
+p90
+(dp91
+g3
+(lp92
+S'Concentration'
+p93
+aS' Craft'
+p94
+aS' Diplomacy'
+p95
+aS' Heal'
+p96
+aS' Knowledge (arcana)'
+p97
+aS' Knowledge (history)'
+p98
+aS' Knowledge (religion)'
+p99
+aS' Knowledge (the planes)'
+p100
+aS' Profession'
+p101
+aS' Spellcraft'
+p102
+asg14
+(lp103
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp104
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp105
+S'Appraise'
+p106
+aS'Balance'
+p107
+aS'Bluff'
+p108
+aS'Climb'
+p109
+aS'Decipher Script'
+p110
+aS'Disable Device'
+p111
+aS'Disguise'
+p112
+aS'Escape Artist'
+p113
+aS'Forgery'
+p114
+aS'Gather Information'
+p115
+aS'Handle Animal'
+p116
+aS'Hide'
+p117
+aS'Intimidate'
+p118
+aS'Jump'
+p119
+aS'Listen'
+p120
+aS'Move Silently'
+p121
+aS'Open Lock'
+p122
+aS'Perform'
+p123
+aS'Ride'
+p124
+aS'Search'
+p125
+aS'Sense Motive'
+p126
+aS'Sleight Of Hand'
+p127
+aS'Speak Language'
+p128
+aS'Spot'
+p129
+aS'Survival'
+p130
+aS'Swim'
+p131
+aS'Tumble'
+p132
+aS'Use Magic Device'
+p133
+aS'Use Rope'
+p134
+asg45
+S'Cleric'
+p135
+sba(isrd
+NPC_Skills_Record
+p136
+(dp137
+g3
+(lp138
+S'Concentration'
+p139
+aS' Craft'
+p140
+aS' Diplomacy'
+p141
+aS' Handle Animal'
+p142
+aS' Heal'
+p143
+aS' Knowledge (nature)'
+p144
+aS' Listen'
+p145
+aS' Profession'
+p146
+aS' Ride'
+p147
+aS' Spellcraft'
+p148
+aS' Spot'
+p149
+aS' Survival'
+p150
+aS' Swim'
+p151
+asg14
+(lp152
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp153
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp154
+S'Appraise'
+p155
+aS'Balance'
+p156
+aS'Bluff'
+p157
+aS'Climb'
+p158
+aS'Decipher Script'
+p159
+aS'Disable Device'
+p160
+aS'Disguise'
+p161
+aS'Escape Artist'
+p162
+aS'Forgery'
+p163
+aS'Gather Information'
+p164
+aS'Hide'
+p165
+aS'Intimidate'
+p166
+aS'Jump'
+p167
+aS'Move Silently'
+p168
+aS'Open Lock'
+p169
+aS'Perform'
+p170
+aS'Search'
+p171
+aS'Sense Motive'
+p172
+aS'Sleight Of Hand'
+p173
+aS'Speak Language'
+p174
+aS'Tumble'
+p175
+aS'Use Magic Device'
+p176
+aS'Use Rope'
+p177
+asg45
+S'Druid'
+p178
+sba(isrd
+NPC_Skills_Record
+p179
+(dp180
+g3
+(lp181
+S'Climb'
+p182
+aS' Craft'
+p183
+aS' Handle Animal'
+p184
+aS' Intimidate'
+p185
+aS' Jump'
+p186
+aS' Ride'
+p187
+aS' Swim'
+p188
+asg14
+(lp189
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp190
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp191
+S'Appraise'
+p192
+aS'Balance'
+p193
+aS'Bluff'
+p194
+aS'Concentration'
+p195
+aS'Decipher Script'
+p196
+aS'Diplomacy'
+p197
+aS'Disable Device'
+p198
+aS'Disguise'
+p199
+aS'Escape Artist'
+p200
+aS'Forgery'
+p201
+aS'Gather Information'
+p202
+aS'Heal'
+p203
+aS'Hide'
+p204
+aS'Jump'
+p205
+aS'Knowledge'
+p206
+aS'Listen'
+p207
+aS'Move Silently'
+p208
+aS'Open Lock'
+p209
+aS'Perform'
+p210
+aS'Profession'
+p211
+aS'Search'
+p212
+aS'Sense Motive'
+p213
+aS'Sleight Of Hand'
+p214
+aS'Speak Language'
+p215
+aS'Spellcraft'
+p216
+aS'Spot'
+p217
+aS'Survival'
+p218
+aS'Tumble'
+p219
+aS'Use Magic Device'
+p220
+aS'Use Rope'
+p221
+asg45
+S'Fighter'
+p222
+sba(isrd
+NPC_Skills_Record
+p223
+(dp224
+g3
+(lp225
+S'Balance'
+p226
+aS' Climb'
+p227
+aS' Concentration'
+p228
+aS' Craft'
+p229
+aS' Diplomacy'
+p230
+aS' Escape Artist'
+p231
+aS' Hide'
+p232
+aS' Jump'
+p233
+aS' Knowledge (arcana)'
+p234
+aS' Knowledge (religion)'
+p235
+aS' Listen'
+p236
+aS' Move Silently'
+p237
+aS' Perform'
+p238
+aS' Profession'
+p239
+aS' Sense Motive'
+p240
+aS' Spot'
+p241
+aS' Swim'
+p242
+aS' Tumble'
+p243
+asg14
+(lp244
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp245
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp246
+S'Appraise'
+p247
+aS'Bluff'
+p248
+aS'Decipher Script'
+p249
+aS'Disable Device'
+p250
+aS'Disguise'
+p251
+aS'Forgery'
+p252
+aS'Gather Information'
+p253
+aS'Handle Animal'
+p254
+aS'Heal'
+p255
+aS'Intimidate'
+p256
+aS'Open Lock'
+p257
+aS'Ride'
+p258
+aS'Search'
+p259
+aS'Sleight Of Hand'
+p260
+aS'Speak Language'
+p261
+aS'Spellcraft'
+p262
+aS'Survival'
+p263
+aS'Use Magic Device'
+p264
+aS'Use Rope'
+p265
+asg45
+S'Monk'
+p266
+sba(isrd
+NPC_Skills_Record
+p267
+(dp268
+g3
+(lp269
+S'Concentration'
+p270
+aS' Craft'
+p271
+aS' Diplomacy'
+p272
+aS' Handle Animal'
+p273
+aS' Heal'
+p274
+aS' Knowledge (nobility and royalty)'
+p275
+aS' Knowledge (religion)'
+p276
+aS' Profession'
+p277
+aS' Ride'
+p278
+aS' Sense Motive'
+p279
+asg14
+(lp280
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp281
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp282
+S'Appraise'
+p283
+aS'Balance'
+p284
+aS'Bluff'
+p285
+aS'Climb'
+p286
+aS'Decipher Script'
+p287
+aS'Disable Device'
+p288
+aS'Disguise'
+p289
+aS'Escape Artist'
+p290
+aS'Forgery'
+p291
+aS'Gather Information'
+p292
+aS'Hide'
+p293
+aS'Intimidate'
+p294
+aS'Jump'
+p295
+aS'Listen'
+p296
+aS'Move Silently'
+p297
+aS'Open Lock'
+p298
+aS'Perform'
+p299
+aS'Search'
+p300
+aS'Sense Motive'
+p301
+aS'Sleight Of Hand'
+p302
+aS'Speak Language'
+p303
+aS'Spellcraft'
+p304
+aS'Spot'
+p305
+aS'Survival'
+p306
+aS'Swim'
+p307
+aS'Tumble'
+p308
+aS'Use Magic Device'
+p309
+aS'Use Rope'
+p310
+asg45
+S'Paladin'
+p311
+sba(isrd
+NPC_Skills_Record
+p312
+(dp313
+g3
+(lp314
+S'Climb'
+p315
+aS' Concentration'
+p316
+aS' Craft'
+p317
+aS' Handle Animal'
+p318
+aS' Heal'
+p319
+aS' Hide'
+p320
+aS' Jump'
+p321
+aS' Knowledge (dungeoneering)'
+p322
+aS' Knowledge (geography)'
+p323
+aS' Knowledge (nature)'
+p324
+aS' Listen'
+p325
+aS' Move Silently'
+p326
+aS' Profession'
+p327
+aS' Ride'
+p328
+aS' Search'
+p329
+aS' Spot'
+p330
+aS' Survival'
+p331
+aS' Swim'
+p332
+aS' Use Rope'
+p333
+asg14
+(lp334
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp335
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp336
+S'Appraise'
+p337
+aS'Balance'
+p338
+aS'Bluff'
+p339
+aS'Decipher Script'
+p340
+aS'Diplomacy'
+p341
+aS'Disable Device'
+p342
+aS'Disguise'
+p343
+aS'Escape Artist'
+p344
+aS'Forgery'
+p345
+aS'Gather Information'
+p346
+aS'Intimidate'
+p347
+aS'Open Lock'
+p348
+aS'Perform'
+p349
+aS'Sense Motive'
+p350
+aS'Sleight Of Hand'
+p351
+aS'Speak Language'
+p352
+aS'Spellcraft'
+p353
+aS'Tumble'
+p354
+aS'Use Magic Device'
+p355
+asg45
+S'Ranger'
+p356
+sba(isrd
+NPC_Skills_Record
+p357
+(dp358
+g3
+(lp359
+S'Appraise'
+p360
+aS' Balance'
+p361
+aS' Bluff'
+p362
+aS' Climb'
+p363
+aS' Craft'
+p364
+aS' Decipher Script'
+p365
+aS' Diplomacy'
+p366
+aS' Disable Device'
+p367
+aS' Disguise'
+p368
+aS' Escape Artist'
+p369
+aS' Forgery'
+p370
+aS' Gather Information'
+p371
+aS' Hide'
+p372
+aS' Intimidate'
+p373
+aS' Jump'
+p374
+aS' Knowledge (local)'
+p375
+aS' Listen'
+p376
+aS' Move Silently'
+p377
+aS' Open Lock'
+p378
+aS' Perform'
+p379
+aS' Profession'
+p380
+aS' Search'
+p381
+aS' Sense Motive'
+p382
+aS' Sleight of Hand'
+p383
+aS' Spot'
+p384
+aS' Swim'
+p385
+aS' Tumble'
+p386
+aS' Use Magic Device'
+p387
+aS' Use Rope'
+p388
+asg14
+(lp389
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp390
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp391
+S'Concentration'
+p392
+aS'Handle Animal'
+p393
+aS'Heal'
+p394
+aS'Ride'
+p395
+aS' Speak Language'
+p396
+aS'Spellcraft'
+p397
+aS'Survival'
+p398
+aS'Use Magic Device'
+p399
+aS'Use Rope'
+p400
+asg45
+S'Rogue'
+p401
+sba(isrd
+NPC_Skills_Record
+p402
+(dp403
+g3
+(lp404
+S'Bluff'
+p405
+aS' Concentration'
+p406
+aS' Craft'
+p407
+aS' Knowledge (arcana)'
+p408
+aS' Profession'
+p409
+aS' Spellcraft'
+p410
+asg14
+(lp411
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp412
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp413
+S'Appraise'
+p414
+aS'Balance'
+p415
+aS'Climb'
+p416
+aS'Decipher Script'
+p417
+aS'Diplomacy'
+p418
+aS'Disable Device'
+p419
+aS'Disguise'
+p420
+aS'Escape Artist'
+p421
+aS'Forgery'
+p422
+aS'Gather Information'
+p423
+aS'Handle Animal'
+p424
+aS'Heal'
+p425
+aS'Hide'
+p426
+aS'Intimidate'
+p427
+aS'Jump'
+p428
+aS'Listen'
+p429
+aS'Move Silently'
+p430
+aS'Open Lock'
+p431
+aS'Perform'
+p432
+aS'Ride'
+p433
+aS'Search'
+p434
+aS'Sense Motive'
+p435
+aS'Sleight Of Hand'
+p436
+aS'Speak Language'
+p437
+aS'Spot'
+p438
+aS'Survival'
+p439
+aS'Swim'
+p440
+aS'Tumble'
+p441
+aS'Use Magic Device'
+p442
+aS'Use Rope'
+p443
+asg45
+S'Sorcerer'
+p444
+sba(isrd
+NPC_Skills_Record
+p445
+(dp446
+g3
+(lp447
+S'Concentration'
+p448
+aS' Craft'
+p449
+aS' Decipher Script'
+p450
+aS' Knowledge all'
+p451
+aS' Profession'
+p452
+aS' Spellcraft'
+p453
+asg14
+(lp454
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp455
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp456
+S'Appraise'
+p457
+aS'Balance'
+p458
+aS'Bluff'
+p459
+aS'Climb'
+p460
+aS'Diplomacy'
+p461
+aS'Disable Device'
+p462
+aS'Disguise'
+p463
+aS'Escape Artist'
+p464
+aS'Forgery'
+p465
+aS'Gather Information'
+p466
+aS'Handle Animal'
+p467
+aS'Heal'
+p468
+aS'Hide'
+p469
+aS'Intimidate'
+p470
+aS'Jump'
+p471
+aS'Listen'
+p472
+aS'Move Silently'
+p473
+aS'Open Lock'
+p474
+aS'Perform'
+p475
+aS'Ride'
+p476
+aS'Search'
+p477
+aS'Sense Motive'
+p478
+aS'Sleight Of Hand'
+p479
+aS'Speak Language'
+p480
+aS'Spot'
+p481
+aS'Survival'
+p482
+aS'Swim'
+p483
+aS'Tumble'
+p484
+aS'Use Magic Device'
+p485
+aS'Use Rope'
+p486
+asg45
+S'Wizard'
+p487
+sba(isrd
+NPC_Skills_Record
+p488
+(dp489
+g3
+(lp490
+S'Concentration'
+p491
+aS' Craft'
+p492
+aS' Handle Animal'
+p493
+aS' Heal'
+p494
+aS' Knowledge all'
+p495
+aS' Profession'
+p496
+aS' Spellcraft'
+p497
+aS' Survival'
+p498
+asg14
+(lp499
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp500
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp501
+S'Appraise'
+p502
+aS'Balance'
+p503
+aS'Bluff'
+p504
+aS'Climb'
+p505
+aS'Decipher Script'
+p506
+aS'Diplomacy'
+p507
+aS'Disable Device'
+p508
+aS'Disguise'
+p509
+aS'Escape Artist'
+p510
+aS'Forgery'
+p511
+aS'Gather Information'
+p512
+aS'Hide'
+p513
+aS'Intimidate'
+p514
+aS'Jump'
+p515
+aS'Listen'
+p516
+aS'Move Silently'
+p517
+aS'Open Lock'
+p518
+aS'Perform'
+p519
+aS'Ride'
+p520
+aS'Search'
+p521
+aS'Sense Motive'
+p522
+aS'Sleight Of Hand'
+p523
+aS'Speak Language'
+p524
+aS'Spot'
+p525
+aS'Swim'
+p526
+aS'Tumble'
+p527
+aS'Use Magic Device'
+p528
+aS'Use Rope'
+p529
+asg45
+S'Adept'
+p530
+sba(isrd
+NPC_Skills_Record
+p531
+(dp532
+g3
+(lp533
+S'Appraise'
+p534
+aS' Bluff'
+p535
+aS' Diplomacy'
+p536
+aS' Disguise'
+p537
+aS' Forgery'
+p538
+aS' Gather Information'
+p539
+aS' Handle Animal'
+p540
+aS' Intimidate'
+p541
+aS' Knowledge all'
+p542
+aS' Listen'
+p543
+aS' Perform'
+p544
+aS' Ride'
+p545
+aS' Sense Motive'
+p546
+aS' Speak Language'
+p547
+aS' Spot'
+p548
+aS' Swim'
+p549
+aS' Survival'
+p550
+asg14
+(lp551
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp552
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp553
+S'Balance'
+p554
+aS'Climb'
+p555
+aS'Concentration'
+p556
+aS'Craft'
+p557
+aS'Decipher Script'
+p558
+aS'Disable Device'
+p559
+aS'Escape Artist'
+p560
+aS'Heal'
+p561
+aS'Hide'
+p562
+aS'Jump'
+p563
+aS'Move Silently'
+p564
+aS'Open Lock'
+p565
+aS'Profession'
+p566
+aS'Search'
+p567
+aS'Sleight Of Hand'
+p568
+aS'Spellcraft'
+p569
+aS'Tumble'
+p570
+aS'Use Magic Device'
+p571
+aS'Use Rope'
+p572
+asg45
+S'Aristocrat'
+p573
+sba(isrd
+NPC_Skills_Record
+p574
+(dp575
+g3
+(lp576
+S'Climb'
+p577
+aS' Craft'
+p578
+aS' Handle Animal'
+p579
+aS' Jump'
+p580
+aS' Listen'
+p581
+aS' Profession'
+p582
+aS' Ride'
+p583
+aS' Spot'
+p584
+aS' Swim'
+p585
+aS' Use Rope'
+p586
+asg14
+(lp587
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp588
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp589
+S'Appraise'
+p590
+aS'Balance'
+p591
+aS'Bluff'
+p592
+aS'Concentration'
+p593
+aS'Decipher Script'
+p594
+aS'Diplomacy'
+p595
+aS'Disable Device'
+p596
+aS'Disguise'
+p597
+aS'Escape Artist'
+p598
+aS'Forgery'
+p599
+aS'Gather Information'
+p600
+aS'Heal'
+p601
+aS'Hide'
+p602
+aS'Intimidate'
+p603
+aS'Knowledge'
+p604
+aS'Move Silently'
+p605
+aS'Open Lock'
+p606
+aS'Perform'
+p607
+aS'Search'
+p608
+aS'Sense Motive'
+p609
+aS'Sleight Of Hand'
+p610
+aS'Speak Language'
+p611
+aS'Spellcraft'
+p612
+aS'Survival'
+p613
+aS'Tumble'
+p614
+aS'Use Rope'
+p615
+asg45
+S'Commoner'
+p616
+sba(isrd
+NPC_Skills_Record
+p617
+(dp618
+g3
+(lp619
+S'Appraise'
+p620
+aS'Balance'
+p621
+aS'Bluff'
+p622
+aS'Climb'
+p623
+aS'Concentration'
+p624
+aS'Craft'
+p625
+aS'Decipher Script'
+p626
+aS'Diplomacy'
+p627
+aS'Disable Device'
+p628
+aS'Disguise'
+p629
+aS'Escape Artist'
+p630
+aS'Forgery'
+p631
+aS'Gather Information'
+p632
+aS'Handle Animal'
+p633
+aS'Heal'
+p634
+aS'Hide'
+p635
+aS'Intimidate'
+p636
+aS'Jump'
+p637
+aS'Knowledge'
+p638
+aS'Listen'
+p639
+aS'Move Silently'
+p640
+aS'Open Lock'
+p641
+aS'Perform'
+p642
+aS'Profession'
+p643
+aS'Ride'
+p644
+aS'Search'
+p645
+aS'Sense Motive'
+p646
+aS'Sleight Of Hand'
+p647
+aS'Speak Language'
+p648
+aS'Spellcraft'
+p649
+aS'Spot'
+p650
+aS'Survival'
+p651
+aS'Swim'
+p652
+aS'Tumble'
+p653
+aS'Use Magic Device'
+p654
+aS'Use Rope'
+p655
+asg14
+(lp656
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp657
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp658
+S'Appraise'
+p659
+aS'Balance'
+p660
+aS'Bluff'
+p661
+aS'Climb'
+p662
+aS'Concentration'
+p663
+aS'Craft'
+p664
+aS'Decipher Script'
+p665
+aS'Diplomacy'
+p666
+aS'Disable Device'
+p667
+aS'Disguise'
+p668
+aS'Escape Artist'
+p669
+aS'Forgery'
+p670
+aS'Gather Information'
+p671
+aS'Handle Animal'
+p672
+aS'Heal'
+p673
+aS'Hide'
+p674
+aS'Intimidate'
+p675
+aS'Jump'
+p676
+aS'Knowledge'
+p677
+aS'Listen'
+p678
+aS'Move Silently'
+p679
+aS'Open Lock'
+p680
+aS'Perform'
+p681
+aS'Profession'
+p682
+aS'Ride'
+p683
+aS'Search'
+p684
+aS'Sense Motive'
+p685
+aS'Sleight Of Hand'
+p686
+aS'Speak Language'
+p687
+aS'Spellcraft'
+p688
+aS'Spot'
+p689
+aS'Survival'
+p690
+aS'Swim'
+p691
+aS'Tumble'
+p692
+aS'Use Magic Device'
+p693
+aS'Use Rope'
+p694
+asg45
+S'Expert'
+p695
+sba(isrd
+NPC_Skills_Record
+p696
+(dp697
+g3
+(lp698
+S'Climb'
+p699
+aS' Handle Animal'
+p700
+aS' Intimidate'
+p701
+aS' Jump'
+p702
+aS' Ride'
+p703
+aS' Swim'
+p704
+asg14
+(lp705
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg16
+(lp706
+I0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+aI0
+asg18
+(lp707
+S'Appraise'
+p708
+aS'Balance'
+p709
+aS'Bluff'
+p710
+aS'Concentration'
+p711
+aS'Craft'
+p712
+aS'Decipher Script'
+p713
+aS'Diplomacy'
+p714
+aS'Disable Device'
+p715
+aS'Disguise'
+p716
+aS'Escape Artist'
+p717
+aS'Forgery'
+p718
+aS'Gather Information'
+p719
+aS'Heal'
+p720
+aS'Hide'
+p721
+aS'Knowledge'
+p722
+aS'Listen'
+p723
+aS'Move Silently'
+p724
+aS'Open Lock'
+p725
+aS'Perform'
+p726
+aS'Profession'
+p727
+aS'Search'
+p728
+aS'Sense Motive'
+p729
+aS'Sleight Of Hand'
+p730
+aS'Speak Language'
+p731
+aS'Spellcraft'
+p732
+aS'Spot'
+p733
+aS'Survival'
+p734
+aS'Tumble'
+p735
+aS'Use Magic Device'
+p736
+aS'Use Rope'
+p737
+asg45
+S'Warrior'
+p738
+sba.

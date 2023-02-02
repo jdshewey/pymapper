@@ -1,0 +1,51 @@
+Barbarian 
+Climb, Craft, Handle Animal, Intimidate, Jump, Listen, Ride, Survival, Swim
+Appraise,Balance,Bluff,Concentration,Decipher Script,Diplomacy,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Heal,Move Silently,Open Lock,Perform,Profession,Search,Sense Motive,Sleight Of Hand,Speak Language,Spellcraft,Spot,Tumble,Use Magic Device,Use Rope
+Bard
+Appraise, Balance, Bluff, Climb, Concentration, Craft, Decipher Script, Diplomacy, Disguise, Escape Artist, Gather Information, Hide, Jump, Knowledge all, Listen, Move Silently, Perform, Profession, Sense Motive, Sleight of Hand, Speak Language, Spellcraft, Swim, Tumble, Use Magic Device
+Disable Device,Forgery,Handle Animal,Heal,Intimidate,Open Lock,Ride,Search,Spot,Survival,Use Rope
+Cleric
+Concentration, Craft, Diplomacy, Heal, Knowledge (arcana), Knowledge (history), Knowledge (religion), Knowledge (the planes), Profession, Spellcraft
+Appraise,Balance,Bluff,Climb,Decipher Script,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Handle Animal,Hide,Intimidate,Jump,Listen,Move Silently,Open Lock,Perform,Ride,Search,Sense Motive,Sleight Of Hand,Speak Language,Spot,Survival,Swim,Tumble,Use Magic Device,Use Rope
+Druid
+Concentration, Craft, Diplomacy, Handle Animal, Heal, Knowledge (nature), Listen, Profession, Ride, Spellcraft, Spot, Survival, Swim
+Appraise,Balance,Bluff,Climb,Decipher Script,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Hide,Intimidate,Jump,Move Silently,Open Lock,Perform,Search,Sense Motive,Sleight Of Hand,Speak Language,Tumble,Use Magic Device,Use Rope
+Fighter
+Climb, Craft, Handle Animal, Intimidate, Jump, Ride, Swim
+Appraise,Balance,Bluff,Concentration,Decipher Script,Diplomacy,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Heal,Hide,Jump,Knowledge,Listen,Move Silently,Open Lock,Perform,Profession,Search,Sense Motive,Sleight Of Hand,Speak Language,Spellcraft,Spot,Survival,Tumble,Use Magic Device,Use Rope
+Monk
+Balance, Climb, Concentration, Craft, Diplomacy, Escape Artist, Hide, Jump, Knowledge (arcana), Knowledge (religion), Listen, Move Silently, Perform, Profession, Sense Motive, Spot, Swim, Tumble
+Appraise,Bluff,Decipher Script,Disable Device,Disguise,Forgery,Gather Information,Handle Animal,Heal,Intimidate,Open Lock,Ride,Search,Sleight Of Hand,Speak Language,Spellcraft,Survival,Use Magic Device,Use Rope
+Paladin
+Concentration, Craft, Diplomacy, Handle Animal, Heal, Knowledge (nobility and royalty), Knowledge (religion), Profession, Ride, Sense Motive
+Appraise,Balance,Bluff,Climb,Decipher Script,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Hide,Intimidate,Jump,Listen,Move Silently,Open Lock,Perform,Search,Sense Motive,Sleight Of Hand,Speak Language,Spellcraft,Spot,Survival,Swim,Tumble,Use Magic Device,Use Rope
+Ranger
+Climb, Concentration, Craft, Handle Animal, Heal, Hide, Jump, Knowledge (dungeoneering), Knowledge (geography), Knowledge (nature), Listen, Move Silently, Profession, Ride, Search, Spot, Survival, Swim, Use Rope
+Appraise,Balance,Bluff,Decipher Script,Diplomacy,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Intimidate,Open Lock,Perform,Sense Motive,Sleight Of Hand,Speak Language,Spellcraft,Tumble,Use Magic Device
+Rogue
+Appraise, Balance, Bluff, Climb, Craft, Decipher Script, Diplomacy, Disable Device, Disguise, Escape Artist, Forgery, Gather Information, Hide, Intimidate, Jump, Knowledge (local), Listen, Move Silently, Open Lock, Perform, Profession, Search, Sense Motive, Sleight of Hand, Spot, Swim, Tumble, Use Magic Device, Use Rope
+Concentration,Handle Animal,Heal,Ride, Speak Language,Spellcraft,Survival,Use Magic Device,Use Rope
+Sorcerer
+Bluff, Concentration, Craft, Knowledge (arcana), Profession, Spellcraft
+Appraise,Balance,Climb,Decipher Script,Diplomacy,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Handle Animal,Heal,Hide,Intimidate,Jump,Listen,Move Silently,Open Lock,Perform,Ride,Search,Sense Motive,Sleight Of Hand,Speak Language,Spot,Survival,Swim,Tumble,Use Magic Device,Use Rope
+Wizard
+Concentration, Craft, Decipher Script, Knowledge all, Profession, Spellcraft
+Appraise,Balance,Bluff,Climb,Diplomacy,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Handle Animal,Heal,Hide,Intimidate,Jump,Listen,Move Silently,Open Lock,Perform,Ride,Search,Sense Motive,Sleight Of Hand,Speak Language,Spot,Survival,Swim,Tumble,Use Magic Device,Use Rope
+Adept
+Concentration, Craft, Handle Animal, Heal, Knowledge all, Profession, Spellcraft, Survival
+Appraise,Balance,Bluff,Climb,Decipher Script,Diplomacy,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Hide,Intimidate,Jump,Listen,Move Silently,Open Lock,Perform,Ride,Search,Sense Motive,Sleight Of Hand,Speak Language,Spot,Swim,Tumble,Use Magic Device,Use Rope
+Aristocrat
+Appraise, Bluff, Diplomacy, Disguise, Forgery, Gather Information, Handle Animal, Intimidate, Knowledge all, Listen, Perform, Ride, Sense Motive, Speak Language, Spot, Swim, Survival
+Balance,Climb,Concentration,Craft,Decipher Script,Disable Device,Escape Artist,Heal,Hide,Jump,Move Silently,Open Lock,Profession,Search,Sleight Of Hand,Spellcraft,Tumble,Use Magic Device,Use Rope
+Commoner
+Climb, Craft, Handle Animal, Jump, Listen, Profession, Ride, Spot, Swim, Use Rope
+Appraise,Balance,Bluff,Concentration,Decipher Script,Diplomacy,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Heal,Hide,Intimidate,Knowledge,Move Silently,Open Lock,Perform,Search,Sense Motive,Sleight Of Hand,Speak Language,Spellcraft,Survival,Tumble,Use Rope
+Expert
+Appraise,Balance,Bluff,Climb,Concentration,Craft,Decipher Script,Diplomacy,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Handle Animal,Heal,Hide,Intimidate,Jump,Knowledge,Listen,Move Silently,Open Lock,Perform,Profession,Ride,Search,Sense Motive,Sleight Of Hand,Speak Language,Spellcraft,Spot,Survival,Swim,Tumble,Use Magic Device,Use Rope
+Appraise,Balance,Bluff,Climb,Concentration,Craft,Decipher Script,Diplomacy,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Handle Animal,Heal,Hide,Intimidate,Jump,Knowledge,Listen,Move Silently,Open Lock,Perform,Profession,Ride,Search,Sense Motive,Sleight Of Hand,Speak Language,Spellcraft,Spot,Survival,Swim,Tumble,Use Magic Device,Use Rope
+Warrior
+Climb, Handle Animal, Intimidate, Jump, Ride, Swim
+Appraise,Balance,Bluff,Concentration,Craft,Decipher Script,Diplomacy,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Heal,Hide,Knowledge,Listen,Move Silently,Open Lock,Perform,Profession,Search,Sense Motive,Sleight Of Hand,Speak Language,Spellcraft,Spot,Survival,Tumble,Use Magic Device,Use Rope
+END
+
+Appraise,Balance,Bluff,Climb,Concentration,Craft,Decipher Script,Diplomacy,Disable Device,Disguise,Escape Artist,Forgery,Gather Information,Handle Animal,Heal,Hide,Intimidate,Jump,Knowledge,Listen,Move Silently,Open Lock,Perform,Profession,Ride,Search,Sense Motive,Sleight Of Hand,Speak Language,Spellcraft,Spot,Survival,Swim,Tumble,Use Magic Device,Use Rope

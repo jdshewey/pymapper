@@ -1,0 +1,588 @@
+PyMapper mapping program, bugfixes and features.
+
+(c) 2009-2017 Michael Seely
+http://www.pymapper.com/
+Direct support requests to: bugs@pymapper.com
+
++ indicates a new feature added.
+- indicates a bugfix.
+
+3/5/17  Version 9.6  (yeah, I know it's been a long time, again)
+- Tile properties dialog would crash if there was no reverse side bitmap defined for the tile.
+- Tile Manifest report would report usage of the same tile multiple times if it was duplicated on the map.
++ While in "Icon" mode, an option to copy an existing icon is available when right-clicking on an existing icon.
++ The monster/npc info dialog now shows the monster type (or npc class) in the dialog title.
+
+
+
+5/22/16  Version 9.5
+- When opening a room xml file (double clicking on an icon), pymapper could lose track of the folder where the xml file was located.
+- Adjusted positioning of icons inside map grids.
+- Right-Click menu for adding icons is disabled when 5E data is not loaded.  
+- Fixed the DnD 5E import update dialog.  Previously, it did not resize, or show the loading of files correctly.
+- Pathfinder/3.5 NPC Generator would crash when trying to create an NPC.  (NPC_Record not referenced in srd.py)
+- The tile panel now responds to being resized by arranging the tiles so that the user only needs to scroll up and down to see the available tiles
+- The toolbar button used to change between limited and unlimted tile usage was not updated correctly from the .ini file.
+- Drawing points did not reference the correct map page, causing a crash
+- Filename for automatic backups was not set correctly according to OS used (windows vs. linux vs. OSX)
+- Fixed calculation errors in the dice roller logic.   Open the dice roller (CTRL+D) for information on the format to use.
+- Added a field for 'Proficiency Bonus' in the 5th edition monster/npc entry dialog.
+- Corrected entries for Air, Water, and Fire Elemental,  Ancient Black and White dragons, and creatures with legendary actions in the 5E xml data files.
+- Fixed the 5E monster dialogs to show legendary actions (with new highlighting).  Actions and Legendary actions are on separate tabs.
+- In the room editor, the hotkeys for bold, italic, and underline would cause a crash of the program
+- In the room editor, the text line spacing would cause a crash if changed from single spacing.
+- 5E NPC editor did not correctly save the NPC class information (this was broken in version 9.4)
+- The 5E entry for "Black Pudding" did not have the reaction entry for "Split"
+
++ Added a 'Notes' tab on the NPC/Monster dialog.  These notes will be saved along with the monster information.
++ Map icons can now snap to grid as an option for placement.  Switch between snap and free form placement is available under the Program Options (from the Options menu)
++ Tile usage is tracked by page by default now, so that the full collection of tiles can be used on a new map page.  Separate pages can use the same tile without restriction to the number physically owned.  To track by map file (all pages) turn off "Reset tile statistics by page" in the Program Options dialog.
++ Added a feature where tiles can be highlighted when the mouse moves over them in the map window.  This can be turned on/off in the program options.
++ Added a button in the NPC/Monster dialog to roll for hit points listed in the hit dice section.
++ Added skills list (acrobatics, arcana, insight, etc.) to the 5th edition monser/npc entry dialog.
++ Added red highlighting for legendary actions.   The highlighting is performed using a ^ character.
++ Add spell attack DC and save DC to monster information dialog.
+
+
+
+12/21/15 Version 9.4.2
+- Instances of wx.Color changed to wx.Colour, which was causing problems for some users running the python code on OSX.  (The use of wx.Color has been deprecated by wxPython)
+
+12/18/15 Version 9.4.1
+- Importing of PF/3.5 data was broken, due to a change in location of the classes from pymapper.py to srd.py.
+
+12/15/15 Version 9.4
+- NPC icons added to the map now show the NPC icon (character holding a sword) instead of the generic dragon head icon
+- Under linux (and potentially MacOS), tilesets would not be read due to the path being interpreted as absolute instead of relative during os.path.join() operations.
+- In the fog-of-war module, some of the tool bitmaps were not assigned correctly, causing a crash.
+
++ Pymapper can now update the fog-of-war map image to a webpage.  See pymapper.com for more details.
++ FTP Settings are saved to disk, if the checkbox is checked;  otherwise they need to be entered each session on pymapper.
++ Customizable images for icons on the map.  These images are stored in the new /tokens/ folder where pymapper is installed.
++ Automatic tileset creation.  Pymapper will automatically create a tileset when the tiles are placed in a special folder in the /tiles/ folder.  The folder must be named based on the resolution of the images.  If the image is 100 pixels per square, then the folder would be named '100__px'.  Note that there are TWO underscore characters in the folder name.
++ NPC icons now have the size attribute (small, medium, large, etc) so that the icon display changes based on the NPC size.
++ New menu items and keyboard shortcuts are available to update the secondary map viewer (used for projectors and second monitors).  Use Ctrl+W to update the fog image to the web, and Ctrl+Y to update to the secondary viewer only.
++ Allow user to choose whether to load only PF/d20 or DnD 5th source material (or both).
++ In the Monster hover dialog (when you hold the mouse over a monster icon), the HP button now shows the hit dice used to recalculate the hit points.
++ Fog of war dialog now has tools to bring up the secondary viewport, and to update the image for the viewport and online as well.
+
+
+11/18/15 Version 9.3
++ In the NPC dialog, double-click on Cantrips (in the spellcaster window) in order to specify how many are known.
++ Place name labels on room/monster icons (toggle to replace hover labels)
++ Monster conditions (stunned, invisible, paralyzed, etc) colors can be changed by selecting "View Monster Condition Colors" from the View menu.
++ Monster conditions can be changed on the monster hover dialog.  When there is a condition, a colored box will show under the name label.
++ User specified names on monster/npc icons (copies of the same monster used to show the same name; allows for renaming to Orc 1, Orc 2, etc)
++ Add a right click menu option for adding monster/npc icons directly (to bypass needing to use the IconFrame)
++ Icon shown on map corresponds to monster size (medium, large, huge, etc --> 1x1, 2x2, 3x3, etc)
++ Added 'CR' value to monster info hover dialog.
++ Added 'Turned' to the conditions list in the monster info hover dialog.
+
+- Drawing items do not appear in the correct place when exporting images
+- Toggle button for icon labels is not synchronized with the option.
+- Display grid toolbar button does not correctly display grid when changing pages
+- Trait information (resistances, vulnerabilities, etc) did not display properly in the 5E monster dialog.
+- Exporting the map image to a jpg/png did not correctly scale the tile images.
+- Tile images did not scale properly after loading a new map.  
+- Monster hover dialog (for 5E monsters and npc) did not have the correct tooltip under the -10 and -20 HP buttons.
+- Old map files (version 2.4 and older) could crash pymapper upon opening.  No map page was created, pymapper tried to assign tiles to a null map page.
+
+
+9/19/15  Version 9.2
++ Added a 'copy current' monster to Monsters dialog to ease creation of similar monsters.
++ Change add columns/rows function to decide direction of additions
++ Added a progress update bar to the 5E Monster dialog (to show when data has been updated to the database)
++ Change 5E spells dialog to modeless operation
++ Added a '-20 hp' button to the monster information dialog for those really lucky hits.
+
+- Icons on inactive pages are no longer detected the mouse hovers over their location.
+- Double click on the NPC spell list removes the spell from the list.
+- 5E NPC editor did not correctly save the NPC class information (always defaulted to Barbarian)
+- 5E NPC editor would crash if an NPC was saved without spell information, and then the NPC was later changed to be a spellcaster.
+- 5E NPC trait and skill information was not correctly saved to the xml file.
+- 5E NPC editor does not increment the UniqueID of the NPC when saving to the xml file.
+- Making a copy of a monster should change the name of the monster to MonsterName (copy) and update the master list accordingly
+- Dim 5E dungeon menu items if resources are not loaded.
+
+
+7/24/15  Version 9.1
++ Updated the look and functionality of the icon editor
++ Change the size of the icon display on the map to represent large creatures, or areas of effect
++ Display hover information for traps (similar to what is available for monsters)
++ Add basic rules monsters to 5E data
++ Add basic rules spells to 5E data
++ Added spell support to NPC/Monster info hover dialog
++ Bonds, Flaws, and Ideals can be saved for NPC records.
++ The NPC and Monster hover dialogs remember the size of the window if it was changed.
+
+- Going back to the background registration dialog would lose the filename of the background image, if one was already loaded.   This caused the file to save without the image name the next time it was saved.
+- Fifth Edition NPC icons did not remember changes to the HP total.
+- Using the arrow keys to move or rotate tiles on the map window does not cause the window view to scroll.
+- Background color coding on monsters (green->yellow->orange->red->black based on HP) updates after HP has changed, and not only on a general refresh
+- Tiles did not correctly display on the first refresh after loading the map.
+- NPC records are stored in their own list apart from monsters list
+- Using the same NPC on two different icons referenced the same NPC.  Stats were not copied into a new record for the second NPC
+- Fog of war functionality was broken with the updates in version 9.0  (pymapper tried to reference the index instead of the page name)
+- Changed handling of folders to improve performance between Windows and Mac/Linux OS differences (use of '\' vs '/' in paths)
+- 5E Monster/NPC editor does not delete monster records.
+
+
+5/1/15  Version 9.0.1
+  In earlier versions of pymapper, the map size was capped at 200x200 squares for the map.  This cap has been increased to 300x300.
+
+04/11/15  Version 9.0  (Sorry for the long time between updates!)
+
++ D&D 5.0 Support.  Still waiting to hear what content will be classified as OGL.
++ Fifth Edition monster stats added to Dungeon options
++ Hovering over an icon shows monster information stats and tracking (if the icon is a monster type)
++ D&D 5.0 Support.  Still waiting to hear what content will be classified as OGL.
++ Tag monster images with info;  Remembers HP and changes color of highlight to reflect current status
++ Pages remember the zoom factor 
++ Highlighting of room icons can be changed to different colors by right-clicking when hovering over them while in Icon mode.
++ Overhaul of the tileset editor.  Bugs fixed and workflow (hopefully) improved.
++ Prompt for email address to register program when pymapper first runs.  Automatically sends email back to pymapper command.  Firewall software may interfere with registration.
+
+- Icon XML editor did not respond to adding d20 items.
+- Importing map files to new pages does not import the new file background to the correct page; replaces original background instead.
+- Undo should work on flipping tile to opposite side
+- Dungeon resources are now loaded automatically if dungeon information was present in the saved map.  Will need to re-save maps made pre-v9.0 to get the new tag.
+- After loading, the background highlight of an icon would draw off center and did not align correctly until after first map refresh.
+- Freehand drawing items (both draw and fog modes) correctly display when map window is scrolled 
+- Fixed filtering of monsters in the Pathfinder/3.5 monsters dialog
+
+
+04/22/13  Version 8.4.2
++ Isometric map viewer!
+- Corrected issue with linux and macOS versions where a \r was being read in file tags
+- Multiple issues related to linux and macOS corrected. 
+
+
+04/14/13  Version 8.3.2 
+- The options dialog did not set the GridScale option to the existing value (always reset to default).
+- Deleting a map page did not delete the internal map index, causing the page to be written to the saved map file.
+- Tileset manifest corrected to display tiles used on the map panel
++ Tileset manifest creation time reduced
++ A print preview for the tileset manifest shows prior to starting print job.
+- Some versions of linux crashed pymapper during the LoadSymbolFile and LoadMarkerFile stage during initialization.  
+
+
+03/29/2013  Version 8.2
+- Several dialogs were not converted fully from xrc.  Other dead code removed.
+- On some systems, dialogs are partially hidden.  Program dialogs can now be resized by dragging a corner if this is an issue for you.
++ When importing tilesets to a new page, the default page name is the name of the tileset.
+
+
+03/5/2013  Version 8.1
+- Symbol files with dimensions other than 100x100 were not loaded by the program.
+- Checking the properties of a symbol file resulted in a crash (filename not set correctly).
+
+
+03/2/2013  Version 8.0
++ Fog-of-War features added.  A pdf tutorial is included to help you through this new feature.
++ Drawing tools functionality changed.
++ A more detailed debug log is generated to help determine the cause of crashes.  A file "pymapper_errors.log" is written when pymapper runs.
++ Add option to outline map tiles in the map window.  This is the same as is shown when printing.
++ A secondary screen is available for use on projectors or other dual screen systems.  Select under the View menu, 'Secondary Map Viewport'  This is helpful when showing players the fog-of-war.
+
+
+- Import tileset functions would add an extra \ between the root folder and tile path.  Caused an error in Win8.
+- Recent file list event.GetId() error.  This prevented using the recent file list to load past projects.
+- The 'delete' key did not work in the room editor.  Previous work-around was to use SHIFT-Delete instead;  key now works as expected.
+- Pymapper needed to catch more assertion errors in dealing with the filesystem when files didn't exist or could not be opened.  Now more fault-tolerant.
+
+
+02/10/2012  Version 7.2
+- Drawing items did not set the correct zoom_factor when printing.
+- Drawing items were not included in the calculation for map extents, resulting in drawing items being left of the printer image.
+- Added help to the Tileset Browser dialog.
+- If a symbol is not found in the /symbols/ folder, the image is replaced with the ImageNotFound icon.
++ Combat initiative tracker has indications for dead players, and tracks hit points.
+
+
+Note:  No version 7.1 was released.
+
+
+06/05/2011  Version 7.0 Beta
+- RichTextFrames (the XML editor used in icons) would position off the available screen space.  Editors now remember their last position, and will default back to the main display if they would otherwise be off screen.  This could happen if the editor was first used on a dual monitor setup, and then opened on a laptop.
+- The program tips.txt file could not be found under certain conditions;  the default folder was not being added to the search path.
+- When exiting the XML editor, the map icon now redraws in the correct position.
++ Combat initiative tracker (available from the Dungeon menu)
++ Variable grid highlighting (highlight every 5th line, etc)
++ Use the arrow keys to move tiles on map window (instead of the entire map panel).   Hold down the SHIFT+arrow key to make this work.
++ Major changes to the way tilesets are loaded...Pymapper now uses a tileset browser.  This window controls the opening of all tilesets.  It will detect which tilesets have been installed to the /tiles/ folder, and shows which are loaded.  You can load or unload tilesets from here now.
++ Create custom markers for use on the map window.  Six different shapes of markers can be created with a short text label.   Markers can be used as tiles, or as custom bitmaps for the room icons.   Marker definitions are saved in the markers.ini file in the program folder.  When used as tiles, the markers will show up on the 'Markers' page on the tile panel.
+Manager dialog for editing markers and symbols is available under the Options | Symbols and Markers menu.
++ Highlighting of room icons can be toggled from the View | Highlight Icons menu.
++ Symbols located in the artwork/symbols folder are automatically loaded into the Symbols page when pymapper starts.  These symbols must have a size in multiples of 100 pixels (say 100x300, but not 142x227) to load properly.  Other custom symbols can be added through the Symbol and Marker manager.  Symbols act like tiles, and are a quick way to add images as tiles, without having to create an entire tileset.
+
+
+02/25/11  Version 6.4  (most of these were in 6.3.x)
+- Images without a back image (no side B) would not always be detected properly when dragging from the tile window.
+- Random dungeon generator did not place tiles on the map page (page not assigned to tile)
+- xml editor does not catch the 'delete' key event.  This is an error in the wxPython code.  Workaround is to use SHIFT+DEL to delete a character.
+- Duplicate tilesets were being written to the .ini file.  This could cause tilesets to appear on the wrong page when restarting the program.
+- PyMapper remembers the last screen position, and in some cases it would place the window off screen when switching displays (from dual to single monitors)
+- Adding a page without a name crashed the program.
+- Images with transparency enabled on the tile window now show up properly (instead of the black background from before).
+- Check for a valid wxMemoryDC in CreateTextLabelBitmap.  This was causing a startup crash on Mac/Linux machines.
++ Drawing tools for lines, rectangles, circles, freehand, and custom images added to the program.  A new selection mode enables these tools.
++ In the geomorph save dialog, add a 'select all edges' button
++ Option to draw grid on top of tiles.
++ Remember the last folder that was accessed for open/save of map files.
++ Press F12 to cycle through drawing modes (tile, icon, drawing).  May need to hit the refresh windows button to get a redraw event processed.
++ Zooming using the mouse wheel can be inverted (zoom in when scrolling forward) via the Program | Options dialog box.
++ Separate background images can be imported to map pages.
++ Adjust highlight color for printing outlined tiles in the Print Setup dialog.
++ The tileset manager dialog has a "Select All" and "Remove All" button added to the assignment windows.
+
+
+01/25/11  Version 6.2
+- Version 6.0 files were saved correctly, but could not be opened.  PyMapper was attempting to change to a map page that did not exist.
+- Reading a map file could cause an error when changing to a folder that didn't exist.
+- PyMapper crashed when opening a map that had a page name the same as an existing page name, and it was the only page.
+- Exporting a geomorph to a map file retained the geomorph data, and would only open as a geomorph.  Geomorphs can now be exported to a standard map file.
+- Program frame icon is correctly set.  (The icon in the top left corner)
+- The recent file list didn't update correctly when saving a brand new map.
+- Importing a file to a new page only opened the file to the base "Map" page.  PyMapper now prompts for the new page name and loads it there.
+- When saving an rich-text file, the room description is used as the default filename.
+- Default backup directory is now set to the root directory where pymapper is installed.  This can still be changed to a different folder via the Options|Program dialog.
+- Switching from dual display to single side turns off the hovertile display. 
++ Pages on the tile window can display only certain tilesets, or groups of tilesets.  This has been updated to work similar to the map pages.
+
+Note that no version 6.1 was released.
+
+01/06/11  Version 6.0
+- Zoom in/zoom out icons did not show in the right click menu from the tile panel.
+- Add icon for show all and delete tile in the right click menus.
+- Deleting an active layer would not delete the corresponding map tiles 
+  (wxMessageBox does not have the wx.YES_NO style available).
+- Highlighted tiles with transparency had a white background when selected and outlined.
+- When showing both sides of a tile in the tile window, multiple tiles could be selected,
+  but only the first selected was eligible for placement.  This now works the same as 
+  single-side mode.
+- Updated saved settings in the .ini file.
+- The PRINT_RESOLUTION tag in the .ini file was not written correctly.
+ 
++ Change right-click context menu when in tile select/icon select modes (tile options 
+  not shown when in icon mode).
++ Multiple map pages are now available to load and edit multiple maps at a time.
++ New report available under the Maps menu.  A list of the tilesets used in the current
+  map is displayed, and can be copied to the clipboard.
++ New toolbar button is available to switch between limited and unlimited tile usage.
++ Added some better error correction when bad image files are loaded.  You may see an image 
+  with a red X that says "Image not found" when loading an image doesn't work.
++ Grid coordinates can be toggled on/off via the View menu.
++ Dual side display on the tile window can be toggled on/off via the View menu.
+
+
+11/17/2010 Version 5.2
+- Automatic backup filename not correctly set.
+- In the NPC generator, the domain spell entry for clerics caused a crash when determining spells. (Changed code and updated srd file)
+
++ Random dungeon generator using geomorph tile collections is now available under the Maps | Create Random Dungeon menu.  See the 
+  tutorial file "geomorph_tutorial.pgf" located in the /geomorphs/ folder for more information.
++ Geomorph designer is available through the File menu, and also as a new toolbar item.
++ A new standard folder /geomorphs/ is created in the pymapper root directory.  This is the default location for geomorph storage.
++ Grid coordinates can be displayed on the map, available through the Options | Program menu.
+
+
+09/24/2010 Version 5.1
+
+- Pymapper size and position is not remembered from one instance to another.
+- Icons did not filter out with the change in display layers.
+- Icon descriptions were not read correctly from saved map files.  
+  The Map specification has been updated to 2.4 to make this change.
+- The current map name is shown in the window title bar.
+- NPC generator did not properly calculate the hit dice (HD).
+- Handle the conflict between hover tile and dual display in the Program Options dialog.
+- Hotkey for Export Image changed from Alt+P to F2 to avoid problems with MacOS compatibility.
+
++ Dice roller added.  Rolls the standard dice, and also combinations (1d4+1, etc.)
++ Added image support to the xml editor.
++ Splash Screen on startup.
++ Added NPC icon to the room description set.
++ Added Treasure icon to the room description set.
++ Icon descriptions can be changed by bringing up the editor and selecting "Edit Description" from the "Edit" menu.
++ Random treasure generator now available.
++ Highlight icons on the map to make them stand out more.  Also, ability to turn the highlighting on/off.
++ Right click option to "Add Description" changed to "Add Icon" since this applies to room descriptions, 
+  treasure, NPC's, and monsters now.
++ In the NPC generator, changed the hit points generator to give full HP at first level.
++ NPC generator generates a spellbook, if appropriate for the class.
++ Tile window defaults to show both sides of a tile in the tile window.  Either side can be placed on the
+  map window by dragging the appropriate image.  This option can be changed in the Options|Program menu.
+
+09/11/2010 Version 5.05
+- Program crashed on MacOS.  The layer select control in the toolbar is apparently not supported by wxPython, 
+  so the control has   been disabled for non-windows platforms.  Layer selection can still be accessed via
+  the "Show Tileset/Layers" dialog in the View menu.
+- Program crash when reading a .ini file from older versions.  The background registration information was
+  missing from the older file.  
+
+08/22/2010 Version 5.0
+- Right clicking when dragging a tile caused pymapper to 'lose' the dragImage.
+- Pymapper would ask if you want to save a file on exit, even if it had just been saved.
+- Double click on a stack of tiles flips all tiles, not just the highlighted tile.
+- If no filename set, the save button/menu item would simply pop a warning.  Now it goes to the SaveAs function.
+- Deselect tiles when changing between tile and icon modes.
+- In icon select mode, a crash occurs when trying to delete text using the 'delete icon' right click option.
+- Clear all items from map panel when opening new file.
+- Clear undo list when opening new map file.
+- Crash when a tile with only one side is double-clicked to flip.
++ Support for the d20 gaming system is now active within pymapper.  See the readme.txt file for more details.
++ Descriptions for rooms, monsters, traps, etc. can be added as an icon on the map.
++ Keyboard shortcuts (ctrl+s, ctrl+o, etc) have been added to many menu items.
++ A simple NPC generator based on Jamis Buck's npc generator is available.
++ A background image can now be aligned to the internal grid.  The method for importation of background images has changed as well.
++ A set of tutorial files are available.  They should automatically load up the first time that 5.0 is started.  They
+  are located in a folder aptly named 'tutorial' in the pymapper folder.
++ As usual, other optimization and minor bugs fixed.
+
+
+
+07/23/2010 Version 5.0 beta
+- Support for the d20 SRD (D&D version 3.5) is being added.
+- NPC Generator is nearly finished.
+- Traps generator is nearly finished.
+- Specific room descriptions can be set using rich text formatting.
+
+
+07/03/2010 Version 4.3.4
+- Operating system was not correctly identified for some Windows7 setups.
+
+
+Release Skipped  Version 4.3.3
+- Tilesets options dialog would not queue sets for deletion if more than one set was going to be deleted.
+- Exporting an image defaults back to the last folder used.
+
+
+05/20/2010 Version 4.3.2
+- Found a bug with the menu code.  This was causing items selected from the menu to default to the "New Map" option.  This was apparently more an issue with OS X users, but all platforms would have been affected to some extent.
+- Layer/Tilesets filter dialog did not initialize properly from the menu.  
+
+05/17/2010 Version 4.3.1
+- "Show All" when a map is first loaded in order to see everything.
+- The tile display showing number of tiles used did not update correctly when tiles were added or deleted.
++ The tile window dims when in text select mode, as a reminder that tiles cannot be placed.
+
+
+05/15/2010 Version 4.3
+- Pymapper will now only move the current selected tile if a stack of tiles, and not holding shift down.
+- Levels dialog updates when a tileset is loaded.
+- Closing using the 'x' button (top left button to close a program) did not go through the shutdown process.
+- Add undo functionality for annotations.
+- Selecting multiple tiles changed to work better.
+- Text annotations did not scale correctly when printing or exporting an image.
+- Crash when using 'show all' under certain circumstances.  
+- The "show all" command did not consider the placement of text strings on the map.
+
+
+05/01/10 Version 4.2.2
+- Correction made to new file dialog data entry.  The code as written caused problems for some mac users.  Oddly enough, it should have caused issues for all users.
+
+NOTE:  The debug code for 4.2.1 remains in 4.2.2.  Users printing tile manifests will have output written to the console screen.
+
+04/30/10 Version 4.2.1
+- Debug code inserted for trying to track down a specific printing issue.  
+
+04/25/10 Version 4.2
+- Text does not appear at correct size when printing image.
+- Text does not select at various zoom factors
+- System OS not correctly identified, causing save problems (the '\' vs '/' problem)
+- Pymapper freezes when loading duplicate tilesets
+- Grid and Background buttons did not set to on/off based on values read from the .ini file.
+- Edit tileset dialog threw an exception if OK was pressed without a file being saved.
+- Tiles that were set to be filtered were included in the RebuildSortGrid function (space was reserved in the tile windows when they should not have been)
++ Tile manifest reports.  Select from the Maps menu.  The report will show the a thumbnail image of the tile, the tileset ID, Name (if any), the number of tiles used, and the size of the tile.
++ The hover tile image (when the mouse sits over the tile) now shows the number of tiles still available for placement / total number of tiles available. (ie, 1/2)
++ Layers are now enabled for use.  Select "Show tileset/layer filter dialog" from the View menu.  Note that the base layer can be renamed, but cannot be deleted.
++ Ability to turn on or off a set being shown in the preview window.  This is from the same dialog that control view of the layers.  The old method of filtering tilesets has been removed.
+
+
+04/10/10 Version 4.1
+- Pymapper would not dismiss the progress dialog if a duplicate tileset was loaded.  The tileset didn't load, but control was never returned to the user.
+- Fixed memory leak where a function could return without closing the file.  Done enough times, this could cause a problem for overall system stability.
+- Removed 3D viewer code.  The cv module that was running that part of the program caused pymapper not to run on some machines.  Since this was a alpha version function anyway, it was easier to remove than debug.
+
+
+04/08/10 Version 4.0
+- Keyboard shortcut for rotation was broken.  Amazing how fragile some of these functions are.
+
++ Pymapper can now move multiple tiles at the same time while holding down the Shift key.  Click to drag a rubberband box around the tiles and hold the Shift key to drag them around.
++ Undo functionality added for add, delete, move, and rotate tiles.  More events for undo will be added in coming versions.
++ Toolbar buttons added to the menu.  Additional functions will be added in future versions.
++ A kind of 3D visualization has been added.  This resulted in a larger download for the new code added, as you have found out. This feature is not fully implemented; the menu option is there for you to try out, but be sure to save your work first, just in case something bad happens.
++ Other internal optimizations tweaked.
++ Recently opened files are stored in the File menu.
++ Official licensing added.  We are now distributed under the GNU public license.
+
+
+03/08/10 Version 3.3
+- Fixed errors with new maps and saving maps under MacOS.
+- Keyboard shortcut for rotation was broken.  Fixed now.
++ New sort funtion for BIG speed improvement over old sorting.  This does result in more 'wasted' space in the tile 
+  window, but the speed improvement more than makes up for this I think.
++ Support for Mac file addressing (using / instead of \ in paths) added.
++ Show user tips at startup via wxTipProvider/wxShowTip
+
+
+01/16/10 Version 3.2
+- A map with many tiles cause a lag in selecting a tile on the map window (A fast moving mouse could get outside of the tile boundary before the hotspot was set   for the tile moving.  Hotspot for moving is now bounded.)
+- Selections errors on maps (tile rotation was not set correctly from saved maps)
+- Long filenames in tile info dialog extend off the tile information window.
+- Backup filename referenced in OnTimer, line 3154/OnTimer; line 4974/SaveMapFile  savefile referenced before assignment.
+- Multi select for tiles does not clear if the next item selected is also a stack of tiles
++ Pymapper draws all tiles that are part of a stack, showing a solid for the current active tile, and a dashed line for
+  others in the stack.
++ Multiple tiles can be selected by dragging a rubber-band box to select multiple tiles.  Still working on being able to
+  do more with the selected stack.
+
+
+11/24/09 Version 3.1
+- When printing, error occurs when there is no map buffer.  This happened if there were no tiles on the map panel.
+- Program Options:  only resort tiles if that option set changed.
+- On Exit, warning dialog for saving map causes error (frame memory was released, and then re-accessed on final cleanup).
+- Printing with custom margins did not properly calculate the border/margin sizes.
+- Backup folder should default to an existing folder on the users computer.
++ A menu option feature to outline tiles is now available.  This helps with placement of similar looking tiles on maps.
++ Program Options dialog:  selecting the backup directory starts at current folder.
++ Program Options dialog:  tiles are only resorted if necessary, not with every dialog change.
++ User-definable print resolution is now available.  See the help file for more details on this change.
++ More changes to printing.
+
+11/08/09 Version 3.00
+- Tileset Options: Only the first word of the tileset name showed up in the listbox.  Spaces were skipped in the loading process
+- Edit Tilesets Dialog:  Load Tileset button did not load a tileset.  
+- Zoom in/out on the tileset editor did not work.  (Scale was never factored in the resize function)
+- Text annotations would not load multi-word text from a map file.  Again with the skipping of spaces.
++ When loading a tileset, PyMapper will default to the /tiles/ folder.
++ Multi select for tiles has come to the PyMapper!  To cycle through the 'stack' of tiles, press spacebar while in the map window.
++ When hovering over a tile in the tile window, the number of remaining copies is also shown on the hover tile display.
++ Pressing the spacebar (while the mouse is in the tile panel) will flip all tiles to the opposite side.
++ From the tilepanel, a right click option has been added to show that tile on the map panel.
++ On the map panel display, a right-click option to Rotate 180 degrees has been added.
++ Many general changes to the tileset creation utility (File|Edit Tileset…)
++ Progress dialogs now show when loading a tileset.
++ On startup, PyMapper will look at dedicated folder for maps.  If the /maps/ folder is not found, it will attempt to create one.  This is the default folder used for saving maps.
++ Tags to classify each tile have been added to program.  This is the biggest change to the PyMapper.  Tags can be added to tiles using the Edit Tileset option (File | Edit Tileset...).  Once defined, go to View|Filter Tags... to show the filter tags dialog.  Select/deselect the checkboxes to filter out tiles.  This dialog does not need to be dismissed;  you can keep it on to make filtering easier.
+
+
+10/23/09 Version 2.31
+- Placing mulitple tiles and then deleting them resulted in only having one tile to use.  The deleted tiles were never 'recovered' by PyMapper.
++ A new file tag has been added to the tileset definitions (TILE_COUNT) to load multiple copies of a tile in the same tileset.
++ The mousewheel will zoom in/out when used on the map window.
+
+10/17/09 Version 2.3
+
+- Tile rotation didn't reset the selection MapRect correctly after the tile had been placed. This resulted in the original shape being the only place where you could select a tile.
+- Changing display options from Options|Program dialog did not change the View menu options. 
+- Loading .ini files did not change View menu options.
+- Hover image did not dismiss on minimizing PyMapper, and caused program to lock up.
+- Print resolution was based on current screen zoom, defaults now to 50.  
+- Printing to a single page did not scale properly
+- Tile window will not redraw to fill available space if the window is resized
++ The display order of tiles can now be changed by using the key shortcuts PgUp/PgDn
++ Show all tiles available from the View|View All menu (was previously only via right click)
++ Display grid option now available from View | Grid menu (previously only from view options dialog)
++ The background color on the map panel can be changed via the Options | Program menu.
+
+10/02/09 Version 2.21
+
+- Tiles used when loading from a file must select from tilesets already loaded (they wouldn't dim).
+- Reduced the opposite side preview image size on mouse hover.  For the larger tiles this was an awkward feature.
+- Tileset options loads multiple copies of the tileset.  PyMapper was not checking tilesets already loaded correctly.
+- Version tag was not backwards compatible, although it was supposed to be.  This was causing problems with trying to open files saved under the new file format structure. (default version set to 2.1)
+- Filter by tileset is broken (filtered tilesets were not skipped on hovering; tileset filter flag was cleared, but tiles were not reset properly)
+- Loading tilesets from the tileset options dialog did not populate the listbox again after exit. (Wrong parameter sent to the load tileset function)
+- Changing tilesets did not write that back to the tilesets file.  Changing the number of sets was only good for the current working session.
+
++ You can now change the number of tilesets outside of editing the .set files.  This is handled in the tilesets options under the Options menu.
++ Text notes (annotations) can be added to the map display now.  This should help you guys in making maps for actual use.  This feature is still somewhat under development (changing sizes, fonts, etc.) but you can start using it.
+
+
+9/26/2009 Version 2.2
+- Rightclick to show all not calculated properly
+- Rotating tiles produces a black border around two sides (tile rotation function added a black border to the side)
+- Tile filtering is broken (condition existed where filtering would occur but not be cleared out)
+- Image loading in the Import Tiles dialog was not fully converted to new internal image formats (switch from pilImage to wxImage)
+- Image rotation did not account for rectangular sized tiles (width and height needed to be swapped.  Surprising that no one reported this before now.)
+- The virtual map panel (where the tiles are placed) had the height and width reversed. (Changed X and Y of internal bitmap.  No one found this one either?)
+- Tilesets would load again when reading from a .map file, even if already loaded. (Changed to read the tileset file just once.)  This should significantly speed up loading of map files.
+- Images in the Import Tiles dialog would not load due to a missing wx. prefix.
+
++ Printing is here!  Print directly to your printer, either in 1:1 scale, or fit to a single page.  PDF printing is not directly supported;  Use an available pdf printer (see the help file) if you need a pdf. (on the menu, Print | Print Map...)
++ Export images is here!  PyMapper will save to a jpg or png file format. (on the menu, Print | Export Image)
++ Additional ini file settings are now saved, and read when starting up.
++ Using the Mousewheel will scroll down on the tile panel.
++ PyMapper will prompt to save map if one exists and has not been saved.
++ Option to resize map grid after new map is started has been added (on the menu, Edit | Change Map Size)
++ Hovering tiles dismiss when moving away from the tile panel.
++ Background images can now be either centered on the map display, or tiled. (on the menu, Options | Program)
++ VERSION info tag added to mapfile format specification.  This will allow new features to be saved into the map files.
+
+9/8/2009 Version 2.11
+- Opening PyMapper after saving .ini files resulted in a crash the next time the program was opened.  Old .ini files need to be deleted to provide for the new file format.
+- Display on hover option was left out of the previous version.  This can now be turned off via the Program options dialog.
+
+9/2/2009 Version 2.1
+- Icon in About|Help wasn't loading properly.  This led to finding some other problems with loading images that hadn't been found yet.
+- Loading a tileset with a single tile (as in the Free RPG 2009 tile) would result in a failed sort table, and the tileset would not display.
+- Some tile properties did not load correctly under certain circumstances
+- Trying to drag a tile that was previously selected could result in an error and a locked program.
++ Tilesets can now be filtered by tileset.
++ PyMapper can now create timed backup files to save work.  Check Program|Options on the menu and in the help file.
++ Right click on a selected tile in the tile window to view image properties
++ Right click to filter out individual tiles, and to clear the filters
++ Program options for backgrounds, grids, and transparency added.  Check Program|Options on the menu and in the help file.
++ The number of tiles available for use is now limited by how many sets you own.  The tile will dim in the tile window when they are all 'used' up.
++ A right-click option to flip all tiles in the tile window was added.
++ Hovering the mouse over a tile in the tile window will show the reverse side.  The delay time is set in the Program|Options dialog.
++ Background images can now be imported.  Display options are in Options|Program.
+
+
+08/21/2009 Version 2.0
++ More major internal changes to how PyMapper deals with scrolling.  Some changes to improve performance as well.
++ Scrollbars added to both Map and Tile panels.  Smooth scrolling now available.  Center button still works for dragging.
++ Tiles placed in the tile window are now arranged to make more efficient use of space.  Some issues persist with placement, but it is quite workable for now.
++ Help file!  Not the most complete, but at least it's started.
++ Right-click context menus are now active.  Zoom In, Zoom Out, Rotate and Delete Tiles with a right click.
++ A default grid is shown on startup now.
+- Repositioning a tile on the Map window did not show the correct tile rotation if the tile had been rotated before moving
+- Open/Save of mapfiles not working correctly due to tileset read issue.
+- Removing all tiles resulted in at least one tile being left on screen due to window updating issue.
+- Grid didn't show up until a tile was dragged onto the map panel.
+
+08/07/2009 Version 1.2
+Import backgrounds option is turned off for now.
+
++ Major changes made to the Import Tiles dialog.  Note that tileset files stored with version 1.1 did not have the NAME or SET_ID tags written correctly.  You should re-download these tileset (.set) files to correctly load the files.
++ Delete button on Import Tiles utility added
++ Option to load tilesets after using the Import Tiles utility added.
++ Open tilesets on program startup if none are loaded by reading a .ini file.
++ Flip tiles in tilepanel now available
++ Multiple tilesets can now be loaded in the tilepanel.
+- File save/load paths are relative to the application directory where PyMapper starts.  This is defaulted to c:\pymapper\ but should work now if you change it.
+- Spaces in filenames were not being read correctly.
+- Issues with spaces in tileset filenames were not being read.
+- Installer did not start in the correct directories.  The "Start In..." folders were not being set.
+- PyMapper generated OnExit() error at program end.
+
+ 
+08/02/2009 Version 1.1 
+- PyMapper loads from a relative path for tilesets, to allow for custom installation locations.
+  Not fully tested, but should work from the File | Import Tileset menu.
+
+08/01/2009Version 1.0 Beta
++ Windows executable!
++ Tile Rotation
++ Tileset Editor
++ Internal changes to handling of images.
++ Comments in tileset files available by using the '#' tag.
++ Transparency in .png images now supported for tiles.
+
+
+7/22/2009 Version 0.5 
++ Initial alpha release of the program.  Limited functionality and proof 
+  of concept.  Sample map and tileset file formats introduced.
+
+
