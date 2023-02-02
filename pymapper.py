@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #-----------------------------------------------------------------------------
 # Name:        PyMapper.py
 # Purpose:     Dungeon Tiles PyMapper
