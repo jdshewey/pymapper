@@ -30,6 +30,7 @@ from __future__ import division   #this makes 5/10 = 0.5, not 0
                                   # 5//10 = 0
 #standard python modules
 import wx     #Using a version higher than 2.8.12 will result in breaks in RichTextCtrl
+import wx.adv
 import os
 import shutil #high level file operations
 import time
@@ -13318,7 +13319,7 @@ class DiceRollDialog(PyMapperDialogs.DiceRollDialogBase):
     dlg.Destroy()
     return
 
-class pymSplashScreen(wx.SplashScreen):
+class pymSplashScreen(wx.adv.SplashScreen):
   def __init__(self, parent=None):
     aBitmap = wx.Image(name = "map_image.jpg").ConvertToBitmap()
     if (not aBitmap.IsOk()):
