@@ -13440,7 +13440,7 @@ class PyMapperAppMain(wx.App):
 
     display = wx.Display()
     logging.debug("Set Frame Dimensions basd on wxDisplay()")
-    self.frame.SetDimensions(gv.WindowExtents.x, gv.WindowExtents.y, gv.WindowExtents.width, gv.WindowExtents.height)
+    self.frame.SetSize(gv.WindowExtents.x, gv.WindowExtents.y, gv.WindowExtents.width, gv.WindowExtents.height)
     logging.info("wxDisplay X, Y, W, H: %d %d %d %d" ,gv.WindowExtents.x, gv.WindowExtents.y, gv.WindowExtents.width, gv.WindowExtents.height)
     index = display.GetFromWindow(self.frame)
     gv.SashPosition = self.frame.SplitterSash.GetSashPosition()
