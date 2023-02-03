@@ -316,73 +316,73 @@ class PyMapperFrameCore ( wx.Frame ):
 		self.toolbar.SetToolSeparation( 2 )
 		self.toolbar.AddSeparator()
 		
-		self.toolbar.AddLabelTool( tFileNew, u"tool", wx.Bitmap( u"artwork/File_New.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Create New Map File", u"Create New Map File", None ) 
+		self.toolbar.AddTool( tFileNew, u"tool", wx.Bitmap( u"artwork/File_New.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Create New Map File", u"Create New Map File", None ) 
 		
-		self.toolbar.AddLabelTool( tFileNewGeomorph, u"New Geomorph", wx.Bitmap( u"artwork/geomorph_button.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Select to create a new geomorph file", u"Select to create a new geomorph file", None ) 
-		
-		self.toolbar.AddSeparator()
-		
-		self.toolbar.AddLabelTool( tFileOpen, u"Open Map File", wx.Bitmap( u"artwork/File_Open.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Open existing map file...", u"Open existing map file...", None ) 
-		
-		self.toolbar.AddLabelTool( tFileOpenGeomorph, u"tool", wx.Bitmap( u"artwork/open_geomorph.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Open a pymapper geomorph file", u"Open a pymapper geomorph file", None ) 
+		self.toolbar.AddTool( tFileNewGeomorph, u"New Geomorph", wx.Bitmap( u"artwork/geomorph_button.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Select to create a new geomorph file", u"Select to create a new geomorph file", None ) 
 		
 		self.toolbar.AddSeparator()
 		
-		self.toolbar.AddLabelTool( tFileSave, u"tool", wx.Bitmap( u"artwork/save.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Save current map file", u"Save current map file", None ) 
+		self.toolbar.AddTool( tFileOpen, u"Open Map File", wx.Bitmap( u"artwork/File_Open.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Open existing map file...", u"Open existing map file...", None ) 
 		
-		self.toolbar.AddLabelTool( tFileSaveAs, u"tool", wx.Bitmap( u"artwork/SaveAs.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Save current map file with a new name...", u"Save current map file with a new name...", None ) 
-		
-		self.toolbar.AddSeparator()
-		
-		self.toolbar.AddLabelTool( tPrintMap, u"tool", wx.Bitmap( u"artwork/printer_small.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Print Map...", u"Print Map...", None ) 
-		
-		self.toolbar.AddLabelTool( tExportImage, u"tool", wx.Bitmap( u"artwork/ExportImage.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Export the current map to a jpg or png image...", u"Export the current map to a jpg or png image...", None ) 
+		self.toolbar.AddTool( tFileOpenGeomorph, u"tool", wx.Bitmap( u"artwork/open_geomorph.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Open a pymapper geomorph file", u"Open a pymapper geomorph file", None ) 
 		
 		self.toolbar.AddSeparator()
 		
-		self.toolbar.AddLabelTool( tEditUndo, u"tool", wx.Bitmap( u"artwork/undo.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Undo the previous action", u"Undo the previous action", None ) 
+		self.toolbar.AddTool( tFileSave, u"tool", wx.Bitmap( u"artwork/save.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Save current map file", u"Save current map file", None ) 
+		
+		self.toolbar.AddTool( tFileSaveAs, u"tool", wx.Bitmap( u"artwork/SaveAs.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Save current map file with a new name...", u"Save current map file with a new name...", None ) 
 		
 		self.toolbar.AddSeparator()
 		
-		self.toolbar.AddLabelTool( tImportTileset, u"tool", wx.Bitmap( u"artwork/import_tileset.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Import a tileset file...", u"Import a tileset file...", None ) 
+		self.toolbar.AddTool( tPrintMap, u"tool", wx.Bitmap( u"artwork/printer_small.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Print Map...", u"Print Map...", None ) 
 		
-		self.toolbar.AddLabelTool( tImportBackground, u"tool", wx.Bitmap( u"artwork/ImportBackground.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Import Background...", u"Import Background...", None ) 
-		
-		self.toolbar.AddSeparator()
-		
-		self.toolbar.AddLabelTool( tTileQuantity, u"tool", wx.Bitmap( u"artwork/TQ_single.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Switch between limited and unlimited tile usage", u"Switch between limited and unlimited tile usage", None ) 
-		
-		self.toolbar.AddLabelTool( tSnapToGrid, u"tool", wx.Bitmap( u"artwork/snap_to_grid.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Snap tiles to grid when active.  Free placement when toggled off.", u"Snap tiles to grid when active.  Free placement when toggled off.", None ) 
+		self.toolbar.AddTool( tExportImage, u"tool", wx.Bitmap( u"artwork/ExportImage.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Export the current map to a jpg or png image...", u"Export the current map to a jpg or png image...", None ) 
 		
 		self.toolbar.AddSeparator()
 		
-		self.toolbar.AddLabelTool( tShowGrid, u"tool", wx.Bitmap( u"artwork/grid_on.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Show or Hide the gridlines", u"Show or Hide the gridlines", None ) 
-		
-		self.toolbar.AddLabelTool( tShowBackground, u"tool", wx.Bitmap( u"artwork/Background.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Show/Hide Background", u"Show/Hide Background", None ) 
-		
-		self.toolbar.AddLabelTool( tShowLayerFilter, u"tool", wx.Bitmap( u"artwork/Layers.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Show layer and tileset filter", u"Show layer and tileset filter", None ) 
-		
-		self.toolbar.AddLabelTool( tShowIcons, u"tool", wx.Bitmap( u"artwork/treasure_icon_small.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Turn on/off display of room/trap/monster icons", u"Turn on/off display of room/trap/monster icons", None ) 
-		
-		self.toolbar.AddLabelTool( tShowLabels, u"Show Labels", wx.Bitmap( u"artwork/icon_labels.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Toggle to show icon labels", u"Toggle to show or hide labels on the icons", None ) 
+		self.toolbar.AddTool( tEditUndo, u"tool", wx.Bitmap( u"artwork/undo.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Undo the previous action", u"Undo the previous action", None ) 
 		
 		self.toolbar.AddSeparator()
 		
-		self.toolbar.AddLabelTool( tShowDrawingObjects, u"tool", wx.Bitmap( u"artwork/draw_show_no_handles.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Turn on/off display of drawing objects.", u"Turn on/off display of drawing objects.", None ) 
+		self.toolbar.AddTool( tImportTileset, u"tool", wx.Bitmap( u"artwork/import_tileset.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Import a tileset file...", u"Import a tileset file...", None ) 
 		
-		self.toolbar.AddLabelTool( tShowDrawingHandles, u"tool", wx.Bitmap( u"artwork/draw_show_handles.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Turn on or off the handles on drawing objects", u"Turn on or off the handles on drawing objects", None ) 
-		
-		self.toolbar.AddLabelTool( tShowFogObjects, u"tool", wx.Bitmap( u"artwork/add_fog.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Toggle the display of fog of war objects", u"Toggle the display of fog of war objects", None ) 
+		self.toolbar.AddTool( tImportBackground, u"tool", wx.Bitmap( u"artwork/ImportBackground.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Import Background...", u"Import Background...", None ) 
 		
 		self.toolbar.AddSeparator()
 		
-		self.toolbar.AddLabelTool( tZoomIn, u"tool", wx.Bitmap( u"artwork/ZoomIn.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Click to zoom in on the map", u"Click to zoom in on the map", None ) 
+		self.toolbar.AddTool( tTileQuantity, u"tool", wx.Bitmap( u"artwork/TQ_single.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Switch between limited and unlimited tile usage", u"Switch between limited and unlimited tile usage", None ) 
 		
-		self.toolbar.AddLabelTool( tZoomOut, u"tool", wx.Bitmap( u"artwork/ZoomOut.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Click to zoom out on the map", u"Click to zoom out on the map", None ) 
+		self.toolbar.AddTool( tSnapToGrid, u"tool", wx.Bitmap( u"artwork/snap_to_grid.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Snap tiles to grid when active.  Free placement when toggled off.", u"Snap tiles to grid when active.  Free placement when toggled off.", None ) 
 		
 		self.toolbar.AddSeparator()
 		
-		self.toolbar.AddLabelTool( tHelp, u"tool", wx.Bitmap( u"artwork/help.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Open help file...", u"Open help file...", None ) 
+		self.toolbar.AddTool( tShowGrid, u"tool", wx.Bitmap( u"artwork/grid_on.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Show or Hide the gridlines", u"Show or Hide the gridlines", None ) 
+		
+		self.toolbar.AddTool( tShowBackground, u"tool", wx.Bitmap( u"artwork/Background.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Show/Hide Background", u"Show/Hide Background", None ) 
+		
+		self.toolbar.AddTool( tShowLayerFilter, u"tool", wx.Bitmap( u"artwork/Layers.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Show layer and tileset filter", u"Show layer and tileset filter", None ) 
+		
+		self.toolbar.AddTool( tShowIcons, u"tool", wx.Bitmap( u"artwork/treasure_icon_small.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Turn on/off display of room/trap/monster icons", u"Turn on/off display of room/trap/monster icons", None ) 
+		
+		self.toolbar.AddTool( tShowLabels, u"Show Labels", wx.Bitmap( u"artwork/icon_labels.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Toggle to show icon labels", u"Toggle to show or hide labels on the icons", None ) 
+		
+		self.toolbar.AddSeparator()
+		
+		self.toolbar.AddTool( tShowDrawingObjects, u"tool", wx.Bitmap( u"artwork/draw_show_no_handles.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Turn on/off display of drawing objects.", u"Turn on/off display of drawing objects.", None ) 
+		
+		self.toolbar.AddTool( tShowDrawingHandles, u"tool", wx.Bitmap( u"artwork/draw_show_handles.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Turn on or off the handles on drawing objects", u"Turn on or off the handles on drawing objects", None ) 
+		
+		self.toolbar.AddTool( tShowFogObjects, u"tool", wx.Bitmap( u"artwork/add_fog.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_CHECK, u"Toggle the display of fog of war objects", u"Toggle the display of fog of war objects", None ) 
+		
+		self.toolbar.AddSeparator()
+		
+		self.toolbar.AddTool( tZoomIn, u"tool", wx.Bitmap( u"artwork/ZoomIn.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Click to zoom in on the map", u"Click to zoom in on the map", None ) 
+		
+		self.toolbar.AddTool( tZoomOut, u"tool", wx.Bitmap( u"artwork/ZoomOut.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Click to zoom out on the map", u"Click to zoom out on the map", None ) 
+		
+		self.toolbar.AddSeparator()
+		
+		self.toolbar.AddTool( tHelp, u"tool", wx.Bitmap( u"artwork/help.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Open help file...", u"Open help file...", None ) 
 		
 		self.toolbar.Realize() 
 		
@@ -1353,47 +1353,47 @@ class IconEditorBase ( wx.Frame ):
 		self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
 		
 		self.tbMainToolbar = self.CreateToolBar( wx.TB_HORIZONTAL, wx.ID_ANY ) 
-		self.tbMainToolbar.AddLabelTool( tCloseID, u"Close", wx.Bitmap( u"artwork/DeleteIcon.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
+		self.tbMainToolbar.AddTool( tCloseID, u"Close", wx.Bitmap( u"artwork/DeleteIcon.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
 		
-		self.tbMainToolbar.AddLabelTool( tOpenID, u"Open...", wx.Bitmap( u"artwork/File_Open.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
+		self.tbMainToolbar.AddTool( tOpenID, u"Open...", wx.Bitmap( u"artwork/File_Open.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
 		
-		self.tbMainToolbar.AddLabelTool( tSaveID, u"Save", wx.Bitmap( u"artwork/save.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
-		
-		self.tbMainToolbar.AddSeparator()
-		
-		self.tbMainToolbar.AddLabelTool( tUndoID, u"Undo", wx.Bitmap( u"artwork/undo.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
-		
-		self.tbMainToolbar.AddLabelTool( tRedoID, u"Redo", wx.Bitmap( u"artwork/redo.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
+		self.tbMainToolbar.AddTool( tSaveID, u"Save", wx.Bitmap( u"artwork/save.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
 		
 		self.tbMainToolbar.AddSeparator()
 		
-		self.tbMainToolbar.AddLabelTool( tCutID, u"Cut", wx.Bitmap( u"artwork/scissors.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
+		self.tbMainToolbar.AddTool( tUndoID, u"Undo", wx.Bitmap( u"artwork/undo.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
 		
-		self.tbMainToolbar.AddLabelTool( tCopyID, u"Copy", wx.Bitmap( u"artwork/clipboard copy.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
-		
-		self.tbMainToolbar.AddLabelTool( tPasteID, u"Paste", wx.Bitmap( u"artwork/clipboard-paste-document-text.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
+		self.tbMainToolbar.AddTool( tRedoID, u"Redo", wx.Bitmap( u"artwork/redo.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
 		
 		self.tbMainToolbar.AddSeparator()
 		
-		self.tbMainToolbar.AddLabelTool( tBoldID, u"Bold", wx.Bitmap( u"artwork/edit-bold.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
+		self.tbMainToolbar.AddTool( tCutID, u"Cut", wx.Bitmap( u"artwork/scissors.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
 		
-		self.tbMainToolbar.AddLabelTool( tItalicID, u"Italic", wx.Bitmap( u"artwork/edit-italic.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
+		self.tbMainToolbar.AddTool( tCopyID, u"Copy", wx.Bitmap( u"artwork/clipboard copy.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
 		
-		self.tbMainToolbar.AddLabelTool( tUnderlineID, u"Underline", wx.Bitmap( u"artwork/edit-underline.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
-		
-		self.tbMainToolbar.AddSeparator()
-		
-		self.tbMainToolbar.AddLabelTool( tLeftJustifyID, u"Left Justify", wx.Bitmap( u"artwork/justify_left.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
-		
-		self.tbMainToolbar.AddLabelTool( tCenterJustifyID, u"Center Justify", wx.Bitmap( u"artwork/justify_center.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
-		
-		self.tbMainToolbar.AddLabelTool( tRightJustifyID, u"Right Justify", wx.Bitmap( u"artwork/justify_right.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
+		self.tbMainToolbar.AddTool( tPasteID, u"Paste", wx.Bitmap( u"artwork/clipboard-paste-document-text.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
 		
 		self.tbMainToolbar.AddSeparator()
 		
-		self.tbMainToolbar.AddLabelTool( tChangeFontID, u"Change Font", wx.Bitmap( u"artwork/font_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Change Font", wx.EmptyString, None ) 
+		self.tbMainToolbar.AddTool( tBoldID, u"Bold", wx.Bitmap( u"artwork/edit-bold.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
 		
-		self.tbMainToolbar.AddLabelTool( tChangeColorID, u"Change Font Color", wx.Bitmap( u"artwork/font_color_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Change Font Color", u"Change the font color", None ) 
+		self.tbMainToolbar.AddTool( tItalicID, u"Italic", wx.Bitmap( u"artwork/edit-italic.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
+		
+		self.tbMainToolbar.AddTool( tUnderlineID, u"Underline", wx.Bitmap( u"artwork/edit-underline.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
+		
+		self.tbMainToolbar.AddSeparator()
+		
+		self.tbMainToolbar.AddTool( tLeftJustifyID, u"Left Justify", wx.Bitmap( u"artwork/justify_left.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
+		
+		self.tbMainToolbar.AddTool( tCenterJustifyID, u"Center Justify", wx.Bitmap( u"artwork/justify_center.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
+		
+		self.tbMainToolbar.AddTool( tRightJustifyID, u"Right Justify", wx.Bitmap( u"artwork/justify_right.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, wx.EmptyString, wx.EmptyString, None ) 
+		
+		self.tbMainToolbar.AddSeparator()
+		
+		self.tbMainToolbar.AddTool( tChangeFontID, u"Change Font", wx.Bitmap( u"artwork/font_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Change Font", wx.EmptyString, None ) 
+		
+		self.tbMainToolbar.AddTool( tChangeColorID, u"Change Font Color", wx.Bitmap( u"artwork/font_color_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_NORMAL, u"Change Font Color", u"Change the font color", None ) 
 		
 		self.tbMainToolbar.Realize() 
 		
@@ -1548,17 +1548,17 @@ class IconEditorBase ( wx.Frame ):
 		bSizer532 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.tbIconTools = wx.ToolBar( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TB_HORIZONTAL ) 
-		self.tbIconTools.AddLabelTool( roomID, u"Information", wx.Bitmap( u"artwork/scroll_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_RADIO, u"Room Information", wx.EmptyString, None ) 
+		self.tbIconTools.AddTool( roomID, u"Information", wx.Bitmap( u"artwork/scroll_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_RADIO, u"Room Information", wx.EmptyString, None ) 
 		
-		self.tbIconTools.AddLabelTool( monsterID, u"Monster", wx.Bitmap( u"artwork/monster_icon_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_RADIO, wx.EmptyString, wx.EmptyString, None ) 
+		self.tbIconTools.AddTool( monsterID, u"Monster", wx.Bitmap( u"artwork/monster_icon_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_RADIO, wx.EmptyString, wx.EmptyString, None ) 
 		
-		self.tbIconTools.AddLabelTool( trapID, u"Trap", wx.Bitmap( u"artwork/trap_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_RADIO, wx.EmptyString, wx.EmptyString, None ) 
+		self.tbIconTools.AddTool( trapID, u"Trap", wx.Bitmap( u"artwork/trap_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_RADIO, wx.EmptyString, wx.EmptyString, None ) 
 		
-		self.tbIconTools.AddLabelTool( npcID, u"NPC", wx.Bitmap( u"artwork/npc_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_RADIO, wx.EmptyString, wx.EmptyString, None ) 
+		self.tbIconTools.AddTool( npcID, u"NPC", wx.Bitmap( u"artwork/npc_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_RADIO, wx.EmptyString, wx.EmptyString, None ) 
 		
-		self.tbIconTools.AddLabelTool( treasureID, u"Treasure", wx.Bitmap( u"artwork/treasure_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_RADIO, wx.EmptyString, wx.EmptyString, None ) 
+		self.tbIconTools.AddTool( treasureID, u"Treasure", wx.Bitmap( u"artwork/treasure_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_RADIO, wx.EmptyString, wx.EmptyString, None ) 
 		
-		self.tbIconTools.AddLabelTool( markerID, u"Symbol", wx.Bitmap( u"artwork/marker_icon_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_RADIO, wx.EmptyString, wx.EmptyString, None ) 
+		self.tbIconTools.AddTool( markerID, u"Symbol", wx.Bitmap( u"artwork/marker_icon_small24.png", wx.BITMAP_TYPE_ANY ), wx.NullBitmap, wx.ITEM_RADIO, wx.EmptyString, wx.EmptyString, None ) 
 		
 		self.tbIconTools.AddSeparator()
 		
