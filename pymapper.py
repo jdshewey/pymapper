@@ -77,7 +77,7 @@ SPLASH = False
 
 menu_title_by_id = {}
 for title in menu_titles:
-  menu_title_by_id[ wx.NewId() ] = title
+  menu_title_by_id[ wx.Window.NewControlId() ] = title
 
 RoomIcon = None
 TrapIcon = None
