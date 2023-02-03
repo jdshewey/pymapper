@@ -13954,7 +13954,7 @@ class PyMapperAppMain(wx.App):
     logging.debug("Initial DrawTileWindow executed")
     self.DrawMapWindow()
     logging.debug("Initial DrawMapWindow executed")
-    self.oldTilePanelSize = self.TilePanel.GetSizeTuple() #returns (width, height)
+    self.oldTilePanelSize = self.TilePanel.GetSize() #returns (width, height)
 
     self.backuptimer = wx.Timer(self.frame, 1)
 
