@@ -1987,7 +1987,7 @@ class SecondaryMapDialog(PyMapperDialogs.SecondaryMapDialogBase):
     panelSize = self.pnSecondaryMap.GetSize()
     width = max(panelSize.GetWidth(), bitmapSize.GetWidth())
     height = max(panelSize.GetHeight(), bitmapSize.GetHeight())
-    self.SecondaryMapBuffer = wx.EmptyBitmap(width, height)
+    self.SecondaryMapBuffer = wx.Bitmap(width, height)
 
     self.pnSecondaryMap.SetVirtualSize(wx.Size(width, height))
     self.SecondaryMapDC = wx.BufferedDC(None, self.SecondaryMapBuffer, wx.BUFFER_VIRTUAL_AREA)
@@ -2161,7 +2161,7 @@ class IsometricMapDialog(PyMapperDialogs.IsometricMapDialogBase):
     panelSize = self.pnIsometricMap.GetSize()
     width = max(panelSize.GetWidth(), bitmapSize.GetWidth())
     height = max(panelSize.GetHeight(), bitmapSize.GetHeight())
-    self.IsometricBuffer = wx.EmptyBitmap(width, height)
+    self.IsometricBuffer = wx.Bitmap(width, height)
 
     self.pnIsometricMap.SetVirtualSize(wx.Size(width, height))
     self.IsometricMapDC = wx.BufferedDC(None, self.IsometricBuffer, wx.BUFFER_VIRTUAL_AREA)
@@ -2741,7 +2741,7 @@ class RandomGeomorphDungeonDialog(PyMapperDialogs.RandomGeomorphDungeonDialogBas
     PyMapperDialogs.RandomGeomorphDungeonDialogBase.__init__(self, parent)
     os.chdir(olddir)
 
-    self.bitmap = wx.EmptyBitmap(180,210)
+    self.bitmap = wx.Bitmap(180,210)
     self.ImagePanelDC = wx.ClientDC(self.pnImagePanel)
     self.ImagePanelDC.DrawBitmap(self.bitmap,0,0,True)
 
@@ -9835,7 +9835,7 @@ class TextOptionsDialogCore(PyMapperDialogs.TextOptionsDialogBase):
     ypos = ((bmpH - height)/2)-2
 
     extent = wx.Rect(xpos, ypos, width+4, height+4)
-    bmp = wx.EmptyBitmap(bmpW, bmpH)
+    bmp = wx.Bitmap(bmpW, bmpH)
     memdc = wx.MemoryDC()
     memdc.SelectObject(bmp)
     memdc.SetBackground(wx.WHITE_BRUSH)
@@ -10349,7 +10349,7 @@ class ManifestPrint(wx.Printout):
     width = wPPI * int(papersize.width/25.4)
     height = hPPI * int(papersize.height/25.4)
     bottom_margin = int(MarginBottomRight.y/25.4)
-    pageBMP = wx.EmptyBitmap(width, height)
+    pageBMP = wx.Bitmap(width, height)
     dc = wx.MemoryDC(pageBMP)
     dc.SetPen(wx.WHITE_PEN)
     dc.SetBrush(wx.WHITE_BRUSH)
@@ -10398,7 +10398,7 @@ class ManifestPrint(wx.Printout):
             dc.SelectObject(wx.NullBitmap)
             self.pagelist.append(pageBMP)
             self.NumPages += 1
-            pageBMP = wx.EmptyBitmap(width, height)
+            pageBMP = wx.Bitmap(width, height)
             dc = wx.MemoryDC(pageBMP)
             dc.SetPen(wx.WHITE_PEN)
             dc.SetBrush(wx.WHITE_BRUSH)
@@ -13594,7 +13594,7 @@ class PyMapperAppMain(wx.App):
     self.frame.SetBackgroundStyle(wx.BG_STYLE_CUSTOM)
 
     #self.MapBuffer is the map display of all tiles, etc.
-    self.MapBuffer = wx.EmptyBitmap(self.MapStruct.rows*gv.MapZoomFactor, 
+    self.MapBuffer = wx.Bitmap(self.MapStruct.rows*gv.MapZoomFactor, 
                                     self.MapStruct.columns*gv.MapZoomFactor)
     if (self.MapBuffer):
       logging.debug("init_frame:  MapBuffer initialized")
@@ -13641,7 +13641,7 @@ class PyMapperAppMain(wx.App):
     self.Bind(wx.EVT_NOTEBOOK_PAGE_CHANGED, self.ChangeMapNotebookPage, self.nbMapNotebook)
     self.Bind(wx.EVT_NOTEBOOK_PAGE_CHANGED, self.ChangeTileNotebookPage, self.nbTileNotebook)
 
-    self.TileBuffer = wx.EmptyBitmap(size.width, size.height)
+    self.TileBuffer = wx.Bitmap(size.width, size.height)
     Brush = wx.Brush(gv.TilePanelBackgroundColor)
     Pen = wx.Pen(gv.TilePanelBackgroundColor)
     self.TilePanel.SetBackgroundStyle(wx.BG_STYLE_CUSTOM)
@@ -14751,7 +14751,7 @@ class PyMapperAppMain(wx.App):
     memdc.SetFont(label.font)
     (width, height) = memdc.GetTextExtent(label.text)
     label.font.SetPointSize(print_size)
-    label.bmp = wx.EmptyBitmap(width, height)
+    label.bmp = wx.Bitmap(width, height)
     memdc.SelectObject(label.bmp)
     memdc.SetBackground(wx.Brush(label.bg, wx.SOLID))
     label.zoomfactor = resolution
@@ -15111,10 +15111,10 @@ class PyMapperAppMain(wx.App):
 
   def UpdateMarkerImage(self, marker):
     """Return a bitmap of the marker"""
-    bitmap = wx.EmptyBitmap(100,100)
+    bitmap = wx.Bitmap(100,100)
     folderPath = os.path.join(gv.artwork_directory,'markers')
     if (not bitmap):
-      logging.critical("Could not create wxEmptyBitmap")
+      logging.critical("Could not create wxBitmap")
       return False
     if (marker.shape == 'Circle'):
       logging.debug("Creating circle mask")
@@ -15286,7 +15286,7 @@ class PyMapperAppMain(wx.App):
       width = wPPI * int(papersize.width/25.4)
       height = hPPI * int(papersize.height/25.4)
       bottom_margin = int(MarginBottomRight.y/25.4)
-      pageBMP = wx.EmptyBitmap(width, height)
+      pageBMP = wx.Bitmap(width, height)
       dc = wx.MemoryDC(pageBMP)
       dc.SetPen(wx.WHITE_PEN)
       dc.SetBrush(wx.WHITE_BRUSH)
@@ -15338,7 +15338,7 @@ class PyMapperAppMain(wx.App):
               pageBMP = wx.BitmapFromImage(image)
               pagelist.append(pageBMP)
               NumPages += 1
-              pageBMP = wx.EmptyBitmap(width, height)
+              pageBMP = wx.Bitmap(width, height)
               dc = wx.MemoryDC(pageBMP)
               dc.SetPen(wx.WHITE_PEN)
               dc.SetBrush(wx.WHITE_BRUSH)
@@ -15818,7 +15818,7 @@ class PyMapperAppMain(wx.App):
               (width, height) = memdc.GetTextExtent(room.Description)
               width += 3  #add a border to the hover image
               height += 3
-              bmp = wx.EmptyBitmap(width, height)
+              bmp = wx.Bitmap(width, height)
               memdc.SelectObject(bmp)
               memdc.Clear()
               memdc.DrawText(room.Description, 2, 0)
@@ -17965,7 +17965,7 @@ class PyMapperAppMain(wx.App):
             width += 5  #add a border to the hover image
             textheight += 3  #add a border to the hover image
             
-            nameBitmap = wx.EmptyBitmap(width, textheight)
+            nameBitmap = wx.Bitmap(width, textheight)
             memdc.SelectObject(nameBitmap)
             memdc.Clear()
             memdc.DrawText(textLabel, 2, 0)
@@ -17990,7 +17990,7 @@ class PyMapperAppMain(wx.App):
                 width += gv.ConditionBarThickness
                 
               if (height > 0) and (width > 0):
-                conditionBitmap = wx.EmptyBitmap(width, height)
+                conditionBitmap = wx.Bitmap(width, height)
                 memdc.SelectObject(conditionBitmap)
                 offset = 0
                 if (room.monster.con1 != 'None'):
@@ -18037,7 +18037,7 @@ class PyMapperAppMain(wx.App):
     fog_size = self.MapBuffer.GetSize()
     
     #set up the fog overlay
-    overlayBitmap = wx.EmptyBitmap(fog_size.x, fog_size.y)
+    overlayBitmap = wx.Bitmap(fog_size.x, fog_size.y)
     
     overlayDC = wx.MemoryDC(overlayBitmap)
     fogPen = wx.Pen(gv.MapFogColor)
@@ -18048,7 +18048,7 @@ class PyMapperAppMain(wx.App):
     overlayDC.SelectObject(wx.NullBitmap)
     
     
-    fogBitmap = wx.EmptyBitmap(fog_size.x, fog_size.y)
+    fogBitmap = wx.Bitmap(fog_size.x, fog_size.y)
     fogDC = wx.MemoryDC(fogBitmap)
     fogDC.SetPen(wx.BLACK_PEN)
     fogDC.SetBrush(wx.BLACK_BRUSH)
@@ -18127,7 +18127,7 @@ class PyMapperAppMain(wx.App):
       resolution = gv.PrintResolution
       MapWidth = self.MapStruct.columns*gv.PrintResolution
       MapHeight = self.MapStruct.rows*gv.PrintResolution
-      self.PrintBuffer = wx.EmptyBitmap(MapWidth, MapHeight)
+      self.PrintBuffer = wx.Bitmap(MapWidth, MapHeight)
       dc = wx.MemoryDC(self.PrintBuffer)
       self.MapPanelGC = wx.GraphicsContext.Create(dc)
     else:
@@ -18139,7 +18139,7 @@ class PyMapperAppMain(wx.App):
       self.VirtualMapPanel = wx.Size(width, height)
       self.MapPanel.SetVirtualSize(self.VirtualMapPanel)
 
-      self.MapBuffer = wx.EmptyBitmap(self.VirtualMapPanel.width, self.VirtualMapPanel.height)
+      self.MapBuffer = wx.Bitmap(self.VirtualMapPanel.width, self.VirtualMapPanel.height)
       self.MapPanelDC = wx.BufferedDC(None, self.MapBuffer)
       self.MapPanel.SetBackgroundStyle(wx.BG_STYLE_CUSTOM)
       self.MapPanel.SetScrollRate(gv.ScrollIncrement, gv.ScrollIncrement)
@@ -18692,7 +18692,7 @@ class PyMapperAppMain(wx.App):
     if (self.tilelist == []): #empty tilelist, no tiles, therefore exit
       #still need to erase older panel if we unloaded a tileset
 
-      self.TileBuffer = wx.EmptyBitmap(panelsize.width, panelsize.height)
+      self.TileBuffer = wx.Bitmap(panelsize.width, panelsize.height)
       Brush = wx.Brush(gv.TilePanelBackgroundColor)
       Pen = wx.Pen(gv.TilePanelBackgroundColor)
       self.TilePanel.SetBackgroundStyle(wx.BG_STYLE_CUSTOM)
@@ -18729,7 +18729,7 @@ class PyMapperAppMain(wx.App):
       self.VirtualTilePanel.height = max(panelsize.height, arraysize.height)
 
     self.TilePanel.SetVirtualSize(self.VirtualTilePanel)
-    self.TileBuffer = wx.EmptyBitmap(self.VirtualTilePanel.width, self.VirtualTilePanel.height)
+    self.TileBuffer = wx.Bitmap(self.VirtualTilePanel.width, self.VirtualTilePanel.height)
     self.TilePanelDC = wx.BufferedDC(None, self.TileBuffer)
     Brush = wx.Brush(gv.TilePanelBackgroundColor)
     Pen = wx.Pen(gv.TilePanelBackgroundColor)
@@ -19020,7 +19020,7 @@ class PyMapperAppMain(wx.App):
         return
     elif ((self.selectlist != []) and (event.m_shiftDown)): #multiple tiles selected and SHIFT key down, so move the group
       rect = self.CalculateMapExtents(self.selectlist)
-      dragImage = wx.EmptyBitmap(rect.width*gv.MapZoomFactor,
+      dragImage = wx.Bitmap(rect.width*gv.MapZoomFactor,
                                  rect.height*gv.MapZoomFactor)
       memDC = wx.MemoryDC()
       memDC.SelectObject(dragImage)
