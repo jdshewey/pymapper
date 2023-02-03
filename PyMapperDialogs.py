@@ -309,7 +309,7 @@ class PyMapperFrameCore ( wx.Frame ):
 	def __init__( self, parent ):
 		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"PyMapper", pos = wx.DefaultPosition, size = wx.Size( 1023,441 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 		
-		self.SetSizeHintsSz( wx.Size( -1,-1 ), wx.DefaultSize )
+		self.SetSizeHints( wx.Size( -1,-1 ), wx.DefaultSize )
 		
 		self.toolbar = self.CreateToolBar( wx.TB_HORIZONTAL, wx.ID_ANY )
 		self.toolbar.SetToolBitmapSize( wx.Size( 20,20 ) )
