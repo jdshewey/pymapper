@@ -9830,7 +9830,7 @@ class TextOptionsDialogCore(PyMapperDialogs.TextOptionsDialogBase):
     string = "PyMapper!"
     dc.SetFont(self.TextFont)
     (width, height) = dc.GetTextExtent(string)
-    (bmpW, bmpH) = self.TextBoxBitmap.GetSizeTuple()
+    (bmpW, bmpH) = self.TextBoxBitmap.GetSize()
     xpos = ((bmpW - width)/2)-2
     ypos = ((bmpH - height)/2)-2
 
@@ -10251,7 +10251,7 @@ class MapPrintout(wx.Printout):
     dc = self.GetDC()
     dc.SetMapMode(wx.MM_TEXT)
     (wPPI, hPPI) = self.GetPPIPrinter()
-    (width, height) = dc.GetSizeTuple()
+    (width, height) = dc.GetSize()
     papersize = self.PageData.GetPaperId()
     if (papersize == wx.PAPER_LETTER):
       #Set size for 8x10 printed size
@@ -18682,7 +18682,7 @@ class PyMapperAppMain(wx.App):
     if (not gv.SashPosition):
       panelsize = self.TilePanel.GetSize()
     else:
-      (frameWidth, frameHeight) = self.frame.GetClientSizeTuple()  #excludes scrollbars, menu, etc
+      (frameWidth, frameHeight) = self.frame.GetClientSize()  #excludes scrollbars, menu, etc
       panelWidth = frameWidth - gv.SashPosition
       panelsize = wx.Size(panelWidth, frameHeight)
     if (panelsize.width == 0) or (panelsize.height == 0):
@@ -20960,8 +20960,8 @@ class PyMapperAppMain(wx.App):
     if (gv.AutoSave):
       ini.write("BACKUP\n")
       ini.write(str(gv.backup_directory)+"\n")
-    (width, height) = self.frame.GetSizeTuple()
-    (dx, dy) = self.frame.GetPositionTuple()
+    (width, height) = self.frame.GetSize()
+    (dx, dy) = self.frame.GetPosition()
     ini.write("PYMAPPER_WINDOW "+str(dx)+" "+str(dy)+" "+str(width)+" "+str(height)+"\n")
     ini.write("SHOW_TIPS\n")
     ini.write(str(gv.ShowTips) + " " + str(gv.LastTip) + "\n")
