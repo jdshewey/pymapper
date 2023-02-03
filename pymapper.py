@@ -14303,7 +14303,7 @@ class PyMapperAppMain(wx.App):
     logging.debug("Show tips")
     filename = os.path.join(gv.root_directory,"tips.txt")
     tipProvider = wx.adv.CreateFileTipProvider(filename, gv.LastTip)
-    gv.ShowTips = wx.ShowTip(self.frame, tipProvider)
+    gv.ShowTips = wx.adv.ShowTip(self.frame, tipProvider)
     gv.LastTip = tipProvider.GetCurrentTip()
     return
 
