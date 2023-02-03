@@ -13829,68 +13829,68 @@ class PyMapperAppMain(wx.App):
     #right click menu
     if not hasattr(self, "popupID1"):
       #300 series is for the tile right click
-      self.popupID301 = wx.NewId()
-      self.popupID302 = wx.NewId()
-      self.popupID303 = wx.NewId()
+      self.popupID301 = wx.Window.NewControlId()
+      self.popupID302 = wx.Window.NewControlId()
+      self.popupID303 = wx.Window.NewControlId()
       self.Bind(wx.EVT_MENU, self.RTilebookAddPage, id=self.popupID301)
       self.Bind(wx.EVT_MENU, self.RTilebookChangePageName, id=self.popupID302)
       self.Bind(wx.EVT_MENU, self.RTilebookDeletePage, id=self.popupID303)
 
       #600 series is for the map right click
-      self.popupID601 = wx.NewId()
-      self.popupID602 = wx.NewId()
-      self.popupID603 = wx.NewId()
+      self.popupID601 = wx.Window.NewControlId()
+      self.popupID602 = wx.Window.NewControlId()
+      self.popupID603 = wx.Window.NewControlId()
 
       self.Bind(wx.EVT_MENU, self.RMapbookAddPage, id=self.popupID601)
       self.Bind(wx.EVT_MENU, self.RMapbookChangePageName, id=self.popupID602)
       self.Bind(wx.EVT_MENU, self.RMapbookDeletePage, id=self.popupID603)
       
-      self.popupID1 = wx.NewId()
-      self.popupID2 = wx.NewId()
-      self.popupID3 = wx.NewId()
-      self.popupID4 = wx.NewId()
-      self.popupID5 = wx.NewId()
-      self.popupID6 = wx.NewId()
-      self.popupID7 = wx.NewId()
-      self.popupID8 = wx.NewId()
-      self.popupID9 = wx.NewId()
-      self.popupID10 = wx.NewId()
-      self.popupID11 = wx.NewId()
-      self.popupID12 = wx.NewId()
-      self.popupID13 = wx.NewId()
-      self.popupID14 = wx.NewId()
-      self.popupID16 = wx.NewId()
-      self.popupID17 = wx.NewId()  #change highlight submenu
-      self.popupID18 = wx.NewId()  #copy icon
+      self.popupID1 = wx.Window.NewControlId()
+      self.popupID2 = wx.Window.NewControlId()
+      self.popupID3 = wx.Window.NewControlId()
+      self.popupID4 = wx.Window.NewControlId()
+      self.popupID5 = wx.Window.NewControlId()
+      self.popupID6 = wx.Window.NewControlId()
+      self.popupID7 = wx.Window.NewControlId()
+      self.popupID8 = wx.Window.NewControlId()
+      self.popupID9 = wx.Window.NewControlId()
+      self.popupID10 = wx.Window.NewControlId()
+      self.popupID11 = wx.Window.NewControlId()
+      self.popupID12 = wx.Window.NewControlId()
+      self.popupID13 = wx.Window.NewControlId()
+      self.popupID14 = wx.Window.NewControlId()
+      self.popupID16 = wx.Window.NewControlId()
+      self.popupID17 = wx.Window.NewControlId()  #change highlight submenu
+      self.popupID18 = wx.Window.NewControlId()  #copy icon
       
-      self.popupID20 = wx.NewId() #highlight color submenu
-      self.popupID21 = wx.NewId()
-      self.popupID22 = wx.NewId()
-      self.popupID23 = wx.NewId()
-      self.popupID24 = wx.NewId()
+      self.popupID20 = wx.Window.NewControlId() #highlight color submenu
+      self.popupID21 = wx.Window.NewControlId()
+      self.popupID22 = wx.Window.NewControlId()
+      self.popupID23 = wx.Window.NewControlId()
+      self.popupID24 = wx.Window.NewControlId()
       
-      self.popupID31 = wx.NewId()   # Add NPC
-      self.popupID32 = wx.NewId()   # Add Room Description
-      self.popupID33 = wx.NewId()   # Add Monster
-      self.popupID35 = wx.NewId()   # Add Trap
+      self.popupID31 = wx.Window.NewControlId()   # Add NPC
+      self.popupID32 = wx.Window.NewControlId()   # Add Room Description
+      self.popupID33 = wx.Window.NewControlId()   # Add Monster
+      self.popupID35 = wx.Window.NewControlId()   # Add Trap
       
-      self.popupID200 = wx.NewId()
-      self.popupID201 = wx.NewId()
-      self.popupID202 = wx.NewId()
-      self.popupID203 = wx.NewId()
-      self.popupID204 = wx.NewId()
-      self.popupID205 = wx.NewId()
-      self.popupID206 = wx.NewId()
-      self.popupID207 = wx.NewId()
-      self.popupID208 = wx.NewId()
-      self.popupID209 = wx.NewId()
-      self.popupID210 = wx.NewId()
-      self.popupID211 = wx.NewId()
-      self.popupID212 = wx.NewId()
-      self.popupID213 = wx.NewId()
-      self.popupID214 = wx.NewId()
-      self.popupID215 = wx.NewId()
-      self.popupID216 = wx.NewId()
+      self.popupID200 = wx.Window.NewControlId()
+      self.popupID201 = wx.Window.NewControlId()
+      self.popupID202 = wx.Window.NewControlId()
+      self.popupID203 = wx.Window.NewControlId()
+      self.popupID204 = wx.Window.NewControlId()
+      self.popupID205 = wx.Window.NewControlId()
+      self.popupID206 = wx.Window.NewControlId()
+      self.popupID207 = wx.Window.NewControlId()
+      self.popupID208 = wx.Window.NewControlId()
+      self.popupID209 = wx.Window.NewControlId()
+      self.popupID210 = wx.Window.NewControlId()
+      self.popupID211 = wx.Window.NewControlId()
+      self.popupID212 = wx.Window.NewControlId()
+      self.popupID213 = wx.Window.NewControlId()
+      self.popupID214 = wx.Window.NewControlId()
+      self.popupID215 = wx.Window.NewControlId()
+      self.popupID216 = wx.Window.NewControlId()
 
       self.Bind(wx.EVT_MENU, self.RMapClickZoomIn, id=self.popupID1)
       self.Bind(wx.EVT_MENU, self.RMapClickZoomOut, id=self.popupID2)
@@ -13913,14 +13913,14 @@ class PyMapperAppMain(wx.App):
       self.Bind(wx.EVT_MENU, self.RMapClickAddSymbol, id=self.popupID200)
 
     if not hasattr(self, "popupID51"):
-      self.popupID51 = wx.NewId()
-      self.popupID52 = wx.NewId()
-      self.popupID53 = wx.NewId()
-      self.popupID54 = wx.NewId()
-      self.popupID55 = wx.NewId()
-      self.popupID56 = wx.NewId()
-      self.popupID57 = wx.NewId()
-      self.popupID58 = wx.NewId()
+      self.popupID51 = wx.Window.NewControlId()
+      self.popupID52 = wx.Window.NewControlId()
+      self.popupID53 = wx.Window.NewControlId()
+      self.popupID54 = wx.Window.NewControlId()
+      self.popupID55 = wx.Window.NewControlId()
+      self.popupID56 = wx.Window.NewControlId()
+      self.popupID57 = wx.Window.NewControlId()
+      self.popupID58 = wx.Window.NewControlId()
 
       self.Bind(wx.EVT_MENU, self.RTileClickZoomIn, id=self.popupID51)
       self.Bind(wx.EVT_MENU, self.RTileClickZoomOut, id=self.popupID52)
@@ -14428,7 +14428,7 @@ class PyMapperAppMain(wx.App):
       else:  #Cancel page creation
         dlg.Destroy()
         return
-    panel = wx.ScrolledWindow(self.nbMapNotebook, id=wx.NewId(), pos=gv.MapPanelPosition)
+    panel = wx.ScrolledWindow(self.nbMapNotebook, id=wx.Window.NewControlId(), pos=gv.MapPanelPosition)
     self.BindMapPanel(self, panel)
     page_index = len(gv.MapPageList)
     if (new_page): #Page_Record created during reading of map file
@@ -14537,7 +14537,7 @@ class PyMapperAppMain(wx.App):
         if (page.PageName == name):
           return
     page = Page_Record(self.nbTileNotebook.GetSelection(),gv.TileZoomFactor,0,0,name)
-    panel = wx.ScrolledWindow(self.nbTileNotebook, id=wx.NewId())
+    panel = wx.ScrolledWindow(self.nbTileNotebook, id=wx.Window.NewControlId())
     panel.SetBackgroundStyle(wx.BG_STYLE_CUSTOM)
     self.BindTilePanel(self, panel)
     gv.TilePanelList.append(panel)
@@ -21929,7 +21929,7 @@ class PyMapperAppMain(wx.App):
 
     gv.templist = []
     for layer in gv.LayerList:
-      var = wx.NewId()
+      var = wx.Window.NewControlId()
       gv.templist.append(var)
       self.Bind(wx.EVT_MENU, self.RMapClickAssignLayer, id=var)
       self.layer_menu.Append(var, layer.name)
