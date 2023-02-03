@@ -786,7 +786,7 @@ class PyMapperFrameCore ( wx.Frame ):
 		self.MapWindowZoomSlider = wx.Slider( self, wx.ID_ANY, 25, 10, 75, wx.DefaultPosition, wx.DefaultSize, wx.SL_BOTH )
 		self.MapWindowZoomSlider.SetForegroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_WINDOW ) )
 		self.MapWindowZoomSlider.SetBackgroundColour( wx.Colour( 64, 128, 128 ) )
-		self.MapWindowZoomSlider.SetToolTipString( u"Slide to change the zoom on the map window." )
+		self.MapWindowZoomSlider.SetToolTip( u"Slide to change the zoom on the map window." )
 		
 		bSizer182.Add( self.MapWindowZoomSlider, 1, wx.EXPAND, 5 )
 		
@@ -826,7 +826,7 @@ class PyMapperFrameCore ( wx.Frame ):
 		cxLayerSelectorChoices = [ u"Base" ]
 		self.cxLayerSelector = wx.Choice( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, cxLayerSelectorChoices, 0 )
 		self.cxLayerSelector.SetSelection( 0 )
-		self.cxLayerSelector.SetToolTipString( u"Selects the active layer" )
+		self.cxLayerSelector.SetToolTip( u"Selects the active layer" )
 		self.cxLayerSelector.SetMinSize( wx.Size( 125,-1 ) )
 		
 		bSizer181.Add( self.cxLayerSelector, 0, wx.EXPAND, 0 )
@@ -838,7 +838,7 @@ class PyMapperFrameCore ( wx.Frame ):
 		
 		self.TileWindowZoomSlider = wx.Slider( self, wx.ID_ANY, 25, 10, 50, wx.DefaultPosition, wx.DefaultSize, wx.SL_BOTH )
 		self.TileWindowZoomSlider.SetBackgroundColour( wx.Colour( 255, 128, 0 ) )
-		self.TileWindowZoomSlider.SetToolTipString( u"Slide to change the zoom of the tile window." )
+		self.TileWindowZoomSlider.SetToolTip( u"Slide to change the zoom of the tile window." )
 		
 		bSizer183.Add( self.TileWindowZoomSlider, 1, wx.EXPAND, 5 )
 		
@@ -1227,7 +1227,7 @@ class FTP_Options ( wx.Dialog ):
 		bSizer634.Add( self.m_staticText3301, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 		
 		self.txFilename = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.txFilename.SetToolTipString( u"Images are saved in .png format" )
+		self.txFilename.SetToolTip( u"Images are saved in .png format" )
 		
 		bSizer634.Add( self.txFilename, 1, wx.ALL, 5 )
 		
@@ -1565,7 +1565,7 @@ class IconEditorBase ( wx.Frame ):
 		cxIconSizeChoices = [ u"1 x 1", u"2 x 2", u"3 x 3", u"4 x 4", u"5 x 5" ]
 		self.cxIconSize = wx.Choice( self.tbIconTools, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, cxIconSizeChoices, 0 )
 		self.cxIconSize.SetSelection( 0 )
-		self.cxIconSize.SetToolTipString( u"Icon Size in Map Window" )
+		self.cxIconSize.SetToolTip( u"Icon Size in Map Window" )
 		
 		self.tbIconTools.AddControl( self.cxIconSize )
 		self.tbIconTools.Realize() 
@@ -1872,19 +1872,19 @@ class DrawingToolsDialogBase ( wx.Dialog ):
 		self.bSelectItem = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_select.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bSelectItem.SetBitmapHover( wx.Bitmap( u"artwork/draw_select_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bSelectItem.SetToolTipString( u"Select item by clicking on the handle boxes.  Modify by dragging them." )
+		self.bSelectItem.SetToolTip( u"Select item by clicking on the handle boxes.  Modify by dragging them." )
 		
 		bSizer2.Add( self.bSelectItem, 1, wx.ALL, 0 )
 		
 		self.bDeleteItem = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_DeleteIcon.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bDeleteItem.SetBitmapHover( wx.Bitmap( u"artwork/draw_DeleteIcon_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bDeleteItem.SetToolTipString( u"Delete selected item" )
+		self.bDeleteItem.SetToolTip( u"Delete selected item" )
 		
 		bSizer2.Add( self.bDeleteItem, 1, wx.ALL, 0 )
 		
 		self.bShowHandles = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_show_handles.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
-		self.bShowHandles.SetToolTipString( u"Click to turn off handle display.  Activating the select tool will automatically turn this back on." )
+		self.bShowHandles.SetToolTip( u"Click to turn off handle display.  Activating the select tool will automatically turn this back on." )
 		
 		bSizer2.Add( self.bShowHandles, 1, wx.EXPAND, 0 )
 		
@@ -1894,12 +1894,12 @@ class DrawingToolsDialogBase ( wx.Dialog ):
 		bSizer467 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.bChooseOutlineColor = wx.ColourPickerCtrl( self, wx.ID_ANY, wx.Colour( 67, 84, 233 ), wx.DefaultPosition, wx.Size( -1,-1 ), wx.CLRP_DEFAULT_STYLE )
-		self.bChooseOutlineColor.SetToolTipString( u"Change Outline Color" )
+		self.bChooseOutlineColor.SetToolTip( u"Change Outline Color" )
 		
 		bSizer467.Add( self.bChooseOutlineColor, 1, wx.EXPAND, 0 )
 		
 		self.bChooseFillColor = wx.ColourPickerCtrl( self, wx.ID_ANY, wx.Colour( 0, 128, 0 ), wx.DefaultPosition, wx.Size( -1,-1 ), wx.CLRP_DEFAULT_STYLE )
-		self.bChooseFillColor.SetToolTipString( u"Change Fill Color" )
+		self.bChooseFillColor.SetToolTip( u"Change Fill Color" )
 		
 		bSizer467.Add( self.bChooseFillColor, 1, wx.EXPAND, 0 )
 		
@@ -1911,35 +1911,35 @@ class DrawingToolsDialogBase ( wx.Dialog ):
 		self.bDrawFilledCircle = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_filled_circle.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bDrawFilledCircle.SetBitmapHover( wx.Bitmap( u"artwork/draw_filled_circle_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bDrawFilledCircle.SetToolTipString( u"Draw filled circle; first click to set center, second click to set radius" )
+		self.bDrawFilledCircle.SetToolTip( u"Draw filled circle; first click to set center, second click to set radius" )
 		
 		bSizer3.Add( self.bDrawFilledCircle, 0, wx.ALL, 0 )
 		
 		self.bDrawOutlinedCircle = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_open_circle.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bDrawOutlinedCircle.SetBitmapHover( wx.Bitmap( u"artwork/draw_open_circle_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bDrawOutlinedCircle.SetToolTipString( u"Draw outlined circle; first click to set center, second click to set radius" )
+		self.bDrawOutlinedCircle.SetToolTip( u"Draw outlined circle; first click to set center, second click to set radius" )
 		
 		bSizer3.Add( self.bDrawOutlinedCircle, 0, 0, 0 )
 		
 		self.bDrawFilledRectangle = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_filled_rectangle.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bDrawFilledRectangle.SetBitmapHover( wx.Bitmap( u"artwork/draw_filled_rectangle_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bDrawFilledRectangle.SetToolTipString( u"Draw filled rectangle; first click to set corner, second click to set other corner." )
+		self.bDrawFilledRectangle.SetToolTip( u"Draw filled rectangle; first click to set corner, second click to set other corner." )
 		
 		bSizer3.Add( self.bDrawFilledRectangle, 0, wx.ALL, 0 )
 		
 		self.bDrawOutlinedRectangle = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_open_rectangle.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bDrawOutlinedRectangle.SetBitmapHover( wx.Bitmap( u"artwork/draw_open_rectangle_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bDrawOutlinedRectangle.SetToolTipString( u"Draw outlined rectangle; first click to set corner, second click to set other corner." )
+		self.bDrawOutlinedRectangle.SetToolTip( u"Draw outlined rectangle; first click to set corner, second click to set other corner." )
 		
 		bSizer3.Add( self.bDrawOutlinedRectangle, 0, wx.ALL, 0 )
 		
 		self.bChangeProperties = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_change_properties.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bChangeProperties.SetBitmapHover( wx.Bitmap( u"artwork/draw_change_properties_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bChangeProperties.SetToolTipString( u"Change the properties to the current color, fill, and linestyle." )
+		self.bChangeProperties.SetToolTip( u"Change the properties to the current color, fill, and linestyle." )
 		
 		bSizer3.Add( self.bChangeProperties, 0, 0, 5 )
 		
@@ -1951,35 +1951,35 @@ class DrawingToolsDialogBase ( wx.Dialog ):
 		self.bDrawLine = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_line.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bDrawLine.SetBitmapHover( wx.Bitmap( u"artwork/draw_line_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bDrawLine.SetToolTipString( u"Draw straight line" )
+		self.bDrawLine.SetToolTip( u"Draw straight line" )
 		
 		bSizer4.Add( self.bDrawLine, 0, wx.ALL, 0 )
 		
 		self.bDrawMultiline = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_line_segments.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bDrawMultiline.SetBitmapHover( wx.Bitmap( u"artwork/draw_line_segments_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bDrawMultiline.SetToolTipString( u"Draw multiline.  Press spacebar to end the line." )
+		self.bDrawMultiline.SetToolTip( u"Draw multiline.  Press spacebar to end the line." )
 		
 		bSizer4.Add( self.bDrawMultiline, 0, wx.ALL, 0 )
 		
 		self.bDrawFreehand = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_freehand.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bDrawFreehand.SetBitmapHover( wx.Bitmap( u"artwork/draw_freehand_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bDrawFreehand.SetToolTipString( u"Draw freehand line.  Click to start, click to end." )
+		self.bDrawFreehand.SetToolTip( u"Draw freehand line.  Click to start, click to end." )
 		
 		bSizer4.Add( self.bDrawFreehand, 0, wx.ALL, 0 )
 		
 		self.bImportCustomImage = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_insert_custom.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bImportCustomImage.SetBitmapHover( wx.Bitmap( u"artwork/draw_insert_custom_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bImportCustomImage.SetToolTipString( u"Import custom image. Click to select the top-left corner of the image." )
+		self.bImportCustomImage.SetToolTip( u"Import custom image. Click to select the top-left corner of the image." )
 		
 		bSizer4.Add( self.bImportCustomImage, 0, wx.ALL, 0 )
 		
 		self.bGetProperties = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_get_properties.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bGetProperties.SetBitmapHover( wx.Bitmap( u"artwork/draw_get_properties_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bGetProperties.SetToolTipString( u"Get the properties (color, fill, linestyle) from the selected item." )
+		self.bGetProperties.SetToolTip( u"Get the properties (color, fill, linestyle) from the selected item." )
 		
 		bSizer4.Add( self.bGetProperties, 0, 0, 5 )
 		
@@ -1991,7 +1991,7 @@ class DrawingToolsDialogBase ( wx.Dialog ):
 		self.bDrawPoint = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_point.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bDrawPoint.SetBitmapHover( wx.Bitmap( u"artwork/draw_point_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bDrawPoint.SetToolTipString( u"Draw a single point.  The line width setting controls the radius of the point." )
+		self.bDrawPoint.SetToolTip( u"Draw a single point.  The line width setting controls the radius of the point." )
 		
 		bSizer370.Add( self.bDrawPoint, 0, 0, 5 )
 		
@@ -2008,7 +2008,7 @@ class DrawingToolsDialogBase ( wx.Dialog ):
 		
 		self.spLineWidth = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 45,-1 ), wx.SP_ARROW_KEYS, 1, 20, 3 )
 		self.spLineWidth.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), 70, 90, 90, False, wx.EmptyString ) )
-		self.spLineWidth.SetToolTipString( u"Adjusts the line width in pixels" )
+		self.spLineWidth.SetToolTip( u"Adjusts the line width in pixels" )
 		
 		bSizer28.Add( self.spLineWidth, 0, wx.ALIGN_RIGHT|wx.ALL, 5 )
 		
@@ -2025,7 +2025,7 @@ class DrawingToolsDialogBase ( wx.Dialog ):
 		self.bResetLineStyle.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), 70, 90, 90, False, wx.EmptyString ) )
 		self.bResetLineStyle.SetForegroundColour( wx.Colour( 255, 255, 255 ) )
 		self.bResetLineStyle.SetBackgroundColour( wx.Colour( 128, 0, 0 ) )
-		self.bResetLineStyle.SetToolTipString( u"Reset to solid line style" )
+		self.bResetLineStyle.SetToolTip( u"Reset to solid line style" )
 		
 		bSizer31.Add( self.bResetLineStyle, 0, wx.ALL, 2 )
 		
@@ -2035,14 +2035,14 @@ class DrawingToolsDialogBase ( wx.Dialog ):
 		bSizer30 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.spLineStyleSelector = wx.SpinButton( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.SP_VERTICAL )
-		self.spLineStyleSelector.SetToolTipString( u"Click the buttons to change the line style" )
+		self.spLineStyleSelector.SetToolTip( u"Click the buttons to change the line style" )
 		
 		bSizer30.Add( self.spLineStyleSelector, 0, wx.ALL|wx.EXPAND, 0 )
 		
 		self.pnLineStyleExample = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.SIMPLE_BORDER|wx.TAB_TRAVERSAL )
 		self.pnLineStyleExample.SetForegroundColour( wx.Colour( 255, 255, 255 ) )
 		self.pnLineStyleExample.SetBackgroundColour( wx.Colour( 255, 255, 255 ) )
-		self.pnLineStyleExample.SetToolTipString( u"Sample Line and Fill.  Vertical black lines show when transparency is changed." )
+		self.pnLineStyleExample.SetToolTip( u"Sample Line and Fill.  Vertical black lines show when transparency is changed." )
 		self.pnLineStyleExample.SetMinSize( wx.Size( -1,30 ) )
 		
 		bSizer30.Add( self.pnLineStyleExample, 1, wx.EXPAND |wx.ALL, 0 )
@@ -2207,21 +2207,21 @@ class FogToolsDialogBase ( wx.Dialog ):
 		
 		self.bConcealAll.SetBitmapHover( wx.Bitmap( u"artwork/fog_conceal_all_selected.png", wx.BITMAP_TYPE_ANY ) )
 		self.bConcealAll.SetBackgroundColour( wx.Colour( 0, 0, 0 ) )
-		self.bConcealAll.SetToolTipString( u"Cover the entire map with fog" )
+		self.bConcealAll.SetToolTip( u"Cover the entire map with fog" )
 		
 		bSizer3.Add( self.bConcealAll, 0, 0, 5 )
 		
 		self.bDrawFilledCircle = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/fog_filled_circle.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bDrawFilledCircle.SetBitmapHover( wx.Bitmap( u"artwork/fog_filled_circle_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bDrawFilledCircle.SetToolTipString( u"Add a fog circle" )
+		self.bDrawFilledCircle.SetToolTip( u"Add a fog circle" )
 		
 		bSizer3.Add( self.bDrawFilledCircle, 0, wx.ALL, 0 )
 		
 		self.bDrawFilledRectangle = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/fog_filled_rectangle.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bDrawFilledRectangle.SetBitmapHover( wx.Bitmap( u"artwork/fog_filled_rectangle_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bDrawFilledRectangle.SetToolTipString( u"Add a fog rectangle" )
+		self.bDrawFilledRectangle.SetToolTip( u"Add a fog rectangle" )
 		
 		bSizer3.Add( self.bDrawFilledRectangle, 0, wx.ALL, 0 )
 		
@@ -2230,7 +2230,7 @@ class FogToolsDialogBase ( wx.Dialog ):
 		self.bAddFog = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/fog_brush.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bAddFog.SetBitmapHover( wx.Bitmap( u"artwork/fog_brush_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bAddFog.SetToolTipString( u"Add fog to the display using the current brush radius" )
+		self.bAddFog.SetToolTip( u"Add fog to the display using the current brush radius" )
 		
 		bSizer2811.Add( self.bAddFog, 0, wx.ALL, 0 )
 		
@@ -2240,7 +2240,7 @@ class FogToolsDialogBase ( wx.Dialog ):
 		
 		self.spAddBrushRadius = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 45,-1 ), wx.SP_ARROW_KEYS, 1, 40, 5 )
 		self.spAddBrushRadius.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), 70, 90, 90, False, wx.EmptyString ) )
-		self.spAddBrushRadius.SetToolTipString( u"Adjusts the brush radius in feet.  Change scale in Program Options" )
+		self.spAddBrushRadius.SetToolTip( u"Adjusts the brush radius in feet.  Change scale in Program Options" )
 		
 		bSizer2811.Add( self.spAddBrushRadius, 0, wx.ALIGN_CENTER_VERTICAL|wx.RIGHT, 5 )
 		
@@ -2252,14 +2252,14 @@ class FogToolsDialogBase ( wx.Dialog ):
 		self.bDrawLine = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_line.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bDrawLine.SetBitmapHover( wx.Bitmap( u"artwork/draw_line_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bDrawLine.SetToolTipString( u"Add fog line" )
+		self.bDrawLine.SetToolTip( u"Add fog line" )
 		
 		bSizer282.Add( self.bDrawLine, 0, wx.ALL, 0 )
 		
 		self.bDrawMultiline = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/draw_line_segments.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bDrawMultiline.SetBitmapHover( wx.Bitmap( u"artwork/draw_line_segments_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bDrawMultiline.SetToolTipString( u"Add fog multiline" )
+		self.bDrawMultiline.SetToolTip( u"Add fog multiline" )
 		
 		bSizer282.Add( self.bDrawMultiline, 0, wx.ALL, 0 )
 		
@@ -2269,7 +2269,7 @@ class FogToolsDialogBase ( wx.Dialog ):
 		
 		self.spAddLineWidth = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 45,-1 ), wx.SP_ARROW_KEYS, 1, 20, 5 )
 		self.spAddLineWidth.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), 70, 90, 90, False, wx.EmptyString ) )
-		self.spAddLineWidth.SetToolTipString( u"Adjusts the line width in feet.  Change scale in Program Options" )
+		self.spAddLineWidth.SetToolTip( u"Adjusts the line width in feet.  Change scale in Program Options" )
 		
 		bSizer282.Add( self.spAddLineWidth, 0, wx.ALIGN_CENTER_VERTICAL|wx.RIGHT, 5 )
 		
@@ -2284,21 +2284,21 @@ class FogToolsDialogBase ( wx.Dialog ):
 		self.bRevealAll = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/fog_reveal_all.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bRevealAll.SetBitmapHover( wx.Bitmap( u"artwork/fog_reveal_all_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bRevealAll.SetToolTipString( u"Remove all fog from the map" )
+		self.bRevealAll.SetToolTip( u"Remove all fog from the map" )
 		
 		bSizer31.Add( self.bRevealAll, 0, 0, 5 )
 		
 		self.bRemoveFilledCircle = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/fog_remove_filled_circle.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bRemoveFilledCircle.SetBitmapHover( wx.Bitmap( u"artwork/fog_remove_filled_circle_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bRemoveFilledCircle.SetToolTipString( u"Remove circle fog" )
+		self.bRemoveFilledCircle.SetToolTip( u"Remove circle fog" )
 		
 		bSizer31.Add( self.bRemoveFilledCircle, 0, wx.ALL, 0 )
 		
 		self.bRemoveFilledRectangle = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/fog_remove_filled_rectangle.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bRemoveFilledRectangle.SetBitmapHover( wx.Bitmap( u"artwork/fog_remove_filled_rectangle_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bRemoveFilledRectangle.SetToolTipString( u"Remove fog rectangle" )
+		self.bRemoveFilledRectangle.SetToolTip( u"Remove fog rectangle" )
 		
 		bSizer31.Add( self.bRemoveFilledRectangle, 0, wx.ALL, 0 )
 		
@@ -2307,7 +2307,7 @@ class FogToolsDialogBase ( wx.Dialog ):
 		self.bEraseFog = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/fog_eraser.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bEraseFog.SetBitmapHover( wx.Bitmap( u"artwork/fog_eraser_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bEraseFog.SetToolTipString( u"Remove fog from the display using the current brush radius" )
+		self.bEraseFog.SetToolTip( u"Remove fog from the display using the current brush radius" )
 		
 		bSizer2812.Add( self.bEraseFog, 0, wx.ALL, 0 )
 		
@@ -2317,7 +2317,7 @@ class FogToolsDialogBase ( wx.Dialog ):
 		
 		self.spRemoveBrushRadius = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 45,-1 ), wx.SP_ARROW_KEYS, 1, 40, 5 )
 		self.spRemoveBrushRadius.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), 70, 90, 90, False, wx.EmptyString ) )
-		self.spRemoveBrushRadius.SetToolTipString( u"Adjusts the brush radius in feet.  Change scale in Program Options" )
+		self.spRemoveBrushRadius.SetToolTip( u"Adjusts the brush radius in feet.  Change scale in Program Options" )
 		
 		bSizer2812.Add( self.spRemoveBrushRadius, 0, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
@@ -2329,14 +2329,14 @@ class FogToolsDialogBase ( wx.Dialog ):
 		self.bRemoveLine = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/fog_remove_line.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bRemoveLine.SetBitmapHover( wx.Bitmap( u"artwork/fog_remove_line_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bRemoveLine.SetToolTipString( u"Remove fog in a straight line" )
+		self.bRemoveLine.SetToolTip( u"Remove fog in a straight line" )
 		
 		bSizer2821.Add( self.bRemoveLine, 0, wx.ALL, 0 )
 		
 		self.bRemoveMultiline = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/fog_remove_line_segments.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bRemoveMultiline.SetBitmapHover( wx.Bitmap( u"artwork/fog_remove_line_segments_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bRemoveMultiline.SetToolTipString( u"Remove fog in a multiline." )
+		self.bRemoveMultiline.SetToolTip( u"Remove fog in a multiline." )
 		
 		bSizer2821.Add( self.bRemoveMultiline, 0, wx.ALL, 0 )
 		
@@ -2346,7 +2346,7 @@ class FogToolsDialogBase ( wx.Dialog ):
 		
 		self.spRemoveLineWidth = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 45,-1 ), wx.SP_ARROW_KEYS, 1, 20, 5 )
 		self.spRemoveLineWidth.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), 70, 90, 90, False, wx.EmptyString ) )
-		self.spRemoveLineWidth.SetToolTipString( u"Adjusts the line width in feet.  Change scale in Program Options" )
+		self.spRemoveLineWidth.SetToolTip( u"Adjusts the line width in feet.  Change scale in Program Options" )
 		
 		bSizer2821.Add( self.spRemoveLineWidth, 0, wx.ALIGN_CENTER_VERTICAL|wx.RIGHT, 5 )
 		
@@ -2363,7 +2363,7 @@ class FogToolsDialogBase ( wx.Dialog ):
 		self.bAddLightSource = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/fog_generic_light.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		
 		self.bAddLightSource.SetBitmapHover( wx.Bitmap( u"artwork/fog_generic_light_selected.png", wx.BITMAP_TYPE_ANY ) )
-		self.bAddLightSource.SetToolTipString( u"Add a light source using the current options" )
+		self.bAddLightSource.SetToolTip( u"Add a light source using the current options" )
 		
 		bSizer371.Add( self.bAddLightSource, 0, 0, 5 )
 		
@@ -2374,7 +2374,7 @@ class FogToolsDialogBase ( wx.Dialog ):
 		bSizer370.Add( self.m_staticText164, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
 		
 		self.spLightRadius = wx.SpinCtrl( self, wx.ID_ANY, u"20", wx.DefaultPosition, wx.Size( 50,-1 ), wx.SP_ARROW_KEYS, 1, 1000, 20 )
-		self.spLightRadius.SetToolTipString( u"Radius in feet.  Change grid scale in Program Options" )
+		self.spLightRadius.SetToolTip( u"Radius in feet.  Change grid scale in Program Options" )
 		
 		bSizer370.Add( self.spLightRadius, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
 		
@@ -2382,7 +2382,7 @@ class FogToolsDialogBase ( wx.Dialog ):
 		bSizer371.Add( bSizer370, 0, wx.EXPAND, 5 )
 		
 		self.cpkLightSource = wx.ColourPickerCtrl( self, wx.ID_ANY, wx.Colour( 255, 255, 0 ), wx.DefaultPosition, wx.DefaultSize, wx.CLRP_DEFAULT_STYLE )
-		self.cpkLightSource.SetToolTipString( u"Light Source Color" )
+		self.cpkLightSource.SetToolTip( u"Light Source Color" )
 		
 		bSizer371.Add( self.cpkLightSource, 0, wx.ALIGN_CENTER_VERTICAL, 7 )
 		
@@ -2396,7 +2396,7 @@ class FogToolsDialogBase ( wx.Dialog ):
 		bSizer376.Add( self.m_staticText167, 1, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
 		
 		self.slMapFogDensity = wx.Slider( self, wx.ID_ANY, 128, 0, 255, wx.DefaultPosition, wx.DefaultSize, wx.SL_HORIZONTAL )
-		self.slMapFogDensity.SetToolTipString( u"Change density on map window" )
+		self.slMapFogDensity.SetToolTip( u"Change density on map window" )
 		
 		bSizer376.Add( self.slMapFogDensity, 2, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
@@ -2539,7 +2539,7 @@ class ProgramFoundationDialogBase ( wx.Dialog ):
 		bSizer91.Add( self.m_staticText11, 0, wx.ALL, 5 )
 		
 		self.m_hyperlink1 = wx.HyperlinkCtrl( self, wx.ID_ANY, u"Python website", u"http://www.python.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		self.m_hyperlink1.SetToolTipString( u"www.python.org" )
+		self.m_hyperlink1.SetToolTip( u"www.python.org" )
 		
 		bSizer91.Add( self.m_hyperlink1, 1, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
@@ -2556,7 +2556,7 @@ class ProgramFoundationDialogBase ( wx.Dialog ):
 		bSizer911.Add( self.m_staticText111, 0, wx.ALL, 5 )
 		
 		self.m_hyperlink2 = wx.HyperlinkCtrl( self, wx.ID_ANY, u"wxPython Website", u"http://www.wxpython.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		self.m_hyperlink2.SetToolTipString( u"www.wxpython.org" )
+		self.m_hyperlink2.SetToolTip( u"www.wxpython.org" )
 		
 		bSizer911.Add( self.m_hyperlink2, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
 		
@@ -2573,7 +2573,7 @@ class ProgramFoundationDialogBase ( wx.Dialog ):
 		bSizer9.Add( self.m_staticText1, 0, wx.ALL, 5 )
 		
 		self.m_hyperlink3 = wx.HyperlinkCtrl( self, wx.ID_ANY, u"Wingware Website", u"http://www.wingware.com", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		self.m_hyperlink3.SetToolTipString( u"www.wingware.com" )
+		self.m_hyperlink3.SetToolTip( u"www.wingware.com" )
 		
 		bSizer9.Add( self.m_hyperlink3, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
 		
@@ -2590,7 +2590,7 @@ class ProgramFoundationDialogBase ( wx.Dialog ):
 		bSizer9111.Add( self.m_staticText1111, 0, wx.ALL, 5 )
 		
 		self.m_hyperlink4 = wx.HyperlinkCtrl( self, wx.ID_ANY, u"wxFB Website", u"http://www.wxformbuilder.org", wx.DefaultPosition, wx.DefaultSize, wx.HL_DEFAULT_STYLE )
-		self.m_hyperlink4.SetToolTipString( u"www.wxformbuilder.org" )
+		self.m_hyperlink4.SetToolTip( u"www.wxformbuilder.org" )
 		
 		bSizer9111.Add( self.m_hyperlink4, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
 		
@@ -2923,7 +2923,7 @@ class ProgramOptionsDialogBase ( wx.Dialog ):
 		
 		self.cbShowGrid = wx.CheckBox( self, wx.ID_ANY, u"Show Grid", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.cbShowGrid.SetValue(True) 
-		self.cbShowGrid.SetToolTipString( u"This option can be changed by pressing CTRL+G or on the toolbar." )
+		self.cbShowGrid.SetToolTip( u"This option can be changed by pressing CTRL+G or on the toolbar." )
 		
 		GridColor_bitmap1.Add( self.cbShowGrid, 0, wx.ALIGN_CENTER_VERTICAL|wx.BOTTOM|wx.TOP, 3 )
 		
@@ -2988,7 +2988,7 @@ class ProgramOptionsDialogBase ( wx.Dialog ):
 		bSizer127.Add( self.cbDrawIntermediateLines, 0, wx.TOP, 5 )
 		
 		self.cpkIntermediateGuideColor = wx.ColourPickerCtrl( self, wx.ID_ANY, wx.Colour( 255, 0, 0 ), wx.DefaultPosition, wx.DefaultSize, wx.CLRP_DEFAULT_STYLE )
-		self.cpkIntermediateGuideColor.SetToolTipString( u"Color for intermediate lines" )
+		self.cpkIntermediateGuideColor.SetToolTip( u"Color for intermediate lines" )
 		
 		bSizer127.Add( self.cpkIntermediateGuideColor, 0, wx.BOTTOM|wx.LEFT, 5 )
 		
@@ -3002,7 +3002,7 @@ class ProgramOptionsDialogBase ( wx.Dialog ):
 		bSizer128.Add( self.m_staticText50, 0, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
 		self.spGuideInterval = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 50,-1 ), wx.SP_ARROW_KEYS, 1, 999, 5 )
-		self.spGuideInterval.SetToolTipString( u"How many minor lines between guides?" )
+		self.spGuideInterval.SetToolTip( u"How many minor lines between guides?" )
 		
 		bSizer128.Add( self.spGuideInterval, 0, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
@@ -3016,7 +3016,7 @@ class ProgramOptionsDialogBase ( wx.Dialog ):
 		bSizer377.Add( self.m_staticText167, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
 		
 		self.spGridScale = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 60,-1 ), wx.SP_ARROW_KEYS, 1, 1000, 10 )
-		self.spGridScale.SetToolTipString( u"Used by the fog-of-war and lightsources" )
+		self.spGridScale.SetToolTip( u"Used by the fog-of-war and lightsources" )
 		
 		bSizer377.Add( self.spGridScale, 0, wx.ALL, 5 )
 		
@@ -3069,7 +3069,7 @@ class ProgramOptionsDialogBase ( wx.Dialog ):
 		
 		self.cbOpenToLastFolder = wx.CheckBox( self, wx.ID_ANY, u"Remember last folder when opening files?", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.cbOpenToLastFolder.SetValue(True) 
-		self.cbOpenToLastFolder.SetToolTipString( u"When checked, this option will remember the folder where you opened a file.  Otherwise, the maps folder is the default." )
+		self.cbOpenToLastFolder.SetToolTip( u"When checked, this option will remember the folder where you opened a file.  Otherwise, the maps folder is the default." )
 		
 		szProgramOptions.Add( self.cbOpenToLastFolder, 0, wx.BOTTOM|wx.TOP, 5 )
 		
@@ -3157,7 +3157,7 @@ class ProgramOptionsDialogBase ( wx.Dialog ):
 		bSizer375.Add( self.m_staticText168, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
 		
 		self.cpkOutlineColor = wx.ColourPickerCtrl( self, wx.ID_ANY, wx.Colour( 255, 128, 0 ), wx.DefaultPosition, wx.DefaultSize, wx.CLRP_DEFAULT_STYLE )
-		self.cpkOutlineColor.SetToolTipString( u"When active, this color will outline tiles on the map window, and on printed maps." )
+		self.cpkOutlineColor.SetToolTip( u"When active, this color will outline tiles on the map window, and on printed maps." )
 		
 		bSizer375.Add( self.cpkOutlineColor, 0, wx.ALL, 5 )
 		
@@ -3196,13 +3196,13 @@ class ProgramOptionsDialogBase ( wx.Dialog ):
 		
 		self.rbDualDisplayTileWindow = wx.RadioButton( self, wx.ID_ANY, u"Display both tile sides in tile window", wx.DefaultPosition, wx.DefaultSize, wx.RB_GROUP )
 		self.rbDualDisplayTileWindow.SetValue( True ) 
-		self.rbDualDisplayTileWindow.SetToolTipString( u"Both sides of a tile are displayed in the tile window.  Either image can drag onto the map window." )
+		self.rbDualDisplayTileWindow.SetToolTip( u"Both sides of a tile are displayed in the tile window.  Either image can drag onto the map window." )
 		
 		bSizer25.Add( self.rbDualDisplayTileWindow, 0, wx.TOP|wx.BOTTOM, 4 )
 		
 		self.rbUseHoverOption = wx.RadioButton( self, wx.ID_ANY, u"Display reverse side on mouse hover", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.rbUseHoverOption.SetValue( True ) 
-		self.rbUseHoverOption.SetToolTipString( u"Displays the reverse side of the tile when the mouse is held over for a short time." )
+		self.rbUseHoverOption.SetToolTip( u"Displays the reverse side of the tile when the mouse is held over for a short time." )
 		
 		bSizer25.Add( self.rbUseHoverOption, 0, wx.TOP|wx.BOTTOM, 2 )
 		
@@ -3213,7 +3213,7 @@ class ProgramOptionsDialogBase ( wx.Dialog ):
 		bSizer26.Add( self.stHoverText, 0, wx.ALIGN_CENTER_VERTICAL, 0 )
 		
 		self.HoverTimeInterval = wx.SpinCtrl( self, wx.ID_ANY, u"500", wx.DefaultPosition, wx.Size( 65, -1 ), wx.SP_ARROW_KEYS, 0, 10000, 500 )
-		self.HoverTimeInterval.SetToolTipString( u"Changes the delay before the reverse side image is displayed.  (1000 ms = 1 second)" )
+		self.HoverTimeInterval.SetToolTip( u"Changes the delay before the reverse side image is displayed.  (1000 ms = 1 second)" )
 		
 		bSizer26.Add( self.HoverTimeInterval, 0, 0, 0 )
 		
@@ -3225,7 +3225,7 @@ class ProgramOptionsDialogBase ( wx.Dialog ):
 		bSizer25.Add( self.cbOutlineOnHover, 0, wx.TOP, 5 )
 		
 		self.cbReverseMouseWheel = wx.CheckBox( self, wx.ID_ANY, u"Reverse mouse wheel for zoom.", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbReverseMouseWheel.SetToolTipString( u"Check to reverse the mouse wheel for zoom in and out." )
+		self.cbReverseMouseWheel.SetToolTip( u"Check to reverse the mouse wheel for zoom in and out." )
 		
 		bSizer25.Add( self.cbReverseMouseWheel, 0, wx.TOP, 5 )
 		
@@ -3275,7 +3275,7 @@ class ProgramOptionsDialogBase ( wx.Dialog ):
 		
 		self.cbReadSRDFiles = wx.CheckBox( self, wx.ID_ANY, u"Read d20 SRD files on startup?", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.cbReadSRDFiles.SetValue(True) 
-		self.cbReadSRDFiles.SetToolTipString( u"Read the d20 System Reference Document files when starting PyMapper?" )
+		self.cbReadSRDFiles.SetToolTip( u"Read the d20 System Reference Document files when starting PyMapper?" )
 		
 		sbSizer90.Add( self.cbReadSRDFiles, 0, wx.TOP, 5 )
 		
@@ -3290,7 +3290,7 @@ class ProgramOptionsDialogBase ( wx.Dialog ):
 		
 		self.cbHighlightIcons = wx.CheckBox( self, wx.ID_ANY, u"Highlight icons on map window?", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.cbHighlightIcons.SetValue(True) 
-		self.cbHighlightIcons.SetToolTipString( u"Draws a yellow circle behind icons on the map window to improve visibility." )
+		self.cbHighlightIcons.SetToolTip( u"Draws a yellow circle behind icons on the map window to improve visibility." )
 		
 		sbSizer91.Add( self.cbHighlightIcons, 0, wx.TOP, 10 )
 		
@@ -3408,13 +3408,13 @@ class BackgroundRegistrationDialogBase ( wx.Dialog ):
 		
 		self.bbZoomIn = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/ZoomIn.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		self.bbZoomIn.SetDefault() 
-		self.bbZoomIn.SetToolTipString( u"Zoom In" )
+		self.bbZoomIn.SetToolTip( u"Zoom In" )
 		
 		bSizer222.Add( self.bbZoomIn, 0, wx.RIGHT, 5 )
 		
 		self.bbZoomOut = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/ZoomOut.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		self.bbZoomOut.SetDefault() 
-		self.bbZoomOut.SetToolTipString( u"Zoom Out" )
+		self.bbZoomOut.SetToolTip( u"Zoom Out" )
 		
 		bSizer222.Add( self.bbZoomOut, 0, wx.LEFT, 5 )
 		
@@ -3663,7 +3663,7 @@ class PrintSetupDialogBase ( wx.Dialog ):
 		self.bPageSetup.SetFont( wx.Font( 8, 74, 90, 92, False, "Tahoma" ) )
 		self.bPageSetup.SetForegroundColour( wx.Colour( 255, 255, 255 ) )
 		self.bPageSetup.SetBackgroundColour( wx.Colour( 139, 1, 214 ) )
-		self.bPageSetup.SetToolTipString( u"Press to see the print job preview" )
+		self.bPageSetup.SetToolTip( u"Press to see the print job preview" )
 		
 		bChangePrinter1.Add( self.bPageSetup, 0, wx.TOP, 5 )
 		
@@ -4125,13 +4125,13 @@ class CombatTrackingBase ( wx.Dialog ):
 		
 		self.bNextRound = wx.Button( self, wx.ID_ANY, u"Next Round", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bNextRound.SetBackgroundColour( wx.Colour( 255, 128, 0 ) )
-		self.bNextRound.SetToolTipString( u"Reset the actions, and advance the round counter" )
+		self.bNextRound.SetToolTip( u"Reset the actions, and advance the round counter" )
 		
 		bSizer468.Add( self.bNextRound, 0, 0, 2 )
 		
 		self.bResetRound = wx.Button( self, wx.ID_ANY, u"Reset Round", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bResetRound.SetBackgroundColour( wx.Colour( 255, 128, 0 ) )
-		self.bResetRound.SetToolTipString( u"Reset the round counter to 1" )
+		self.bResetRound.SetToolTip( u"Reset the round counter to 1" )
 		
 		bSizer468.Add( self.bResetRound, 0, 0, 2 )
 		
@@ -4204,30 +4204,30 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer1 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead1 = wx.CheckBox( self, p1Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead1.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead1.SetToolTip( u"Dead?" )
 		
 		szPlayer1.Add( self.cbPlayerDead1, 0, wx.ALL, 5 )
 		
 		self.bActivateP1 = wx.Button( self, p1Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP1.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP1.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP1.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer1.Add( self.bActivateP1, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP1 = wx.SpinCtrl( self, p1HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP1.SetToolTipString( u"HP" )
+		self.spHitPointsP1.SetToolTip( u"HP" )
 		
 		szPlayer1.Add( self.spHitPointsP1, 0, wx.ALL, 2 )
 		
 		cbPlayer1Choices = []
 		self.cbPlayer1 = wx.ComboBox( self, p1Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer1Choices, 0 )
-		self.cbPlayer1.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer1.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer1.Add( self.cbPlayer1, 0, wx.ALL, 2 )
 		
 		self.txInitiative1 = wx.TextCtrl( self, p1Init, u"0", wx.DefaultPosition, wx.Size( 30,-1 ), 0 )
 		self.txInitiative1.SetMaxLength( 0 ) 
-		self.txInitiative1.SetToolTipString( u"Initiative for this player" )
+		self.txInitiative1.SetToolTip( u"Initiative for this player" )
 		
 		szPlayer1.Add( self.txInitiative1, 0, wx.ALL, 2 )
 		
@@ -4253,24 +4253,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer2 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead2 = wx.CheckBox( self, p2Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead2.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead2.SetToolTip( u"Dead?" )
 		
 		szPlayer2.Add( self.cbPlayerDead2, 0, wx.ALL, 5 )
 		
 		self.bActivateP2 = wx.Button( self, p2Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP2.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP2.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP2.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer2.Add( self.bActivateP2, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP2 = wx.SpinCtrl( self, p2HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP2.SetToolTipString( u"HP" )
+		self.spHitPointsP2.SetToolTip( u"HP" )
 		
 		szPlayer2.Add( self.spHitPointsP2, 0, wx.ALL, 2 )
 		
 		cbPlayer2Choices = []
 		self.cbPlayer2 = wx.ComboBox( self, p2Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer2Choices, 0 )
-		self.cbPlayer2.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer2.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer2.Add( self.cbPlayer2, 0, wx.ALL, 2 )
 		
@@ -4300,24 +4300,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer3 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead3 = wx.CheckBox( self, p3Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead3.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead3.SetToolTip( u"Dead?" )
 		
 		szPlayer3.Add( self.cbPlayerDead3, 0, wx.ALL, 5 )
 		
 		self.bActivateP3 = wx.Button( self, p3Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP3.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP3.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP3.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer3.Add( self.bActivateP3, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP3 = wx.SpinCtrl( self, p3HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP3.SetToolTipString( u"HP" )
+		self.spHitPointsP3.SetToolTip( u"HP" )
 		
 		szPlayer3.Add( self.spHitPointsP3, 0, wx.ALL, 2 )
 		
 		cbPlayer3Choices = []
 		self.cbPlayer3 = wx.ComboBox( self, p3Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer3Choices, 0 )
-		self.cbPlayer3.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer3.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer3.Add( self.cbPlayer3, 0, wx.ALL, 2 )
 		
@@ -4347,24 +4347,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer4 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead4 = wx.CheckBox( self, p4Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead4.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead4.SetToolTip( u"Dead?" )
 		
 		szPlayer4.Add( self.cbPlayerDead4, 0, wx.ALL, 5 )
 		
 		self.bActivateP4 = wx.Button( self, p4Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP4.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP4.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP4.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer4.Add( self.bActivateP4, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP4 = wx.SpinCtrl( self, p4HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP4.SetToolTipString( u"HP" )
+		self.spHitPointsP4.SetToolTip( u"HP" )
 		
 		szPlayer4.Add( self.spHitPointsP4, 0, wx.ALL, 2 )
 		
 		cbPlayer4Choices = []
 		self.cbPlayer4 = wx.ComboBox( self, p4Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer4Choices, 0 )
-		self.cbPlayer4.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer4.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer4.Add( self.cbPlayer4, 0, wx.ALL, 2 )
 		
@@ -4394,24 +4394,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer5 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead5 = wx.CheckBox( self, p5Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead5.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead5.SetToolTip( u"Dead?" )
 		
 		szPlayer5.Add( self.cbPlayerDead5, 0, wx.ALL, 5 )
 		
 		self.bActivateP5 = wx.Button( self, p5Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP5.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP5.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP5.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer5.Add( self.bActivateP5, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP5 = wx.SpinCtrl( self, p5HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP5.SetToolTipString( u"HP" )
+		self.spHitPointsP5.SetToolTip( u"HP" )
 		
 		szPlayer5.Add( self.spHitPointsP5, 0, wx.ALL, 2 )
 		
 		cbPlayer5Choices = []
 		self.cbPlayer5 = wx.ComboBox( self, p5Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer5Choices, 0 )
-		self.cbPlayer5.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer5.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer5.Add( self.cbPlayer5, 0, wx.ALL, 2 )
 		
@@ -4441,24 +4441,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer6 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead6 = wx.CheckBox( self, p6Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead6.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead6.SetToolTip( u"Dead?" )
 		
 		szPlayer6.Add( self.cbPlayerDead6, 0, wx.ALL, 5 )
 		
 		self.bActivateP6 = wx.Button( self, p6Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP6.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP6.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP6.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer6.Add( self.bActivateP6, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP6 = wx.SpinCtrl( self, p6HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP6.SetToolTipString( u"HP" )
+		self.spHitPointsP6.SetToolTip( u"HP" )
 		
 		szPlayer6.Add( self.spHitPointsP6, 0, wx.ALL, 2 )
 		
 		cbPlayer6Choices = []
 		self.cbPlayer6 = wx.ComboBox( self, p6Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer6Choices, 0 )
-		self.cbPlayer6.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer6.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer6.Add( self.cbPlayer6, 0, wx.ALL, 2 )
 		
@@ -4488,24 +4488,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer7 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead7 = wx.CheckBox( self, p7Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead7.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead7.SetToolTip( u"Dead?" )
 		
 		szPlayer7.Add( self.cbPlayerDead7, 0, wx.ALL, 5 )
 		
 		self.bActivateP7 = wx.Button( self, p7Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP7.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP7.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP7.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer7.Add( self.bActivateP7, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP7 = wx.SpinCtrl( self, p7HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP7.SetToolTipString( u"HP" )
+		self.spHitPointsP7.SetToolTip( u"HP" )
 		
 		szPlayer7.Add( self.spHitPointsP7, 0, wx.ALL, 2 )
 		
 		cbPlayer7Choices = []
 		self.cbPlayer7 = wx.ComboBox( self, p7Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer7Choices, 0 )
-		self.cbPlayer7.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer7.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer7.Add( self.cbPlayer7, 0, wx.ALL, 2 )
 		
@@ -4535,24 +4535,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer8 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead8 = wx.CheckBox( self, p8Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead8.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead8.SetToolTip( u"Dead?" )
 		
 		szPlayer8.Add( self.cbPlayerDead8, 0, wx.ALL, 5 )
 		
 		self.bActivateP8 = wx.Button( self, p8Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP8.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP8.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP8.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer8.Add( self.bActivateP8, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP8 = wx.SpinCtrl( self, p8HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP8.SetToolTipString( u"HP" )
+		self.spHitPointsP8.SetToolTip( u"HP" )
 		
 		szPlayer8.Add( self.spHitPointsP8, 0, wx.ALL, 2 )
 		
 		cbPlayer8Choices = []
 		self.cbPlayer8 = wx.ComboBox( self, p8Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer8Choices, 0 )
-		self.cbPlayer8.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer8.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer8.Add( self.cbPlayer8, 0, wx.ALL, 2 )
 		
@@ -4582,24 +4582,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer9 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead9 = wx.CheckBox( self, p9Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead9.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead9.SetToolTip( u"Dead?" )
 		
 		szPlayer9.Add( self.cbPlayerDead9, 0, wx.ALL, 5 )
 		
 		self.bActivateP9 = wx.Button( self, p9Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP9.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP9.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP9.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer9.Add( self.bActivateP9, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP9 = wx.SpinCtrl( self, p9HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP9.SetToolTipString( u"HP" )
+		self.spHitPointsP9.SetToolTip( u"HP" )
 		
 		szPlayer9.Add( self.spHitPointsP9, 0, wx.ALL, 2 )
 		
 		cbPlayer9Choices = []
 		self.cbPlayer9 = wx.ComboBox( self, p9Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer9Choices, 0 )
-		self.cbPlayer9.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer9.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer9.Add( self.cbPlayer9, 0, wx.ALL, 2 )
 		
@@ -4629,24 +4629,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer10 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead10 = wx.CheckBox( self, p10Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead10.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead10.SetToolTip( u"Dead?" )
 		
 		szPlayer10.Add( self.cbPlayerDead10, 0, wx.ALL, 5 )
 		
 		self.bActivateP10 = wx.Button( self, p10Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP10.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP10.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP10.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer10.Add( self.bActivateP10, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP10 = wx.SpinCtrl( self, p10HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP10.SetToolTipString( u"HP" )
+		self.spHitPointsP10.SetToolTip( u"HP" )
 		
 		szPlayer10.Add( self.spHitPointsP10, 0, wx.ALL, 2 )
 		
 		cbPlayer10Choices = []
 		self.cbPlayer10 = wx.ComboBox( self, p10Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer10Choices, 0 )
-		self.cbPlayer10.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer10.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer10.Add( self.cbPlayer10, 0, wx.ALL, 2 )
 		
@@ -4676,24 +4676,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer11 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead11 = wx.CheckBox( self, p11Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead11.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead11.SetToolTip( u"Dead?" )
 		
 		szPlayer11.Add( self.cbPlayerDead11, 0, wx.ALL, 5 )
 		
 		self.bActivateP11 = wx.Button( self, p11Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP11.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP11.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP11.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer11.Add( self.bActivateP11, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP11 = wx.SpinCtrl( self, p11HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP11.SetToolTipString( u"HP" )
+		self.spHitPointsP11.SetToolTip( u"HP" )
 		
 		szPlayer11.Add( self.spHitPointsP11, 0, wx.ALL, 2 )
 		
 		cbPlayer11Choices = []
 		self.cbPlayer11 = wx.ComboBox( self, p11Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer11Choices, 0 )
-		self.cbPlayer11.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer11.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer11.Add( self.cbPlayer11, 0, wx.ALL, 2 )
 		
@@ -4723,24 +4723,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer12 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead12 = wx.CheckBox( self, p12Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead12.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead12.SetToolTip( u"Dead?" )
 		
 		szPlayer12.Add( self.cbPlayerDead12, 0, wx.ALL, 5 )
 		
 		self.bActivateP12 = wx.Button( self, p12Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP12.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP12.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP12.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer12.Add( self.bActivateP12, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP12 = wx.SpinCtrl( self, p12HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP12.SetToolTipString( u"HP" )
+		self.spHitPointsP12.SetToolTip( u"HP" )
 		
 		szPlayer12.Add( self.spHitPointsP12, 0, wx.ALL, 2 )
 		
 		cbPlayer12Choices = []
 		self.cbPlayer12 = wx.ComboBox( self, p12Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer12Choices, 0 )
-		self.cbPlayer12.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer12.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer12.Add( self.cbPlayer12, 0, wx.ALL, 2 )
 		
@@ -4770,24 +4770,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer13 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead13 = wx.CheckBox( self, p13Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead13.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead13.SetToolTip( u"Dead?" )
 		
 		szPlayer13.Add( self.cbPlayerDead13, 0, wx.ALL, 5 )
 		
 		self.bActivateP13 = wx.Button( self, p13Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP13.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP13.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP13.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer13.Add( self.bActivateP13, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP13 = wx.SpinCtrl( self, p13HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP13.SetToolTipString( u"HP" )
+		self.spHitPointsP13.SetToolTip( u"HP" )
 		
 		szPlayer13.Add( self.spHitPointsP13, 0, wx.ALL, 2 )
 		
 		cbPlayer13Choices = []
 		self.cbPlayer13 = wx.ComboBox( self, p13Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer13Choices, 0 )
-		self.cbPlayer13.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer13.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer13.Add( self.cbPlayer13, 0, wx.ALL, 2 )
 		
@@ -4817,24 +4817,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer14 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead14 = wx.CheckBox( self, p14Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead14.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead14.SetToolTip( u"Dead?" )
 		
 		szPlayer14.Add( self.cbPlayerDead14, 0, wx.ALL, 5 )
 		
 		self.bActivateP14 = wx.Button( self, p14Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP14.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP14.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP14.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer14.Add( self.bActivateP14, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP14 = wx.SpinCtrl( self, p14HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP14.SetToolTipString( u"HP" )
+		self.spHitPointsP14.SetToolTip( u"HP" )
 		
 		szPlayer14.Add( self.spHitPointsP14, 0, wx.ALL, 2 )
 		
 		cbPlayer14Choices = []
 		self.cbPlayer14 = wx.ComboBox( self, p14Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer14Choices, 0 )
-		self.cbPlayer14.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer14.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer14.Add( self.cbPlayer14, 0, wx.ALL, 2 )
 		
@@ -4864,24 +4864,24 @@ class CombatTrackingBase ( wx.Dialog ):
 		szPlayer15 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbPlayerDead15 = wx.CheckBox( self, p15Dead, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbPlayerDead15.SetToolTipString( u"Dead?" )
+		self.cbPlayerDead15.SetToolTip( u"Dead?" )
 		
 		szPlayer15.Add( self.cbPlayerDead15, 0, wx.ALL, 5 )
 		
 		self.bActivateP15 = wx.Button( self, p15Action, wx.EmptyString, wx.DefaultPosition, wx.Size( 20,20 ), wx.NO_BORDER )
 		self.bActivateP15.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bActivateP15.SetToolTipString( u"Green=Ready\nRed=Acted\nBlack=Dead" )
+		self.bActivateP15.SetToolTip( u"Green=Ready\nRed=Acted\nBlack=Dead" )
 		
 		szPlayer15.Add( self.bActivateP15, 0, wx.BOTTOM|wx.TOP, 2 )
 		
 		self.spHitPointsP15 = wx.SpinCtrl( self, p15HP, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 100 )
-		self.spHitPointsP15.SetToolTipString( u"HP" )
+		self.spHitPointsP15.SetToolTip( u"HP" )
 		
 		szPlayer15.Add( self.spHitPointsP15, 0, wx.ALL, 2 )
 		
 		cbPlayer15Choices = []
 		self.cbPlayer15 = wx.ComboBox( self, p15Name, u"Combo!", wx.DefaultPosition, wx.Size( 125,-1 ), cbPlayer15Choices, 0 )
-		self.cbPlayer15.SetToolTipString( u"PC/NPC Name" )
+		self.cbPlayer15.SetToolTip( u"PC/NPC Name" )
 		
 		szPlayer15.Add( self.cbPlayer15, 0, wx.ALL, 2 )
 		
@@ -4914,19 +4914,19 @@ class CombatTrackingBase ( wx.Dialog ):
 		
 		self.bAddNames = wx.Button( self, wx.ID_ANY, u"Add Names...", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bAddNames.SetBackgroundColour( wx.Colour( 255, 128, 0 ) )
-		self.bAddNames.SetToolTipString( u"Add names to the selection list" )
+		self.bAddNames.SetToolTip( u"Add names to the selection list" )
 		
 		bSizer133.Add( self.bAddNames, 0, 0, 2 )
 		
 		self.bSortInitiative = wx.Button( self, wx.ID_ANY, u"Sort Initiative", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bSortInitiative.SetBackgroundColour( wx.Colour( 255, 128, 0 ) )
-		self.bSortInitiative.SetToolTipString( u"Sort the players by initiative ranking" )
+		self.bSortInitiative.SetToolTip( u"Sort the players by initiative ranking" )
 		
 		bSizer133.Add( self.bSortInitiative, 0, wx.ALL, 2 )
 		
 		self.bResetAll = wx.Button( self, wx.ID_ANY, u"Reset All", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bResetAll.SetBackgroundColour( wx.Colour( 255, 128, 0 ) )
-		self.bResetAll.SetToolTipString( u"Reset the actions, HP, round counter, and status to default values " )
+		self.bResetAll.SetToolTip( u"Reset the actions, HP, round counter, and status to default values " )
 		
 		bSizer133.Add( self.bResetAll, 0, wx.ALL, 2 )
 		
@@ -4951,7 +4951,7 @@ class CombatTrackingBase ( wx.Dialog ):
 		
 		self.cbSaveData = wx.CheckBox( self, wx.ID_ANY, u"Save data?", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.cbSaveData.SetValue(True) 
-		self.cbSaveData.SetToolTipString( u"Save the state of all items if checked" )
+		self.cbSaveData.SetToolTip( u"Save the state of all items if checked" )
 		
 		bSizer118.Add( self.cbSaveData, 0, wx.ALL, 5 )
 		
@@ -5197,7 +5197,7 @@ class TilesetBrowserBase ( wx.Dialog ):
 		sbSizer201.Add( self.rbImportToNewPage, 0, wx.TOP|wx.BOTTOM, 3 )
 		
 		self.bChangePageAssignments = wx.Button( self, wx.ID_ANY, u"Change Page Assignments...", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.bChangePageAssignments.SetToolTipString( u"Select which pages tilesets appear on (for loaded tilesets only, not queued)" )
+		self.bChangePageAssignments.SetToolTip( u"Select which pages tilesets appear on (for loaded tilesets only, not queued)" )
 		
 		sbSizer201.Add( self.bChangePageAssignments, 0, wx.ALL, 5 )
 		
@@ -5362,22 +5362,22 @@ class TilesetPageManagerDialogBase_UX ( wx.Dialog ):
 		bSizer304 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.bAddAllTilesetsToPage = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/AddToPageAll.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
-		self.bAddAllTilesetsToPage.SetToolTipString( u"Click to add all tilesets to this page" )
+		self.bAddAllTilesetsToPage.SetToolTip( u"Click to add all tilesets to this page" )
 		
 		bSizer304.Add( self.bAddAllTilesetsToPage, 0, wx.BOTTOM, 0 )
 		
 		self.bAddTilesetToPage = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/AddToPage.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
-		self.bAddTilesetToPage.SetToolTipString( u"Click to add the selected tileset to this page" )
+		self.bAddTilesetToPage.SetToolTip( u"Click to add the selected tileset to this page" )
 		
 		bSizer304.Add( self.bAddTilesetToPage, 0, wx.BOTTOM, 5 )
 		
 		self.bRemoveTilesetFromPage = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/RemoveFromPage.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
-		self.bRemoveTilesetFromPage.SetToolTipString( u"Click to remove the selected tileset from this page" )
+		self.bRemoveTilesetFromPage.SetToolTip( u"Click to remove the selected tileset from this page" )
 		
 		bSizer304.Add( self.bRemoveTilesetFromPage, 0, wx.TOP, 5 )
 		
 		self.bRemoveAllTilesetsFromPage = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/RemoveFromPageAll.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
-		self.bRemoveAllTilesetsFromPage.SetToolTipString( u"Click to remove all tilesets from this page" )
+		self.bRemoveAllTilesetsFromPage.SetToolTip( u"Click to remove all tilesets from this page" )
 		
 		bSizer304.Add( self.bRemoveAllTilesetsFromPage, 0, wx.ALL, 0 )
 		
@@ -5389,7 +5389,7 @@ class TilesetPageManagerDialogBase_UX ( wx.Dialog ):
 		cbxPagesChoices = []
 		self.cbxPages = wx.Choice( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, cbxPagesChoices, 0 )
 		self.cbxPages.SetSelection( 0 )
-		self.cbxPages.SetToolTipString( u"Select the page to assign tilesets to." )
+		self.cbxPages.SetToolTip( u"Select the page to assign tilesets to." )
 		
 		sbSizer69.Add( self.cbxPages, 0, wx.ALL|wx.EXPAND, 5 )
 		
@@ -5684,7 +5684,7 @@ class SymbolManagerDialogCore ( wx.Dialog ):
 		bSizer146.Add( self.m_staticText61, 0, wx.ALIGN_CENTER_VERTICAL|wx.LEFT, 5 )
 		
 		self.spMarkerSize = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 45,-1 ), wx.SP_ARROW_KEYS, 1, 20, 1 )
-		self.spMarkerSize.SetToolTipString( u"Set the height and width of the marker" )
+		self.spMarkerSize.SetToolTip( u"Set the height and width of the marker" )
 		
 		bSizer146.Add( self.spMarkerSize, 0, wx.ALL, 5 )
 		
@@ -5879,22 +5879,22 @@ class SecondaryMapDialogBase ( wx.Dialog ):
 		bSizer146.Add( self.bUpdateFTP, 0, 0, 3 )
 		
 		self.bZoomIn = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/ZoomIn.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
-		self.bZoomIn.SetToolTipString( u"Zoom In" )
+		self.bZoomIn.SetToolTip( u"Zoom In" )
 		
 		bSizer146.Add( self.bZoomIn, 0, wx.LEFT, 5 )
 		
 		self.bZoomOut = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/ZoomOut.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
-		self.bZoomOut.SetToolTipString( u"Zoom Out" )
+		self.bZoomOut.SetToolTip( u"Zoom Out" )
 		
 		bSizer146.Add( self.bZoomOut, 0, 0, 3 )
 		
 		self.bViewAll = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/select_all.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
-		self.bViewAll.SetToolTipString( u"Reset Zoom" )
+		self.bViewAll.SetToolTip( u"Reset Zoom" )
 		
 		bSizer146.Add( self.bViewAll, 0, 0, 3 )
 		
 		self.bSaveImage = wx.Button( self, wx.ID_ANY, u"Save Current Image...", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.bSaveImage.SetToolTipString( u"Save Current Image" )
+		self.bSaveImage.SetToolTip( u"Save Current Image" )
 		
 		bSizer146.Add( self.bSaveImage, 0, wx.LEFT, 5 )
 		
@@ -5992,22 +5992,22 @@ class IsometricMapDialogBase ( wx.Dialog ):
 		bSizer146.Add( self.bUpdateImage, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 3 )
 		
 		self.bZoomIn = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/ZoomIn.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
-		self.bZoomIn.SetToolTipString( u"Zoom In" )
+		self.bZoomIn.SetToolTip( u"Zoom In" )
 		
 		bSizer146.Add( self.bZoomIn, 0, wx.ALL, 5 )
 		
 		self.bZoomOut = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/ZoomOut.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
-		self.bZoomOut.SetToolTipString( u"Zoom Out" )
+		self.bZoomOut.SetToolTip( u"Zoom Out" )
 		
 		bSizer146.Add( self.bZoomOut, 0, wx.ALL, 5 )
 		
 		self.bViewAll = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/select_all.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
-		self.bViewAll.SetToolTipString( u"Reset Zoom" )
+		self.bViewAll.SetToolTip( u"Reset Zoom" )
 		
 		bSizer146.Add( self.bViewAll, 0, wx.ALL, 5 )
 		
 		self.bSaveImage = wx.Button( self, wx.ID_ANY, u"Save Current Image...", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.bSaveImage.SetToolTipString( u"Save Current Image" )
+		self.bSaveImage.SetToolTip( u"Save Current Image" )
 		
 		bSizer146.Add( self.bSaveImage, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 3 )
 		
@@ -6206,7 +6206,7 @@ class FilterTagsDialogBase ( wx.Dialog ):
 		wx.Dialog.__init__ ( self, parent, id = wx.ID_ANY, title = u"Filter Tags", pos = wx.DefaultPosition, size = wx.Size( -1,-1 ), style = wx.DEFAULT_DIALOG_STYLE|wx.RESIZE_BORDER )
 		
 		self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
-		self.SetToolTipString( u"Select Filter Tags for Tiles" )
+		self.SetToolTip( u"Select Filter Tags for Tiles" )
 		
 		bSizer38 = wx.BoxSizer( wx.VERTICAL )
 		
@@ -6578,7 +6578,7 @@ class TilePropertiesDialogBase ( wx.Dialog ):
 		self.ID_OK.SetFont( wx.Font( 8, 74, 90, 92, False, "Tahoma" ) )
 		self.ID_OK.SetForegroundColour( wx.Colour( 255, 255, 0 ) )
 		self.ID_OK.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.ID_OK.SetToolTipString( u"Click to dismiss info" )
+		self.ID_OK.SetToolTip( u"Click to dismiss info" )
 		
 		ID_OK2.Add( self.ID_OK, 0, wx.ALIGN_RIGHT, 0 )
 		
@@ -6858,7 +6858,7 @@ class TextOptionsDialogBase ( wx.Dialog ):
 		bSizer55.Add( self.rbOpaque, 0, wx.RIGHT|wx.ALIGN_CENTRE_VERTICAL, 4 )
 		
 		self.cpkBackgroundColor = wx.ColourPickerCtrl( self, wx.ID_ANY, wx.Colour( 0, 0, 0 ), wx.DefaultPosition, wx.DefaultSize, wx.CLRP_DEFAULT_STYLE )
-		self.cpkBackgroundColor.SetToolTipString( u"Click to change the background color" )
+		self.cpkBackgroundColor.SetToolTip( u"Click to change the background color" )
 		
 		bSizer55.Add( self.cpkBackgroundColor, 0, 0, 5 )
 		
@@ -6874,7 +6874,7 @@ class TextOptionsDialogBase ( wx.Dialog ):
 		
 		self.bChangeFont = wx.Button( self, wx.ID_ANY, u"Change Font...", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bChangeFont.SetDefault() 
-		self.bChangeFont.SetToolTipString( u"Change font, size, and color of text" )
+		self.bChangeFont.SetToolTip( u"Change font, size, and color of text" )
 		
 		bSizer364.Add( self.bChangeFont, 0, wx.ALL|wx.ALIGN_CENTRE_VERTICAL, 5 )
 		
@@ -6885,7 +6885,7 @@ class TextOptionsDialogBase ( wx.Dialog ):
 		bSizer365.Add( self.m_staticText163, 0, wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL, 5 )
 		
 		self.cpkTextColor = wx.ColourPickerCtrl( self, wx.ID_ANY, wx.BLACK, wx.DefaultPosition, wx.DefaultSize, wx.CLRP_DEFAULT_STYLE )
-		self.cpkTextColor.SetToolTipString( u"Click to change the text color." )
+		self.cpkTextColor.SetToolTip( u"Click to change the text color." )
 		
 		bSizer365.Add( self.cpkTextColor, 0, 0, 5 )
 		
@@ -7122,7 +7122,7 @@ class LayerDisplayDialogBase ( wx.Dialog ):
 		
 		self.slOpacity = wx.Slider( self, wx.ID_ANY, 100, 0, 100, wx.DefaultPosition, wx.DefaultSize, wx.SL_HORIZONTAL|wx.SL_LABELS )
 		self.slOpacity.SetBackgroundColour( wx.Colour( 192, 192, 192 ) )
-		self.slOpacity.SetToolTipString( u"Change layer opacity.  0=Transparent, 100=Opaque" )
+		self.slOpacity.SetToolTip( u"Change layer opacity.  0=Transparent, 100=Opaque" )
 		
 		bSizer642.Add( self.slOpacity, 0, wx.EXPAND, 5 )
 		
@@ -7135,19 +7135,19 @@ class LayerDisplayDialogBase ( wx.Dialog ):
 		
 		self.bAddLayer = wx.Button( self, wx.ID_ANY, u"Add Layer...", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bAddLayer.SetDefault() 
-		self.bAddLayer.SetToolTipString( u"Click to add another layer to the map" )
+		self.bAddLayer.SetToolTip( u"Click to add another layer to the map" )
 		
 		bSizer644.Add( self.bAddLayer, 0, wx.EXPAND, 0 )
 		
 		self.bRenameLayer = wx.Button( self, wx.ID_ANY, u"Rename Layer...", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bRenameLayer.SetDefault() 
-		self.bRenameLayer.SetToolTipString( u"Click to rename active layer..." )
+		self.bRenameLayer.SetToolTip( u"Click to rename active layer..." )
 		
 		bSizer644.Add( self.bRenameLayer, 0, wx.EXPAND, 0 )
 		
 		self.bDeleteLayer = wx.Button( self, wx.ID_ANY, u"Delete Layer...", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bDeleteLayer.SetDefault() 
-		self.bDeleteLayer.SetToolTipString( u"Click to delete layer.  Base layer cannot be deleted." )
+		self.bDeleteLayer.SetToolTip( u"Click to delete layer.  Base layer cannot be deleted." )
 		
 		bSizer644.Add( self.bDeleteLayer, 0, wx.BOTTOM|wx.EXPAND, 3 )
 		
@@ -7647,19 +7647,19 @@ class TrapsDialogBase ( wx.Dialog ):
 		
 		self.rbMechanicalTrap = wx.RadioButton( self, wx.ID_ANY, u"Mechanical Trap", wx.DefaultPosition, wx.DefaultSize, wx.RB_GROUP )
 		self.rbMechanicalTrap.SetValue( True ) 
-		self.rbMechanicalTrap.SetToolTipString( u"Trap is mechanical in nature." )
+		self.rbMechanicalTrap.SetToolTip( u"Trap is mechanical in nature." )
 		
 		sbSizer39.Add( self.rbMechanicalTrap, 0, 0, 0 )
 		
 		self.rbMagicTrap = wx.RadioButton( self, wx.ID_ANY, u"Magic Trap", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.rbMagicTrap.SetValue( True ) 
-		self.rbMagicTrap.SetToolTipString( u"Trap is magical in nature." )
+		self.rbMagicTrap.SetToolTip( u"Trap is magical in nature." )
 		
 		sbSizer39.Add( self.rbMagicTrap, 0, 0, 0 )
 		
 		self.rbOtherTrap = wx.RadioButton( self, wx.ID_ANY, u"Other", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.rbOtherTrap.SetValue( True ) 
-		self.rbOtherTrap.SetToolTipString( u"Other (used in filtering algorithm)" )
+		self.rbOtherTrap.SetToolTip( u"Other (used in filtering algorithm)" )
 		
 		sbSizer39.Add( self.rbOtherTrap, 0, 0, 0 )
 		
@@ -7688,7 +7688,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		
 		self.txDescription = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.txDescription.SetMaxLength( 0 ) 
-		self.txDescription.SetToolTipString( u"Enter the description of the trap." )
+		self.txDescription.SetToolTip( u"Enter the description of the trap." )
 		
 		bSizer127.Add( self.txDescription, 2, wx.EXPAND|wx.EXPAND, 0 )
 		
@@ -7702,7 +7702,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		bSizer139.Add( self.m_staticText82, 1, wx.ALIGN_CENTER_VERTICAL, 0 )
 		
 		self.spChallengeRating = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 50,-1 ), wx.SP_ARROW_KEYS, -1, 99, 1 )
-		self.spChallengeRating.SetToolTipString( u"What is the challenge rating (CR) of this trap?" )
+		self.spChallengeRating.SetToolTip( u"What is the challenge rating (CR) of this trap?" )
 		
 		bSizer139.Add( self.spChallengeRating, 0, 0, 0 )
 		
@@ -7717,7 +7717,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		
 		cbxTriggerChoices = []
 		self.cbxTrigger = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 150,-1 ), cbxTriggerChoices, 0 )
-		self.cbxTrigger.SetToolTipString( u"How is this trap set off?" )
+		self.cbxTrigger.SetToolTip( u"How is this trap set off?" )
 		
 		bSizer128.Add( self.cbxTrigger, 1, wx.LEFT, 4 )
 		
@@ -7732,7 +7732,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		
 		cbxResetChoices = []
 		self.cbxReset = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, cbxResetChoices, 0 )
-		self.cbxReset.SetToolTipString( u"How is this trap reset?" )
+		self.cbxReset.SetToolTip( u"How is this trap reset?" )
 		
 		bSizer129.Add( self.cbxReset, 0, wx.LEFT|wx.EXPAND|wx.EXPAND, 10 )
 		
@@ -7746,7 +7746,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		bSizer562.Add( self.m_staticText71, 0, wx.ALIGN_CENTER_VERTICAL, 0 )
 		
 		self.spSearchDC = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 50,-1 ), wx.SP_ARROW_KEYS, -1, 99, 12 )
-		self.spSearchDC.SetToolTipString( u"What is the DC to find this trap?" )
+		self.spSearchDC.SetToolTip( u"What is the DC to find this trap?" )
 		
 		bSizer562.Add( self.spSearchDC, 0, wx.LEFT|wx.ALIGN_CENTER_VERTICAL, 14 )
 		
@@ -7760,7 +7760,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		bSizer131.Add( self.m_staticText72, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALIGN_RIGHT, 0 )
 		
 		self.spDisableDC = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 50,-1 ), wx.SP_ARROW_KEYS, -1, 99, 12 )
-		self.spDisableDC.SetToolTipString( u"What is the DC to disable this trap?" )
+		self.spDisableDC.SetToolTip( u"What is the DC to disable this trap?" )
 		
 		bSizer131.Add( self.spDisableDC, 0, wx.ALIGN_RIGHT|wx.LEFT|wx.ALIGN_CENTER_VERTICAL, 14 )
 		
@@ -7774,13 +7774,13 @@ class TrapsDialogBase ( wx.Dialog ):
 		bSizer132.Add( self.m_staticText73, 0, wx.ALIGN_CENTER_VERTICAL, 0 )
 		
 		self.spAttackBonus = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 50,-1 ), wx.SP_ARROW_KEYS, -1, 99,  )
-		self.spAttackBonus.SetToolTipString( u"If this trap simulates an attack, what is the bonus?" )
+		self.spAttackBonus.SetToolTip( u"If this trap simulates an attack, what is the bonus?" )
 		
 		bSizer132.Add( self.spAttackBonus, 0, wx.LEFT, 3 )
 		
 		cbxAttackTypeChoices = []
 		self.cbxAttackType = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 125,-1 ), cbxAttackTypeChoices, 0 )
-		self.cbxAttackType.SetToolTipString( u"What type of attack mode?" )
+		self.cbxAttackType.SetToolTip( u"What type of attack mode?" )
 		
 		bSizer132.Add( self.cbxAttackType, 0, wx.LEFT, 3 )
 		
@@ -7797,7 +7797,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		
 		self.txDamageEffect = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( -1,60 ), wx.TE_MULTILINE )
 		self.txDamageEffect.SetMaxLength( 0 ) 
-		self.txDamageEffect.SetToolTipString( u"If the trap is sprung, what happens?" )
+		self.txDamageEffect.SetToolTip( u"If the trap is sprung, what happens?" )
 		
 		bSizer558.Add( self.txDamageEffect, 1, wx.ALIGN_CENTER_VERTICAL|wx.LEFT, 3 )
 		
@@ -7811,7 +7811,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		bSizer559.Add( self.m_staticText294, 0, wx.LEFT|wx.ALIGN_CENTER_VERTICAL, 15 )
 		
 		self.txDamageDice = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.txDamageDice.SetToolTipString( u"Enter the damage dice, ie, 2d10+3" )
+		self.txDamageDice.SetToolTip( u"Enter the damage dice, ie, 2d10+3" )
 		
 		bSizer559.Add( self.txDamageDice, 0, wx.ALL, 5 )
 		
@@ -7828,19 +7828,19 @@ class TrapsDialogBase ( wx.Dialog ):
 		bSizer134.Add( self.m_staticText75, 0, wx.ALIGN_CENTER_VERTICAL, 0 )
 		
 		self.spSaveDC = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 50,-1 ), wx.SP_ARROW_KEYS, -1, 99, 12 )
-		self.spSaveDC.SetToolTipString( u"What is the DC to save against this trap's effect?" )
+		self.spSaveDC.SetToolTip( u"What is the DC to save against this trap's effect?" )
 		
 		bSizer134.Add( self.spSaveDC, 0, wx.LEFT, 3 )
 		
 		cbxSaveTypeChoices = []
 		self.cbxSaveType = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 80,-1 ), cbxSaveTypeChoices, 0 )
-		self.cbxSaveType.SetToolTipString( u"Which save type to use?" )
+		self.cbxSaveType.SetToolTip( u"Which save type to use?" )
 		
 		bSizer134.Add( self.cbxSaveType, 0, wx.LEFT, 2 )
 		
 		cbxSaveAmountChoices = []
 		self.cbxSaveAmount = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 120, -1 ), cbxSaveAmountChoices, 0 )
-		self.cbxSaveAmount.SetToolTipString( u"If the save is successful, save for half or avoid?" )
+		self.cbxSaveAmount.SetToolTip( u"If the save is successful, save for half or avoid?" )
 		
 		bSizer134.Add( self.cbxSaveAmount, 0, 0, 0 )
 		
@@ -7855,7 +7855,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		
 		cbxOptionalChoices = []
 		self.cbxOptional = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 150,-1 ), cbxOptionalChoices, 0 )
-		self.cbxOptional.SetToolTipString( u"Some traps have an optional feature." )
+		self.cbxOptional.SetToolTip( u"Some traps have an optional feature." )
 		
 		bSizer135.Add( self.cbxOptional, 1, wx.LEFT, 4 )
 		
@@ -7870,7 +7870,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		
 		cbxBypassChoices = []
 		self.cbxBypass = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 150,-1 ), cbxBypassChoices, 0 )
-		self.cbxBypass.SetToolTipString( u"What kind of bypass is equipped with this trap?" )
+		self.cbxBypass.SetToolTip( u"What kind of bypass is equipped with this trap?" )
 		
 		bSizer137.Add( self.cbxBypass, 0, wx.LEFT|wx.EXPAND|wx.EXPAND, 3 )
 		
@@ -7885,7 +7885,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		
 		self.txOtherFeature = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 150,40 ), wx.TE_MULTILINE )
 		self.txOtherFeature.SetMaxLength( 0 ) 
-		self.txOtherFeature.SetToolTipString( u"Other notes or user-defined features of the trap." )
+		self.txOtherFeature.SetToolTip( u"Other notes or user-defined features of the trap." )
 		
 		bSizer136.Add( self.txOtherFeature, 2, wx.LEFT|wx.EXPAND|wx.EXPAND, 3 )
 		
@@ -7903,7 +7903,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		bSizer138.Add( self.m_staticText80, 0, wx.LEFT|wx.RIGHT|wx.ALIGN_CENTER_VERTICAL, 6 )
 		
 		self.txGPCost = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 70,-1 ), wx.SP_ARROW_KEYS, -1, 500000,  )
-		self.txGPCost.SetToolTipString( u"How much does this trap cost in gold?" )
+		self.txGPCost.SetToolTip( u"How much does this trap cost in gold?" )
 		
 		bSizer138.Add( self.txGPCost, 0, wx.LEFT|wx.ALIGN_CENTER_VERTICAL, 3 )
 		
@@ -7912,7 +7912,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		bSizer138.Add( self.m_staticText81, 0, wx.ALIGN_CENTER_VERTICAL|wx.LEFT, 20 )
 		
 		self.txXPCost = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 70,-1 ), wx.SP_ARROW_KEYS, -1, 500000,  )
-		self.txXPCost.SetToolTipString( u"How much does this cost in XP?" )
+		self.txXPCost.SetToolTip( u"How much does this cost in XP?" )
 		
 		bSizer138.Add( self.txXPCost, 0, wx.ALIGN_CENTER_VERTICAL, 0 )
 		
@@ -7929,14 +7929,14 @@ class TrapsDialogBase ( wx.Dialog ):
 		bSizer525 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.cbFilterByCR = wx.CheckBox( self, wx.ID_ANY, u"CR", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbFilterByCR.SetToolTipString( u"Check to filter by Challenge Rating" )
+		self.cbFilterByCR.SetToolTip( u"Check to filter by Challenge Rating" )
 		
 		bSizer525.Add( self.cbFilterByCR, 0, wx.ALL, 5 )
 		
 		lbCRFilterChoices = [ u"<1", u"1", u"2", u"3", u"4", u"5", u"6", u"7", u"8", u"9", u"10", u"11", u"12", u"13", u"14", u"15", u"16", u"17", u"18", u"19", u"20+" ]
 		self.lbCRFilter = wx.ListBox( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( 50,-1 ), lbCRFilterChoices, wx.LB_MULTIPLE )
 		self.lbCRFilter.Enable( False )
-		self.lbCRFilter.SetToolTipString( u"Select CR to filter" )
+		self.lbCRFilter.SetToolTip( u"Select CR to filter" )
 		
 		bSizer525.Add( self.lbCRFilter, 1, wx.ALL|wx.EXPAND, 5 )
 		
@@ -7998,7 +7998,7 @@ class TrapsDialogBase ( wx.Dialog ):
 		
 		self.bUpdateSelectedTrap = wx.Button( self, wx.ID_ANY, u"Update Selected Trap to Current Info", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bUpdateSelectedTrap.SetDefault() 
-		self.bUpdateSelectedTrap.SetToolTipString( u"Update the trap selected in the list to the values above." )
+		self.bUpdateSelectedTrap.SetToolTip( u"Update the trap selected in the list to the values above." )
 		
 		bApplyFilter1.Add( self.bUpdateSelectedTrap, 0, wx.ALIGN_RIGHT, 5 )
 		
@@ -8047,19 +8047,19 @@ class TrapsDialogBase ( wx.Dialog ):
 		
 		self.bAddTrap = wx.Button( self, wx.ID_ANY, u"Add New Trap", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bAddTrap.SetDefault() 
-		self.bAddTrap.SetToolTipString( u"Add a new trap based on the values to the left." )
+		self.bAddTrap.SetToolTip( u"Add a new trap based on the values to the left." )
 		
 		bSizer143.Add( self.bAddTrap, 0, wx.LEFT|wx.RIGHT, 3 )
 		
 		self.bDeleteTrap = wx.Button( self, wx.ID_ANY, u"Delete Trap", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bDeleteTrap.SetDefault() 
-		self.bDeleteTrap.SetToolTipString( u"Delete the currently selected trap." )
+		self.bDeleteTrap.SetToolTip( u"Delete the currently selected trap." )
 		
 		bSizer143.Add( self.bDeleteTrap, 0, wx.LEFT|wx.RIGHT, 3 )
 		
 		self.bClearSelection = wx.Button( self, wx.ID_ANY, u"Clear Selection", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bClearSelection.SetDefault() 
-		self.bClearSelection.SetToolTipString( u"Clear all selections on the trap listing." )
+		self.bClearSelection.SetToolTip( u"Clear all selections on the trap listing." )
 		
 		bSizer143.Add( self.bClearSelection, 0, wx.LEFT|wx.RIGHT, 3 )
 		
@@ -8155,7 +8155,7 @@ class TrapsHoverBase ( wx.Dialog ):
 		self.bRollDamage.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), 70, 90, 92, False, wx.EmptyString ) )
 		self.bRollDamage.SetForegroundColour( wx.Colour( 255, 255, 255 ) )
 		self.bRollDamage.SetBackgroundColour( wx.Colour( 255, 0, 0 ) )
-		self.bRollDamage.SetToolTipString( u"Roll dice to determine damage" )
+		self.bRollDamage.SetToolTip( u"Roll dice to determine damage" )
 		self.bRollDamage.SetHelpText( u"Click to roll the damage dice" )
 		
 		bSizer560.Add( self.bRollDamage, 0, 0, 5 )
@@ -8175,7 +8175,7 @@ class TrapsHoverBase ( wx.Dialog ):
 		
 		self.txDescription = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, wx.TE_READONLY )
 		self.txDescription.SetMaxLength( 0 ) 
-		self.txDescription.SetToolTipString( u"Enter the description of the trap." )
+		self.txDescription.SetToolTip( u"Enter the description of the trap." )
 		
 		bSizer127.Add( self.txDescription, 2, wx.EXPAND|wx.EXPAND, 0 )
 		
@@ -8198,7 +8198,7 @@ class TrapsHoverBase ( wx.Dialog ):
 		bSizer139.Add( self.m_staticText82, 1, wx.ALIGN_CENTER_VERTICAL, 0 )
 		
 		self.spChallengeRating = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 60,-1 ), wx.SP_ARROW_KEYS, 0, 99, 1 )
-		self.spChallengeRating.SetToolTipString( u"What is the challenge rating (CR) of this trap?" )
+		self.spChallengeRating.SetToolTip( u"What is the challenge rating (CR) of this trap?" )
 		
 		bSizer139.Add( self.spChallengeRating, 0, wx.LEFT, 10 )
 		
@@ -8214,7 +8214,7 @@ class TrapsHoverBase ( wx.Dialog ):
 		bSizer130.Add( self.m_staticText71, 1, wx.ALIGN_CENTER_VERTICAL, 0 )
 		
 		self.spSearchDC = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 60,-1 ), wx.SP_ARROW_KEYS, 0, 99, 12 )
-		self.spSearchDC.SetToolTipString( u"What is the DC to find this trap?" )
+		self.spSearchDC.SetToolTip( u"What is the DC to find this trap?" )
 		
 		bSizer130.Add( self.spSearchDC, 0, wx.LEFT, 5 )
 		
@@ -8228,7 +8228,7 @@ class TrapsHoverBase ( wx.Dialog ):
 		bSizer131.Add( self.m_staticText72, 0, wx.ALIGN_CENTER_VERTICAL, 0 )
 		
 		self.spDisableDC = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 60,-1 ), wx.SP_ARROW_KEYS, 0, 99, 12 )
-		self.spDisableDC.SetToolTipString( u"What is the DC to disable this trap?" )
+		self.spDisableDC.SetToolTip( u"What is the DC to disable this trap?" )
 		
 		bSizer131.Add( self.spDisableDC, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALIGN_RIGHT|wx.LEFT, 5 )
 		
@@ -8246,7 +8246,7 @@ class TrapsHoverBase ( wx.Dialog ):
 		
 		cbxTriggerChoices = []
 		self.cbxTrigger = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 150,-1 ), cbxTriggerChoices, 0 )
-		self.cbxTrigger.SetToolTipString( u"How is this trap set off?" )
+		self.cbxTrigger.SetToolTip( u"How is this trap set off?" )
 		
 		bSizer128.Add( self.cbxTrigger, 1, wx.LEFT, 4 )
 		
@@ -8261,7 +8261,7 @@ class TrapsHoverBase ( wx.Dialog ):
 		
 		cbxResetChoices = []
 		self.cbxReset = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, cbxResetChoices, 0 )
-		self.cbxReset.SetToolTipString( u"How is this trap reset?" )
+		self.cbxReset.SetToolTip( u"How is this trap reset?" )
 		
 		bSizer129.Add( self.cbxReset, 1, wx.LEFT|wx.EXPAND|wx.EXPAND, 10 )
 		
@@ -8275,13 +8275,13 @@ class TrapsHoverBase ( wx.Dialog ):
 		bSizer132.Add( self.m_staticText73, 0, wx.ALIGN_CENTER_VERTICAL, 0 )
 		
 		self.spAttackBonus = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 50,-1 ), wx.SP_ARROW_KEYS, -1, 99,  )
-		self.spAttackBonus.SetToolTipString( u"If this trap simulates an attack, what is the bonus?" )
+		self.spAttackBonus.SetToolTip( u"If this trap simulates an attack, what is the bonus?" )
 		
 		bSizer132.Add( self.spAttackBonus, 0, wx.LEFT, 3 )
 		
 		cbxAttackTypeChoices = []
 		self.cbxAttackType = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 125,-1 ), cbxAttackTypeChoices, 0 )
-		self.cbxAttackType.SetToolTipString( u"What type of attack mode?" )
+		self.cbxAttackType.SetToolTip( u"What type of attack mode?" )
 		
 		bSizer132.Add( self.cbxAttackType, 1, wx.LEFT, 3 )
 		
@@ -8296,7 +8296,7 @@ class TrapsHoverBase ( wx.Dialog ):
 		
 		self.txDamageEffect = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 150,-1 ), wx.TE_MULTILINE )
 		self.txDamageEffect.SetMaxLength( 0 ) 
-		self.txDamageEffect.SetToolTipString( u"If the trap is sprung, what happens?" )
+		self.txDamageEffect.SetToolTip( u"If the trap is sprung, what happens?" )
 		
 		bSizer133.Add( self.txDamageEffect, 2, wx.EXPAND|wx.LEFT, 3 )
 		
@@ -8310,19 +8310,19 @@ class TrapsHoverBase ( wx.Dialog ):
 		bSizer134.Add( self.m_staticText75, 0, wx.ALIGN_CENTER_VERTICAL, 0 )
 		
 		self.spSaveDC = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 60,-1 ), wx.SP_ARROW_KEYS, -1, 99, 12 )
-		self.spSaveDC.SetToolTipString( u"What is the DC to save against this trap's effect?" )
+		self.spSaveDC.SetToolTip( u"What is the DC to save against this trap's effect?" )
 		
 		bSizer134.Add( self.spSaveDC, 0, wx.LEFT, 3 )
 		
 		cbxSaveTypeChoices = []
 		self.cbxSaveType = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 80,-1 ), cbxSaveTypeChoices, 0 )
-		self.cbxSaveType.SetToolTipString( u"Which save type to use?" )
+		self.cbxSaveType.SetToolTip( u"Which save type to use?" )
 		
 		bSizer134.Add( self.cbxSaveType, 0, wx.LEFT, 2 )
 		
 		cbxSaveAmountChoices = []
 		self.cbxSaveAmount = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 120, -1 ), cbxSaveAmountChoices, 0 )
-		self.cbxSaveAmount.SetToolTipString( u"If the save is successful, save for half or avoid?" )
+		self.cbxSaveAmount.SetToolTip( u"If the save is successful, save for half or avoid?" )
 		
 		bSizer134.Add( self.cbxSaveAmount, 0, 0, 0 )
 		
@@ -8337,7 +8337,7 @@ class TrapsHoverBase ( wx.Dialog ):
 		
 		cbxBypassChoices = []
 		self.cbxBypass = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 150,-1 ), cbxBypassChoices, 0 )
-		self.cbxBypass.SetToolTipString( u"What kind of bypass is equipped with this trap?" )
+		self.cbxBypass.SetToolTip( u"What kind of bypass is equipped with this trap?" )
 		
 		bSizer137.Add( self.cbxBypass, 1, wx.LEFT|wx.EXPAND|wx.EXPAND, 3 )
 		
@@ -8352,7 +8352,7 @@ class TrapsHoverBase ( wx.Dialog ):
 		
 		cbxOptionalChoices = []
 		self.cbxOptional = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 150,-1 ), cbxOptionalChoices, 0 )
-		self.cbxOptional.SetToolTipString( u"Some traps have an optional feature." )
+		self.cbxOptional.SetToolTip( u"Some traps have an optional feature." )
 		
 		bSizer135.Add( self.cbxOptional, 1, wx.LEFT, 4 )
 		
@@ -8367,7 +8367,7 @@ class TrapsHoverBase ( wx.Dialog ):
 		
 		self.txOtherFeature = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 150,-1 ), wx.TE_MULTILINE )
 		self.txOtherFeature.SetMaxLength( 0 ) 
-		self.txOtherFeature.SetToolTipString( u"Other notes or user-defined features of the trap." )
+		self.txOtherFeature.SetToolTip( u"Other notes or user-defined features of the trap." )
 		
 		bSizer136.Add( self.txOtherFeature, 2, wx.LEFT|wx.EXPAND|wx.EXPAND, 3 )
 		
@@ -9066,42 +9066,42 @@ class MonsterHoverBase ( wx.Dialog ):
 		
 		self.bCalculateHP = wx.Button( self, wx.ID_ANY, u"HP:", wx.DefaultPosition, wx.DefaultSize, wx.BU_EXACTFIT )
 		self.bCalculateHP.SetBackgroundColour( wx.Colour( 151, 196, 179 ) )
-		self.bCalculateHP.SetToolTipString( u"Click to recalculate HP total based on hit dice" )
+		self.bCalculateHP.SetToolTip( u"Click to recalculate HP total based on hit dice" )
 		
 		bSizer89.Add( self.bCalculateHP, 0, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
 		self.spHitPoints = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 55,-1 ), wx.SP_ARROW_KEYS, -10, 9999, 6 )
-		self.spHitPoints.SetToolTipString( u"Monster Hit Points" )
+		self.spHitPoints.SetToolTip( u"Monster Hit Points" )
 		
 		bSizer89.Add( self.spHitPoints, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 3 )
 		
 		self.bSubtract1HP = wx.Button( self, wx.ID_ANY, u"-1", wx.DefaultPosition, wx.DefaultSize, wx.BU_EXACTFIT )
 		self.bSubtract1HP.SetBackgroundColour( wx.Colour( 255, 255, 191 ) )
-		self.bSubtract1HP.SetToolTipString( u"-1 HP" )
+		self.bSubtract1HP.SetToolTip( u"-1 HP" )
 		
 		bSizer89.Add( self.bSubtract1HP, 0, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
 		self.bSubtract5HP = wx.Button( self, wx.ID_ANY, u"-5", wx.DefaultPosition, wx.DefaultSize, wx.BU_EXACTFIT )
 		self.bSubtract5HP.SetBackgroundColour( wx.Colour( 224, 172, 101 ) )
-		self.bSubtract5HP.SetToolTipString( u"-5 HP" )
+		self.bSubtract5HP.SetToolTip( u"-5 HP" )
 		
 		bSizer89.Add( self.bSubtract5HP, 0, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
 		self.bSubtract10HP = wx.Button( self, wx.ID_ANY, u"-10", wx.DefaultPosition, wx.DefaultSize, wx.BU_EXACTFIT )
 		self.bSubtract10HP.SetBackgroundColour( wx.Colour( 224, 141, 120 ) )
-		self.bSubtract10HP.SetToolTipString( u"-10 HP" )
+		self.bSubtract10HP.SetToolTip( u"-10 HP" )
 		
 		bSizer89.Add( self.bSubtract10HP, 0, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
 		self.bSubtract20HP = wx.Button( self, wx.ID_ANY, u"-20", wx.DefaultPosition, wx.DefaultSize, wx.BU_EXACTFIT )
 		self.bSubtract20HP.SetBackgroundColour( wx.Colour( 255, 100, 100 ) )
-		self.bSubtract20HP.SetToolTipString( u"-20 HP" )
+		self.bSubtract20HP.SetToolTip( u"-20 HP" )
 		
 		bSizer89.Add( self.bSubtract20HP, 0, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
 		self.stStartHP = wx.StaticText( self, wx.ID_ANY, u"0 HP", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.stStartHP.Wrap( -1 )
-		self.stStartHP.SetToolTipString( u"Starting HP" )
+		self.stStartHP.SetToolTip( u"Starting HP" )
 		
 		bSizer89.Add( self.stStartHP, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 		
@@ -9117,7 +9117,7 @@ class MonsterHoverBase ( wx.Dialog ):
 		bSizer524.Add( self.stArmorClass, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 3 )
 		
 		self.spArmorClass = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 50,-1 ), wx.SP_ARROW_KEYS, 1, 999, 10 )
-		self.spArmorClass.SetToolTipString( u"Monster Armor Class" )
+		self.spArmorClass.SetToolTip( u"Monster Armor Class" )
 		
 		bSizer524.Add( self.spArmorClass, 0, wx.ALL, 3 )
 		
@@ -9144,7 +9144,7 @@ class MonsterHoverBase ( wx.Dialog ):
 		
 		self.stPassivePerception = wx.StaticText( self, wx.ID_ANY, u"PP: 10", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.stPassivePerception.Wrap( -1 )
-		self.stPassivePerception.SetToolTipString( u"Passive Perception" )
+		self.stPassivePerception.SetToolTip( u"Passive Perception" )
 		
 		bSizer523.Add( self.stPassivePerception, 1, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
@@ -9242,7 +9242,7 @@ class MonsterHoverBase ( wx.Dialog ):
 		sbSizer87 = wx.StaticBoxSizer( wx.StaticBox( self, wx.ID_ANY, u"Icon Image" ), wx.VERTICAL )
 		
 		self.bCustomImage = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/monster_icon.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.Size( 100,100 ), wx.BU_AUTODRAW )
-		self.bCustomImage.SetToolTipString( u"Click to change the monster image..." )
+		self.bCustomImage.SetToolTip( u"Click to change the monster image..." )
 		
 		sbSizer87.Add( self.bCustomImage, 0, 0, 0 )
 		
@@ -9582,7 +9582,7 @@ class MonstersDialogBase ( wx.Dialog ):
 		
 		self.txHitDice = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( -1,-1 ), 0 )
 		self.txHitDice.SetMaxLength( 0 ) 
-		self.txHitDice.SetToolTipString( u"Monster Hit Dice, ie 7d8+10" )
+		self.txHitDice.SetToolTip( u"Monster Hit Dice, ie 7d8+10" )
 		
 		bSizer533.Add( self.txHitDice, 0, wx.LEFT|wx.ALIGN_CENTER_VERTICAL, 5 )
 		
@@ -9643,14 +9643,14 @@ class MonstersDialogBase ( wx.Dialog ):
 		bSizer525 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.cbFilterByCR = wx.CheckBox( self.pnFilterPanel, wx.ID_ANY, u"CR", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbFilterByCR.SetToolTipString( u"Check to filter by Challenge Rating" )
+		self.cbFilterByCR.SetToolTip( u"Check to filter by Challenge Rating" )
 		
 		bSizer525.Add( self.cbFilterByCR, 0, wx.ALL, 5 )
 		
 		lbCRFilterChoices = [ u"<1", u"1", u"2", u"3", u"4", u"5", u"6", u"7", u"8", u"9", u"10", u"11", u"12", u"13", u"14", u"15", u"16", u"17", u"18", u"19", u"20+" ]
 		self.lbCRFilter = wx.ListBox( self.pnFilterPanel, wx.ID_ANY, wx.DefaultPosition, wx.Size( 50,-1 ), lbCRFilterChoices, wx.LB_MULTIPLE )
 		self.lbCRFilter.Enable( False )
-		self.lbCRFilter.SetToolTipString( u"Select CR to filter" )
+		self.lbCRFilter.SetToolTip( u"Select CR to filter" )
 		
 		bSizer525.Add( self.lbCRFilter, 1, wx.ALL|wx.EXPAND, 5 )
 		
@@ -9660,14 +9660,14 @@ class MonstersDialogBase ( wx.Dialog ):
 		bSizer526 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.cbFilterByMonsterType = wx.CheckBox( self.pnFilterPanel, wx.ID_ANY, u"Monster Type", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbFilterByMonsterType.SetToolTipString( u"Check to filter by Monster Type" )
+		self.cbFilterByMonsterType.SetToolTip( u"Check to filter by Monster Type" )
 		
 		bSizer526.Add( self.cbFilterByMonsterType, 0, wx.ALL, 5 )
 		
 		lbMonsterFilterChoices = [ u"Aberration", u"Beast", u"Celestial", u"Construct", u"Dragon", u"Elemental", u"Fey", u"Fiend", u"Giant", u"Humanoid", u"Monstrosity", u"Ooze", u"Plant", u"Undead" ]
 		self.lbMonsterFilter = wx.ListBox( self.pnFilterPanel, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, lbMonsterFilterChoices, wx.LB_MULTIPLE )
 		self.lbMonsterFilter.Enable( False )
-		self.lbMonsterFilter.SetToolTipString( u"Select monster to filter" )
+		self.lbMonsterFilter.SetToolTip( u"Select monster to filter" )
 		
 		bSizer526.Add( self.lbMonsterFilter, 1, wx.ALL|wx.EXPAND, 5 )
 		
@@ -9816,21 +9816,21 @@ class MonstersDialogBase ( wx.Dialog ):
 		
 		self.bAddMonster = wx.Button( self, wx.ID_ANY, u"Add New Monster", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bAddMonster.SetDefault() 
-		self.bAddMonster.SetToolTipString( u"Add a new monster based on the values to the left." )
+		self.bAddMonster.SetToolTip( u"Add a new monster based on the values to the left." )
 		
 		bApplyFilter.Add( self.bAddMonster, 0, 0, 0 )
 		
 		self.bUpdateMonster = wx.Button( self, wx.ID_ANY, u"Update User Defined Monster", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bUpdateMonster.SetDefault() 
 		self.bUpdateMonster.Enable( False )
-		self.bUpdateMonster.SetToolTipString( u"Update the monster selected in the list to the values above." )
+		self.bUpdateMonster.SetToolTip( u"Update the monster selected in the list to the values above." )
 		
 		bApplyFilter.Add( self.bUpdateMonster, 0, wx.LEFT|wx.ALIGN_CENTRE_HORIZONTAL, 5 )
 		
 		self.bDeleteMonster = wx.Button( self, wx.ID_ANY, u"Delete Monster", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bDeleteMonster.SetDefault() 
 		self.bDeleteMonster.Enable( False )
-		self.bDeleteMonster.SetToolTipString( u"Delete the currently selected monster." )
+		self.bDeleteMonster.SetToolTip( u"Delete the currently selected monster." )
 		
 		bApplyFilter.Add( self.bDeleteMonster, 0, 0, 0 )
 		
@@ -9873,7 +9873,7 @@ class MonstersDialogBase ( wx.Dialog ):
 		
 		lbMonsterListChoices = []
 		self.lbMonsterList = wx.ListBox( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( 225,-1 ), lbMonsterListChoices, wx.LB_SINGLE )
-		self.lbMonsterList.SetToolTipString( u"List of Monsters" )
+		self.lbMonsterList.SetToolTip( u"List of Monsters" )
 		
 		bSizer186.Add( self.lbMonsterList, 1, wx.ALL|wx.EXPAND|wx.EXPAND, 3 )
 		
@@ -9945,7 +9945,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		wx.Dialog.__init__ ( self, parent, id = wx.ID_ANY, title = u"Fifth Edition Monsters", pos = wx.DefaultPosition, size = wx.Size( 900,1000 ), style = wx.DEFAULT_DIALOG_STYLE|wx.RESIZE_BORDER )
 		
 		self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
-		self.SetToolTipString( u"Click to change image..." )
+		self.SetToolTip( u"Click to change image..." )
 		
 		bSizer158 = wx.BoxSizer( wx.HORIZONTAL )
 		
@@ -10089,7 +10089,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		
 		self.txXPValue = wx.TextCtrl( self, wx.ID_ANY, u"0", wx.DefaultPosition, wx.Size( 50,-1 ), 0 )
 		self.txXPValue.SetMaxLength( 0 ) 
-		self.txXPValue.SetToolTipString( u"Initial value based on CR, update this field to override" )
+		self.txXPValue.SetToolTip( u"Initial value based on CR, update this field to override" )
 		
 		bSizer518.Add( self.txXPValue, 0, wx.LEFT, 3 )
 		
@@ -10162,7 +10162,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		
 		self.txHitDice = wx.TextCtrl( self, wx.ID_ANY, u"1d10", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.txHitDice.SetMaxLength( 0 ) 
-		self.txHitDice.SetToolTipString( u"Enter dice format for calculating HP (ie, 4d8+3)" )
+		self.txHitDice.SetToolTip( u"Enter dice format for calculating HP (ie, 4d8+3)" )
 		
 		bSizer645.Add( self.txHitDice, 0, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
@@ -10182,7 +10182,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		
 		self.txSpeed = wx.TextCtrl( self, wx.ID_ANY, u"0", wx.DefaultPosition, wx.Size( 50,-1 ), 0 )
 		self.txSpeed.SetMaxLength( 0 ) 
-		self.txSpeed.SetToolTipString( u"Enter base speed" )
+		self.txSpeed.SetToolTip( u"Enter base speed" )
 		
 		bSizer653.Add( self.txSpeed, 1, wx.ALIGN_CENTER_VERTICAL|wx.EXPAND|wx.LEFT, 14 )
 		
@@ -10246,14 +10246,14 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		bSizer525 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.cbFilterByCR = wx.CheckBox( self, wx.ID_ANY, u"CR", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbFilterByCR.SetToolTipString( u"Check to filter by Challenge Rating" )
+		self.cbFilterByCR.SetToolTip( u"Check to filter by Challenge Rating" )
 		
 		bSizer525.Add( self.cbFilterByCR, 0, wx.ALL, 5 )
 		
 		lbCRFilterChoices = [ u"<1", u"1", u"2", u"3", u"4", u"5", u"6", u"7", u"8", u"9", u"10", u"11", u"12", u"13", u"14", u"15", u"16", u"17", u"18", u"19", u"20+" ]
 		self.lbCRFilter = wx.ListBox( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( 50,-1 ), lbCRFilterChoices, wx.LB_MULTIPLE )
 		self.lbCRFilter.Enable( False )
-		self.lbCRFilter.SetToolTipString( u"Select CR to filter" )
+		self.lbCRFilter.SetToolTip( u"Select CR to filter" )
 		
 		bSizer525.Add( self.lbCRFilter, 0, wx.ALL, 5 )
 		
@@ -10263,14 +10263,14 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		bSizer526 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.cbFilterByMonsterType = wx.CheckBox( self, wx.ID_ANY, u"Monster Type", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbFilterByMonsterType.SetToolTipString( u"Check to filter by Monster Type" )
+		self.cbFilterByMonsterType.SetToolTip( u"Check to filter by Monster Type" )
 		
 		bSizer526.Add( self.cbFilterByMonsterType, 0, wx.ALL, 5 )
 		
 		lbMonsterFilterChoices = [ u"Aberration", u"Beast", u"Celestial", u"Construct", u"Dragon", u"Elemental", u"Fey", u"Fiend", u"Giant", u"Humanoid", u"Monstrosity", u"Ooze", u"Plant", u"Undead" ]
 		self.lbMonsterFilter = wx.ListBox( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, lbMonsterFilterChoices, wx.LB_MULTIPLE )
 		self.lbMonsterFilter.Enable( False )
-		self.lbMonsterFilter.SetToolTipString( u"Select monster to filter" )
+		self.lbMonsterFilter.SetToolTip( u"Select monster to filter" )
 		
 		bSizer526.Add( self.lbMonsterFilter, 0, wx.ALL, 5 )
 		
@@ -10281,7 +10281,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		sbSizer89.Add( bSizer518, 1, wx.EXPAND, 5 )
 		
 		self.cbShowOnlyUserMonsters = wx.CheckBox( self, wx.ID_ANY, u"Show only custom monsters?", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbShowOnlyUserMonsters.SetToolTipString( u"Select to show only customized monsters." )
+		self.cbShowOnlyUserMonsters.SetToolTip( u"Select to show only customized monsters." )
 		
 		sbSizer89.Add( self.cbShowOnlyUserMonsters, 0, 0, 1 )
 		
@@ -10302,7 +10302,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		
 		self.txStr = wx.TextCtrl( self, wx.ID_ANY, u"3", wx.DefaultPosition, wx.Size( 40,-1 ), wx.TE_PROCESS_ENTER )
 		self.txStr.SetMaxLength( 0 ) 
-		self.txStr.SetToolTipString( u"Enter Ability Score" )
+		self.txStr.SetToolTip( u"Enter Ability Score" )
 		
 		bSizer175.Add( self.txStr, 0, wx.ALIGN_CENTER_VERTICAL|wx.RIGHT|wx.LEFT, 5 )
 		
@@ -10312,7 +10312,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		
 		self.txDex = wx.TextCtrl( self, wx.ID_ANY, u"3", wx.DefaultPosition, wx.Size( 40,-1 ), wx.TE_PROCESS_ENTER )
 		self.txDex.SetMaxLength( 0 ) 
-		self.txDex.SetToolTipString( u"Enter Ability Score" )
+		self.txDex.SetToolTip( u"Enter Ability Score" )
 		
 		bSizer175.Add( self.txDex, 0, wx.ALIGN_CENTER_VERTICAL|wx.RIGHT|wx.LEFT, 5 )
 		
@@ -10322,7 +10322,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		
 		self.txCon = wx.TextCtrl( self, wx.ID_ANY, u"3", wx.DefaultPosition, wx.Size( 40,-1 ), wx.TE_PROCESS_ENTER )
 		self.txCon.SetMaxLength( 0 ) 
-		self.txCon.SetToolTipString( u"Enter Ability Score" )
+		self.txCon.SetToolTip( u"Enter Ability Score" )
 		
 		bSizer175.Add( self.txCon, 0, wx.RIGHT|wx.LEFT, 5 )
 		
@@ -10332,7 +10332,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		
 		self.txInt = wx.TextCtrl( self, wx.ID_ANY, u"3", wx.DefaultPosition, wx.Size( 40,-1 ), wx.TE_PROCESS_ENTER )
 		self.txInt.SetMaxLength( 0 ) 
-		self.txInt.SetToolTipString( u"Enter Ability Score" )
+		self.txInt.SetToolTip( u"Enter Ability Score" )
 		
 		bSizer175.Add( self.txInt, 0, wx.RIGHT|wx.LEFT, 5 )
 		
@@ -10342,7 +10342,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		
 		self.txWis = wx.TextCtrl( self, wx.ID_ANY, u"3", wx.DefaultPosition, wx.Size( 40,-1 ), wx.TE_PROCESS_ENTER )
 		self.txWis.SetMaxLength( 0 ) 
-		self.txWis.SetToolTipString( u"Enter Ability Score" )
+		self.txWis.SetToolTip( u"Enter Ability Score" )
 		
 		bSizer175.Add( self.txWis, 0, wx.RIGHT|wx.LEFT, 5 )
 		
@@ -10352,7 +10352,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		
 		self.txCha = wx.TextCtrl( self, wx.ID_ANY, u"3", wx.DefaultPosition, wx.Size( 40,-1 ), wx.TE_PROCESS_ENTER )
 		self.txCha.SetMaxLength( 0 ) 
-		self.txCha.SetToolTipString( u"Enter Ability Score" )
+		self.txCha.SetToolTip( u"Enter Ability Score" )
 		
 		bSizer175.Add( self.txCha, 0, wx.RIGHT|wx.LEFT, 5 )
 		
@@ -10367,7 +10367,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		
 		self.txActions = wx.TextCtrl( self.m_panel48, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( -1,100 ), wx.TE_MULTILINE|wx.TE_RICH2|wx.TE_WORDWRAP )
 		self.txActions.SetMaxLength( 0 ) 
-		self.txActions.SetToolTipString( u"Must add a ~ after the action name to define it" )
+		self.txActions.SetToolTip( u"Must add a ~ after the action name to define it" )
 		
 		bSizer667.Add( self.txActions, 0, wx.ALL|wx.EXPAND, 2 )
 		
@@ -10381,7 +10381,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		
 		self.txLegendaryActions = wx.TextCtrl( self.m_panel49, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( -1,100 ), wx.TE_MULTILINE|wx.TE_RICH2|wx.TE_WORDWRAP )
 		self.txLegendaryActions.SetMaxLength( 0 ) 
-		self.txLegendaryActions.SetToolTipString( u"Must add a ^ after the action name to define it." )
+		self.txLegendaryActions.SetToolTip( u"Must add a ^ after the action name to define it." )
 		
 		bSizer668.Add( self.txLegendaryActions, 0, wx.ALL|wx.EXPAND, 2 )
 		
@@ -10506,97 +10506,97 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		bSizer58611.Fit( self.m_panel351 )
 		self.nbNPC_Features.AddPage( self.m_panel351, u"Traits", False )
 		self.pnSkills = wx.Panel( self.nbNPC_Features, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
-		self.pnSkills.SetToolTipString( u"Skill values based on current ability scores and proficiency bonus (if checked)" )
+		self.pnSkills.SetToolTip( u"Skill values based on current ability scores and proficiency bonus (if checked)" )
 		
 		gSizer51 = wx.GridSizer( 0, 4, 0, 0 )
 		
 		self.cbSkill_Acrobatics = wx.CheckBox( self.pnSkills, skAcrobatics, u"Acrobatics", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Acrobatics.SetToolTipString( u"DEX" )
+		self.cbSkill_Acrobatics.SetToolTip( u"DEX" )
 		
 		gSizer51.Add( self.cbSkill_Acrobatics, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_History = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"History", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_History.SetToolTipString( u"INT" )
+		self.cbSkill_History.SetToolTip( u"INT" )
 		
 		gSizer51.Add( self.cbSkill_History, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_Nature = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Nature", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Nature.SetToolTipString( u"INT" )
+		self.cbSkill_Nature.SetToolTip( u"INT" )
 		
 		gSizer51.Add( self.cbSkill_Nature, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_Religion = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Religion", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Religion.SetToolTipString( u"INT" )
+		self.cbSkill_Religion.SetToolTip( u"INT" )
 		
 		gSizer51.Add( self.cbSkill_Religion, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_AnimalHandling = wx.CheckBox( self.pnSkills, skAnimalHandling, u"Animal Handling", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_AnimalHandling.SetToolTipString( u"WIS" )
+		self.cbSkill_AnimalHandling.SetToolTip( u"WIS" )
 		
 		gSizer51.Add( self.cbSkill_AnimalHandling, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_Insight = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Insight", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Insight.SetToolTipString( u"WIS" )
+		self.cbSkill_Insight.SetToolTip( u"WIS" )
 		
 		gSizer51.Add( self.cbSkill_Insight, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_Perception = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Perception", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Perception.SetToolTipString( u"WIS" )
+		self.cbSkill_Perception.SetToolTip( u"WIS" )
 		
 		gSizer51.Add( self.cbSkill_Perception, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_SleightOfHand = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Sleight of Hand", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_SleightOfHand.SetToolTipString( u"DEX" )
+		self.cbSkill_SleightOfHand.SetToolTip( u"DEX" )
 		
 		gSizer51.Add( self.cbSkill_SleightOfHand, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_Arcana = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Arcana", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Arcana.SetToolTipString( u"INT" )
+		self.cbSkill_Arcana.SetToolTip( u"INT" )
 		
 		gSizer51.Add( self.cbSkill_Arcana, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_Intimidation = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Intimidation", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Intimidation.SetToolTipString( u"CHA" )
+		self.cbSkill_Intimidation.SetToolTip( u"CHA" )
 		
 		gSizer51.Add( self.cbSkill_Intimidation, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_Performance = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Performance", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Performance.SetToolTipString( u"CHA" )
+		self.cbSkill_Performance.SetToolTip( u"CHA" )
 		
 		gSizer51.Add( self.cbSkill_Performance, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_Stealth = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Stealth", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Stealth.SetToolTipString( u"DEX" )
+		self.cbSkill_Stealth.SetToolTip( u"DEX" )
 		
 		gSizer51.Add( self.cbSkill_Stealth, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_Athletics = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Athletics", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Athletics.SetToolTipString( u"STR" )
+		self.cbSkill_Athletics.SetToolTip( u"STR" )
 		
 		gSizer51.Add( self.cbSkill_Athletics, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_Investigation = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Investigation", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Investigation.SetToolTipString( u"INT" )
+		self.cbSkill_Investigation.SetToolTip( u"INT" )
 		
 		gSizer51.Add( self.cbSkill_Investigation, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_Persuasion = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Persuasion", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Persuasion.SetToolTipString( u"CHA" )
+		self.cbSkill_Persuasion.SetToolTip( u"CHA" )
 		
 		gSizer51.Add( self.cbSkill_Persuasion, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_Survival = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Survival", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Survival.SetToolTipString( u"WIS" )
+		self.cbSkill_Survival.SetToolTip( u"WIS" )
 		
 		gSizer51.Add( self.cbSkill_Survival, 0, wx.EXPAND|wx.ALIGN_CENTER_VERTICAL, 5 )
 		
 		self.cbSkill_Deception = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Deception", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Deception.SetToolTipString( u"CHA" )
+		self.cbSkill_Deception.SetToolTip( u"CHA" )
 		
 		gSizer51.Add( self.cbSkill_Deception, 0, wx.EXPAND, 5 )
 		
 		self.cbSkill_Medicine = wx.CheckBox( self.pnSkills, wx.ID_ANY, u"Medicine", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSkill_Medicine.SetToolTipString( u"WIS" )
+		self.cbSkill_Medicine.SetToolTip( u"WIS" )
 		
 		gSizer51.Add( self.cbSkill_Medicine, 0, wx.EXPAND, 5 )
 		
@@ -10689,7 +10689,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		bSizer658.Add( self.stSpellAttack, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 		
 		self.spSpellAttack = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 50,-1 ), wx.SP_ARROW_KEYS, -10, 20, 1 )
-		self.spSpellAttack.SetToolTipString( u"Attack = Proficiency + Spellcasting Ability Modifier" )
+		self.spSpellAttack.SetToolTip( u"Attack = Proficiency + Spellcasting Ability Modifier" )
 		
 		bSizer658.Add( self.spSpellAttack, 0, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
@@ -10703,7 +10703,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		bSizer6581.Add( self.stSpellDC, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 		
 		self.spSpellDC = wx.SpinCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 50,-1 ), wx.SP_ARROW_KEYS, -10, 20, 8 )
-		self.spSpellDC.SetToolTipString( u"Save = 8 + Proficiency + Spellcasting Ability Modifier" )
+		self.spSpellDC.SetToolTip( u"Save = 8 + Proficiency + Spellcasting Ability Modifier" )
 		
 		bSizer6581.Add( self.spSpellDC, 0, wx.ALIGN_CENTER_VERTICAL, 5 )
 		
@@ -10717,13 +10717,13 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		
 		self.trCreatureSpellList = wx.TreeCtrl( self, trCreatureSpellListID, wx.DefaultPosition, wx.Size( -1,100 ), wx.TR_DEFAULT_STYLE )
 		self.trCreatureSpellList.SetBackgroundColour( wx.Colour( 201, 241, 184 ) )
-		self.trCreatureSpellList.SetToolTipString( u"Spells for this NPC/Monster" )
+		self.trCreatureSpellList.SetToolTip( u"Spells for this NPC/Monster" )
 		
 		bSizer588.Add( self.trCreatureSpellList, 1, wx.ALL|wx.EXPAND|wx.FIXED_MINSIZE, 2 )
 		
 		self.trAllSpellList = wx.TreeCtrl( self, trAllSpellListID, wx.DefaultPosition, wx.Size( -1,100 ), wx.TR_DEFAULT_STYLE )
 		self.trAllSpellList.SetBackgroundColour( wx.Colour( 196, 196, 255 ) )
-		self.trAllSpellList.SetToolTipString( u"Available Spells" )
+		self.trAllSpellList.SetToolTip( u"Available Spells" )
 		
 		bSizer588.Add( self.trAllSpellList, 1, wx.ALL|wx.EXPAND|wx.FIXED_MINSIZE, 2 )
 		
@@ -10742,20 +10742,20 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		szUpdateButtons = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.bNewMonster = wx.Button( self, wx.ID_ANY, u"New Monster", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.bNewMonster.SetToolTipString( u"Clear selection and all fields" )
+		self.bNewMonster.SetToolTip( u"Clear selection and all fields" )
 		
 		szUpdateButtons.Add( self.bNewMonster, 0, 0, 5 )
 		
 		self.bAddMonster = wx.Button( self, wx.ID_ANY, u"Add to Master List", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bAddMonster.SetDefault() 
-		self.bAddMonster.SetToolTipString( u"Add a new monster based on the values to the left." )
+		self.bAddMonster.SetToolTip( u"Add a new monster based on the values to the left." )
 		
 		szUpdateButtons.Add( self.bAddMonster, 0, 0, 0 )
 		
 		self.bCopyMonster = wx.Button( self, wx.ID_ANY, u"Copy Monster", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bCopyMonster.SetDefault() 
 		self.bCopyMonster.Enable( False )
-		self.bCopyMonster.SetToolTipString( u"Copy selected monster stats to a new monster" )
+		self.bCopyMonster.SetToolTip( u"Copy selected monster stats to a new monster" )
 		
 		szUpdateButtons.Add( self.bCopyMonster, 0, wx.LEFT, 0 )
 		
@@ -10764,7 +10764,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		self.bUpdateMonster = wx.Button( self, wx.ID_ANY, u"Update Monster", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bUpdateMonster.SetDefault() 
 		self.bUpdateMonster.Enable( False )
-		self.bUpdateMonster.SetToolTipString( u"Update the monster selected in the list to the values above." )
+		self.bUpdateMonster.SetToolTip( u"Update the monster selected in the list to the values above." )
 		
 		bSizer601.Add( self.bUpdateMonster, 0, wx.LEFT|wx.ALIGN_CENTRE_HORIZONTAL, 0 )
 		
@@ -10781,7 +10781,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		self.bDeleteMonster = wx.Button( self, wx.ID_ANY, u"Delete Monster", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bDeleteMonster.SetDefault() 
 		self.bDeleteMonster.Enable( False )
-		self.bDeleteMonster.SetToolTipString( u"Delete the currently selected monster." )
+		self.bDeleteMonster.SetToolTip( u"Delete the currently selected monster." )
 		
 		szUpdateButtons.Add( self.bDeleteMonster, 0, 0, 0 )
 		
@@ -10795,7 +10795,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		self.ID_OK.SetFont( wx.Font( 8, 74, 90, 92, False, "Tahoma" ) )
 		self.ID_OK.SetForegroundColour( wx.Colour( 255, 255, 0 ) )
 		self.ID_OK.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.ID_OK.SetToolTipString( u"Add to description text if open" )
+		self.ID_OK.SetToolTip( u"Add to description text if open" )
 		
 		bSizer185.Add( self.ID_OK, 0, wx.RIGHT, 2 )
 		
@@ -10825,7 +10825,7 @@ class Monsters5E_DialogBase ( wx.Dialog ):
 		
 		lbMonsterListChoices = []
 		self.lbMonsterList = wx.ListBox( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( 225,-1 ), lbMonsterListChoices, wx.LB_SINGLE|wx.LB_SORT )
-		self.lbMonsterList.SetToolTipString( u"List of Monsters" )
+		self.lbMonsterList.SetToolTip( u"List of Monsters" )
 		
 		bSizer186.Add( self.lbMonsterList, 1, wx.ALL|wx.EXPAND|wx.EXPAND, 2 )
 		
@@ -12096,47 +12096,47 @@ class PC_5_GeneratorBase ( wx.Dialog ):
 		bSizer579 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.m_checkBox86 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Acrobatics", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox86.SetToolTipString( u"DEX" )
+		self.m_checkBox86.SetToolTip( u"DEX" )
 		
 		bSizer579.Add( self.m_checkBox86, 0, wx.ALL, 5 )
 		
 		self.m_checkBox88 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Animal Handling", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox88.SetToolTipString( u"WIS" )
+		self.m_checkBox88.SetToolTip( u"WIS" )
 		
 		bSizer579.Add( self.m_checkBox88, 0, wx.ALL, 5 )
 		
 		self.m_checkBox89 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Arcana", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox89.SetToolTipString( u"INT" )
+		self.m_checkBox89.SetToolTip( u"INT" )
 		
 		bSizer579.Add( self.m_checkBox89, 0, wx.ALL, 5 )
 		
 		self.m_checkBox90 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Athletics", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox90.SetToolTipString( u"STR" )
+		self.m_checkBox90.SetToolTip( u"STR" )
 		
 		bSizer579.Add( self.m_checkBox90, 0, wx.ALL, 5 )
 		
 		self.m_checkBox91 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Deception", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox91.SetToolTipString( u"CHA" )
+		self.m_checkBox91.SetToolTip( u"CHA" )
 		
 		bSizer579.Add( self.m_checkBox91, 0, wx.ALL, 5 )
 		
 		self.m_checkBox92 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"History", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox92.SetToolTipString( u"INT" )
+		self.m_checkBox92.SetToolTip( u"INT" )
 		
 		bSizer579.Add( self.m_checkBox92, 0, wx.ALL, 5 )
 		
 		self.m_checkBox93 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Insight", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox93.SetToolTipString( u"WIS" )
+		self.m_checkBox93.SetToolTip( u"WIS" )
 		
 		bSizer579.Add( self.m_checkBox93, 0, wx.ALL, 5 )
 		
 		self.m_checkBox94 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Intimidation", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox94.SetToolTipString( u"CHA" )
+		self.m_checkBox94.SetToolTip( u"CHA" )
 		
 		bSizer579.Add( self.m_checkBox94, 0, wx.ALL, 5 )
 		
 		self.m_checkBox95 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Investigation", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox95.SetToolTipString( u"INT" )
+		self.m_checkBox95.SetToolTip( u"INT" )
 		
 		bSizer579.Add( self.m_checkBox95, 0, wx.ALL, 5 )
 		
@@ -12146,47 +12146,47 @@ class PC_5_GeneratorBase ( wx.Dialog ):
 		bSizer580 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.m_checkBox87 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Medicine", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox87.SetToolTipString( u"WIS" )
+		self.m_checkBox87.SetToolTip( u"WIS" )
 		
 		bSizer580.Add( self.m_checkBox87, 0, wx.ALL, 5 )
 		
 		self.m_checkBox96 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Nature", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox96.SetToolTipString( u"INT" )
+		self.m_checkBox96.SetToolTip( u"INT" )
 		
 		bSizer580.Add( self.m_checkBox96, 0, wx.ALL, 5 )
 		
 		self.m_checkBox97 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Perception", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox97.SetToolTipString( u"WIS" )
+		self.m_checkBox97.SetToolTip( u"WIS" )
 		
 		bSizer580.Add( self.m_checkBox97, 0, wx.ALL, 5 )
 		
 		self.m_checkBox98 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Performance", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox98.SetToolTipString( u"CHA" )
+		self.m_checkBox98.SetToolTip( u"CHA" )
 		
 		bSizer580.Add( self.m_checkBox98, 0, wx.ALL, 5 )
 		
 		self.m_checkBox99 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Persuasion", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox99.SetToolTipString( u"CHA" )
+		self.m_checkBox99.SetToolTip( u"CHA" )
 		
 		bSizer580.Add( self.m_checkBox99, 0, wx.ALL, 5 )
 		
 		self.m_checkBox100 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Religion", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox100.SetToolTipString( u"INT" )
+		self.m_checkBox100.SetToolTip( u"INT" )
 		
 		bSizer580.Add( self.m_checkBox100, 0, wx.ALL, 5 )
 		
 		self.m_checkBox101 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Sleight of Hand", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox101.SetToolTipString( u"DEX" )
+		self.m_checkBox101.SetToolTip( u"DEX" )
 		
 		bSizer580.Add( self.m_checkBox101, 0, wx.ALL, 5 )
 		
 		self.m_checkBox102 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Stealth", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox102.SetToolTipString( u"DEX" )
+		self.m_checkBox102.SetToolTip( u"DEX" )
 		
 		bSizer580.Add( self.m_checkBox102, 0, wx.ALL, 5 )
 		
 		self.m_checkBox103 = wx.CheckBox( self.pnASF, wx.ID_ANY, u"Survival", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_checkBox103.SetToolTipString( u"WIS" )
+		self.m_checkBox103.SetToolTip( u"WIS" )
 		
 		bSizer580.Add( self.m_checkBox103, 0, wx.ALL, 5 )
 		
@@ -12252,25 +12252,25 @@ class ManifestPreviewDialogBase ( wx.Dialog ):
 		
 		self.bFirstPage = wx.Button( self, wx.ID_ANY, u"<<", wx.DefaultPosition, wx.Size( 30,-1 ), 0 )
 		self.bFirstPage.Enable( False )
-		self.bFirstPage.SetToolTipString( u"Go to first page" )
+		self.bFirstPage.SetToolTip( u"Go to first page" )
 		
 		bSizer410.Add( self.bFirstPage, 0, 0, 5 )
 		
 		self.bPreviousPage = wx.Button( self, wx.ID_ANY, u"<", wx.DefaultPosition, wx.Size( 30,-1 ), 0 )
 		self.bPreviousPage.Enable( False )
-		self.bPreviousPage.SetToolTipString( u"Go to previous page" )
+		self.bPreviousPage.SetToolTip( u"Go to previous page" )
 		
 		bSizer410.Add( self.bPreviousPage, 0, 0, 5 )
 		
 		self.bNextPage = wx.Button( self, wx.ID_ANY, u">", wx.DefaultPosition, wx.Size( 30,-1 ), 0 )
 		self.bNextPage.Enable( False )
-		self.bNextPage.SetToolTipString( u"Go to next page" )
+		self.bNextPage.SetToolTip( u"Go to next page" )
 		
 		bSizer410.Add( self.bNextPage, 0, 0, 5 )
 		
 		self.bLastPage = wx.Button( self, wx.ID_ANY, u">>", wx.DefaultPosition, wx.Size( 30,-1 ), 0 )
 		self.bLastPage.Enable( False )
-		self.bLastPage.SetToolTipString( u"Go to last page" )
+		self.bLastPage.SetToolTip( u"Go to last page" )
 		
 		bSizer410.Add( self.bLastPage, 0, 0, 5 )
 		
@@ -12283,7 +12283,7 @@ class ManifestPreviewDialogBase ( wx.Dialog ):
 		self.bPrint.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), 70, 90, 92, False, wx.EmptyString ) )
 		self.bPrint.SetForegroundColour( wx.Colour( 255, 255, 0 ) )
 		self.bPrint.SetBackgroundColour( wx.Colour( 0, 64, 0 ) )
-		self.bPrint.SetToolTipString( u"Print the document" )
+		self.bPrint.SetToolTip( u"Print the document" )
 		
 		bSizer409.Add( self.bPrint, 1, wx.ALIGN_RIGHT, 5 )
 		
@@ -12291,7 +12291,7 @@ class ManifestPreviewDialogBase ( wx.Dialog ):
 		self.bCancel.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), 70, 90, 92, False, wx.EmptyString ) )
 		self.bCancel.SetForegroundColour( wx.Colour( 255, 255, 255 ) )
 		self.bCancel.SetBackgroundColour( wx.Colour( 128, 0, 0 ) )
-		self.bCancel.SetToolTipString( u"Cancel printing" )
+		self.bCancel.SetToolTip( u"Cancel printing" )
 		
 		bSizer409.Add( self.bCancel, 1, wx.ALIGN_RIGHT, 5 )
 		
@@ -12398,7 +12398,7 @@ class ImportTilesDialogBase ( wx.Dialog ):
 		
 		self.txTilesetID = wx.TextCtrl( self, wx.ID_ANY, u"SetID", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.txTilesetID.SetMaxLength( 0 ) 
-		self.txTilesetID.SetToolTipString( u"Enter the Set ID here.  This is also the folder name where the tiles are stored." )
+		self.txTilesetID.SetToolTip( u"Enter the Set ID here.  This is also the folder name where the tiles are stored." )
 		
 		bSizer34.Add( self.txTilesetID, 0, 0, 0 )
 		
@@ -12427,7 +12427,7 @@ class ImportTilesDialogBase ( wx.Dialog ):
 		
 		lbTilesetBoxChoices = []
 		self.lbTilesetBox = wx.ListBox( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( 225, 200 ), lbTilesetBoxChoices, wx.LB_SINGLE )
-		self.lbTilesetBox.SetToolTipString( u"Lists all tiles currently part of the active tileset" )
+		self.lbTilesetBox.SetToolTip( u"Lists all tiles currently part of the active tileset" )
 		
 		bClearSelection1.Add( self.lbTilesetBox, 6, wx.TOP, 5 )
 		
@@ -12442,7 +12442,7 @@ class ImportTilesDialogBase ( wx.Dialog ):
 		self.bUpdateTile = wx.Button( self, wx.ID_ANY, u"Update Selected Tile", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bUpdateTile.SetDefault() 
 		self.bUpdateTile.Enable( False )
-		self.bUpdateTile.SetToolTipString( u"Update the above selected tile with values at right" )
+		self.bUpdateTile.SetToolTip( u"Update the above selected tile with values at right" )
 		
 		bSizer36.Add( self.bUpdateTile, 0, wx.EXPAND, 1 )
 		
@@ -12519,7 +12519,7 @@ class ImportTilesDialogBase ( wx.Dialog ):
 		
 		ImageListBoxChoices = []
 		self.ImageListBox = wx.ListBox( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( -1,-1 ), ImageListBoxChoices, wx.LB_NEEDED_SB|wx.LB_SINGLE )
-		self.ImageListBox.SetToolTipString( u"List of available images to include in the tileset" )
+		self.ImageListBox.SetToolTip( u"List of available images to include in the tileset" )
 		
 		bSizer365.Add( self.ImageListBox, 1, wx.EXPAND, 0 )
 		
@@ -12607,7 +12607,7 @@ class ImportTilesDialogBase ( wx.Dialog ):
 		self.bSetImageSideA = wx.Button( self, wx.ID_ANY, u"Set Image Side A", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bSetImageSideA.SetDefault() 
 		self.bSetImageSideA.SetBackgroundColour( wx.Colour( 255, 255, 202 ) )
-		self.bSetImageSideA.SetToolTipString( u"Assign the currently selected image to side A" )
+		self.bSetImageSideA.SetToolTip( u"Assign the currently selected image to side A" )
 		
 		bSizer17.Add( self.bSetImageSideA, 0, wx.EXPAND|wx.TOP, 3 )
 		
@@ -12625,7 +12625,7 @@ class ImportTilesDialogBase ( wx.Dialog ):
 		self.bSetImageSideB = wx.Button( self, wx.ID_ANY, u"Set Image Side B", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bSetImageSideB.SetDefault() 
 		self.bSetImageSideB.SetBackgroundColour( wx.Colour( 202, 202, 255 ) )
-		self.bSetImageSideB.SetToolTipString( u"Assign the currently selected image to side B" )
+		self.bSetImageSideB.SetToolTip( u"Assign the currently selected image to side B" )
 		
 		bSizer18.Add( self.bSetImageSideB, 0, wx.EXPAND|wx.TOP, 3 )
 		
@@ -12662,7 +12662,7 @@ class ImportTilesDialogBase ( wx.Dialog ):
 		self.bAddCurrentToTileset.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), 70, 90, 90, False, wx.EmptyString ) )
 		self.bAddCurrentToTileset.SetForegroundColour( wx.Colour( 255, 255, 0 ) )
 		self.bAddCurrentToTileset.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bAddCurrentToTileset.SetToolTipString( u"Add the tile to the tileset with the given attributes" )
+		self.bAddCurrentToTileset.SetToolTip( u"Add the tile to the tileset with the given attributes" )
 		
 		sbSizer5.Add( self.bAddCurrentToTileset, 0, wx.ALIGN_CENTER_HORIZONTAL|wx.ALL, 4 )
 		
@@ -12768,7 +12768,7 @@ class ImportTilesDialogBase ( wx.Dialog ):
 		bSizer29.Add( self.bZoomOutSideA, 0, 0, 0 )
 		
 		self.cpkSideAGridColor = wx.ColourPickerCtrl( self, wx.ID_ANY, wx.Colour( 255, 0, 0 ), wx.DefaultPosition, wx.DefaultSize, wx.CLRP_DEFAULT_STYLE )
-		self.cpkSideAGridColor.SetToolTipString( u"Grid color for Side A.  Click to change." )
+		self.cpkSideAGridColor.SetToolTip( u"Grid color for Side A.  Click to change." )
 		
 		bSizer29.Add( self.cpkSideAGridColor, 0, wx.ALIGN_CENTER_VERTICAL|wx.LEFT, 5 )
 		
@@ -12800,7 +12800,7 @@ class ImportTilesDialogBase ( wx.Dialog ):
 		bSizer30.Add( self.bZoomOutSideB, 0, wx.ALIGN_CENTRE, 0 )
 		
 		self.cpkSideBGridColor = wx.ColourPickerCtrl( self, wx.ID_ANY, wx.Colour( 255, 0, 0 ), wx.DefaultPosition, wx.DefaultSize, wx.CLRP_DEFAULT_STYLE )
-		self.cpkSideBGridColor.SetToolTipString( u"Grid Color for Side B.  Click to change." )
+		self.cpkSideBGridColor.SetToolTip( u"Grid Color for Side B.  Click to change." )
 		
 		bSizer30.Add( self.cpkSideBGridColor, 0, wx.ALIGN_CENTER_VERTICAL|wx.LEFT, 5 )
 		
@@ -12964,7 +12964,7 @@ class TilesetBuilderDialogCore ( wx.Dialog ):
 		wx.Dialog.__init__ ( self, parent, id = wx.ID_ANY, title = u"Tileset Builder Image Extractor", pos = wx.DefaultPosition, size = wx.Size( -1,-1 ), style = wx.DEFAULT_DIALOG_STYLE|wx.RESIZE_BORDER )
 		
 		self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
-		self.SetToolTipString( u"Browse in the tiles folder" )
+		self.SetToolTip( u"Browse in the tiles folder" )
 		
 		bSizer160 = wx.BoxSizer( wx.VERTICAL )
 		
@@ -12978,7 +12978,7 @@ class TilesetBuilderDialogCore ( wx.Dialog ):
 		
 		self.txTilesetName = wx.TextCtrl( self, wx.ID_ANY, u"Tileset Name", wx.DefaultPosition, wx.Size( 200,-1 ), 0 )
 		self.txTilesetName.SetMaxLength( 0 ) 
-		self.txTilesetName.SetToolTipString( u"This is the name of the tileset." )
+		self.txTilesetName.SetToolTip( u"This is the name of the tileset." )
 		
 		bSizer172.Add( self.txTilesetName, 0, wx.ALL, 5 )
 		
@@ -12993,7 +12993,7 @@ class TilesetBuilderDialogCore ( wx.Dialog ):
 		
 		self.txFolderID = wx.TextCtrl( self, wx.ID_ANY, u"ID", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.txFolderID.SetMaxLength( 0 ) 
-		self.txFolderID.SetToolTipString( u"This is the folder name where images are stored in the tiles folder" )
+		self.txFolderID.SetToolTip( u"This is the folder name where images are stored in the tiles folder" )
 		
 		bSizer174.Add( self.txFolderID, 0, wx.ALL, 5 )
 		
@@ -13016,7 +13016,7 @@ class TilesetBuilderDialogCore ( wx.Dialog ):
 		bSizer405.Add( self.m_staticText2231, 0, wx.ALIGN_CENTER_VERTICAL|wx.ALL, 5 )
 		
 		self.fpkLoadSideA = wx.FilePickerCtrl( self, wx.ID_ANY, wx.EmptyString, u"Select Image for Front Side", u"Image Files (*.jpg, *.png)|*.jpg; *.png", wx.DefaultPosition, wx.DefaultSize, wx.FLP_FILE_MUST_EXIST|wx.FLP_OPEN )
-		self.fpkLoadSideA.SetToolTipString( u"Select for front side image" )
+		self.fpkLoadSideA.SetToolTip( u"Select for front side image" )
 		
 		bSizer405.Add( self.fpkLoadSideA, 0, wx.ALL, 5 )
 		
@@ -13056,13 +13056,13 @@ class TilesetBuilderDialogCore ( wx.Dialog ):
 		
 		self.bZoomInA = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/ZoomIn.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		self.bZoomInA.SetDefault() 
-		self.bZoomInA.SetToolTipString( u"Zoom In" )
+		self.bZoomInA.SetToolTip( u"Zoom In" )
 		
 		bSizer222.Add( self.bZoomInA, 0, wx.RIGHT, 5 )
 		
 		self.bZoomOutA = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/ZoomOut.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		self.bZoomOutA.SetDefault() 
-		self.bZoomOutA.SetToolTipString( u"Zoom Out" )
+		self.bZoomOutA.SetToolTip( u"Zoom Out" )
 		
 		bSizer222.Add( self.bZoomOutA, 0, wx.LEFT, 5 )
 		
@@ -13089,7 +13089,7 @@ class TilesetBuilderDialogCore ( wx.Dialog ):
 		bSizer406.Add( self.bDefineTileB, 0, wx.ALIGN_BOTTOM|wx.ALL, 2 )
 		
 		self.tgSideB = wx.ToggleButton( self, wx.ID_ANY, u"Turn off side B", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.tgSideB.SetToolTipString( u"Toggle this button on if there is no side B image." )
+		self.tgSideB.SetToolTip( u"Toggle this button on if there is no side B image." )
 		
 		bSizer406.Add( self.tgSideB, 0, wx.ALIGN_BOTTOM|wx.ALL, 2 )
 		
@@ -13121,13 +13121,13 @@ class TilesetBuilderDialogCore ( wx.Dialog ):
 		
 		self.bZoomInB = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/ZoomIn.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		self.bZoomInB.SetDefault() 
-		self.bZoomInB.SetToolTipString( u"Zoom In" )
+		self.bZoomInB.SetToolTip( u"Zoom In" )
 		
 		bSizer2221.Add( self.bZoomInB, 0, wx.RIGHT, 5 )
 		
 		self.bZoomOutB = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/ZoomOut.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		self.bZoomOutB.SetDefault() 
-		self.bZoomOutB.SetToolTipString( u"Zoom Out" )
+		self.bZoomOutB.SetToolTip( u"Zoom Out" )
 		
 		bSizer2221.Add( self.bZoomOutB, 0, wx.LEFT, 5 )
 		
@@ -13144,7 +13144,7 @@ class TilesetBuilderDialogCore ( wx.Dialog ):
 		
 		lbTilesetBoxChoices = []
 		self.lbTilesetBox = wx.ListBox( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( 200,100 ), lbTilesetBoxChoices, wx.LB_SINGLE )
-		self.lbTilesetBox.SetToolTipString( u"List of tiles in tileset.  Select to see the tile below." )
+		self.lbTilesetBox.SetToolTip( u"List of tiles in tileset.  Select to see the tile below." )
 		
 		sbTilesetSizer.Add( self.lbTilesetBox, 0, wx.ALL, 5 )
 		
@@ -13155,7 +13155,7 @@ class TilesetBuilderDialogCore ( wx.Dialog ):
 		
 		self.pnSelectedTile = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( 200,200 ), wx.SUNKEN_BORDER|wx.TAB_TRAVERSAL )
 		self.pnSelectedTile.SetBackgroundColour( wx.Colour( 64, 128, 128 ) )
-		self.pnSelectedTile.SetToolTipString( u"Display selected tile from the tileset" )
+		self.pnSelectedTile.SetToolTip( u"Display selected tile from the tileset" )
 		
 		sbTilesetSizer.Add( self.pnSelectedTile, 0, wx.ALL, 5 )
 		
@@ -13339,7 +13339,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		
 		ImageListBox_SetupChoices = []
 		self.ImageListBox_Setup = wx.ListBox( self.pnSetupTile, Setup_ImageListBox, wx.DefaultPosition, wx.Size( -1,150 ), ImageListBox_SetupChoices, wx.LB_NEEDED_SB|wx.LB_SINGLE )
-		self.ImageListBox_Setup.SetToolTipString( u"List of available images to include in the tileset" )
+		self.ImageListBox_Setup.SetToolTip( u"List of available images to include in the tileset" )
 		
 		bSizer3651.Add( self.ImageListBox_Setup, 1, wx.EXPAND, 0 )
 		
@@ -13357,7 +13357,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		
 		self.pnImagePreview_Setup = wx.Panel( self.pnSetupTile, wx.ID_ANY, wx.DefaultPosition, wx.Size( 200,200 ), wx.SUNKEN_BORDER|wx.TAB_TRAVERSAL )
 		self.pnImagePreview_Setup.SetBackgroundColour( wx.Colour( 58, 118, 118 ) )
-		self.pnImagePreview_Setup.SetToolTipString( u"Image preview of selected tile" )
+		self.pnImagePreview_Setup.SetToolTip( u"Image preview of selected tile" )
 		
 		sbSizer601.Add( self.pnImagePreview_Setup, 1, wx.ALIGN_CENTER_HORIZONTAL|wx.EXPAND, 5 )
 		
@@ -13378,7 +13378,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		self.bSetImageSideA.SetDefault() 
 		self.bSetImageSideA.SetBackgroundColour( wx.Colour( 255, 255, 202 ) )
 		self.bSetImageSideA.Enable( False )
-		self.bSetImageSideA.SetToolTipString( u"Assign the currently selected image to side A" )
+		self.bSetImageSideA.SetToolTip( u"Assign the currently selected image to side A" )
 		
 		bSizer17.Add( self.bSetImageSideA, 0, wx.EXPAND|wx.TOP, 3 )
 		
@@ -13397,7 +13397,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		self.bSetImageSideB.SetDefault() 
 		self.bSetImageSideB.SetBackgroundColour( wx.Colour( 202, 202, 255 ) )
 		self.bSetImageSideB.Enable( False )
-		self.bSetImageSideB.SetToolTipString( u"Assign the currently selected image to side B" )
+		self.bSetImageSideB.SetToolTip( u"Assign the currently selected image to side B" )
 		
 		bSizer18.Add( self.bSetImageSideB, 0, wx.EXPAND|wx.TOP, 3 )
 		
@@ -13434,7 +13434,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		self.bAddCurrentToTileset.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), 70, 90, 90, False, wx.EmptyString ) )
 		self.bAddCurrentToTileset.SetForegroundColour( wx.Colour( 255, 255, 0 ) )
 		self.bAddCurrentToTileset.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bAddCurrentToTileset.SetToolTipString( u"Add the tile to the tileset with the given attributes" )
+		self.bAddCurrentToTileset.SetToolTip( u"Add the tile to the tileset with the given attributes" )
 		
 		sbSizer5.Add( self.bAddCurrentToTileset, 0, wx.ALIGN_CENTER_HORIZONTAL, 4 )
 		
@@ -13444,7 +13444,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		self.bUpdateTile.SetForegroundColour( wx.Colour( 255, 255, 0 ) )
 		self.bUpdateTile.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
 		self.bUpdateTile.Enable( False )
-		self.bUpdateTile.SetToolTipString( u"Update the selected tile with the given attributes" )
+		self.bUpdateTile.SetToolTip( u"Update the selected tile with the given attributes" )
 		
 		sbSizer5.Add( self.bUpdateTile, 0, wx.ALIGN_CENTER_HORIZONTAL, 5 )
 		
@@ -13552,12 +13552,12 @@ class TilesetEditor2Base ( wx.Dialog ):
 		bSizer466 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.bSetWallsSideA = wx.ToggleButton( self.pnTileAttributes, wx.ID_ANY, u"Set edge types on Side A", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.bSetWallsSideA.SetToolTipString( u"Click toggle to set edge types " )
+		self.bSetWallsSideA.SetToolTip( u"Click toggle to set edge types " )
 		
 		bSizer466.Add( self.bSetWallsSideA, 0, 0, 0 )
 		
 		self.bSetWallsSideB = wx.ToggleButton( self.pnTileAttributes, wx.ID_ANY, u"Set edge types on Side B", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.bSetWallsSideB.SetToolTipString( u"Click toggle to set edge types " )
+		self.bSetWallsSideB.SetToolTip( u"Click toggle to set edge types " )
 		
 		bSizer466.Add( self.bSetWallsSideB, 0, wx.TOP, 5 )
 		
@@ -13565,7 +13565,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		self.bAddFilterTags.SetDefault() 
 		self.bAddFilterTags.SetForegroundColour( wx.Colour( 255, 255, 255 ) )
 		self.bAddFilterTags.SetBackgroundColour( wx.Colour( 0, 128, 0 ) )
-		self.bAddFilterTags.SetToolTipString( u"Add tags for filtering tiles" )
+		self.bAddFilterTags.SetToolTip( u"Add tags for filtering tiles" )
 		
 		bSizer466.Add( self.bAddFilterTags, 0, wx.TOP, 5 )
 		
@@ -13603,7 +13603,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		self.Setup_SideAImagePanel = wx.Panel( self.pnSetupTile, Setup_ImageA, wx.DefaultPosition, wx.Size( 200,200 ), wx.DOUBLE_BORDER )
 		self.Setup_SideAImagePanel.SetForegroundColour( wx.Colour( 255, 255, 255 ) )
 		self.Setup_SideAImagePanel.SetBackgroundColour( wx.Colour( 255, 255, 202 ) )
-		self.Setup_SideAImagePanel.SetToolTipString( u"Image for side A" )
+		self.Setup_SideAImagePanel.SetToolTip( u"Image for side A" )
 		
 		sbSizer81.Add( self.Setup_SideAImagePanel, 0, 0, 0 )
 		
@@ -13621,7 +13621,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		bSizer291.Add( self.bZoomOutSideA1, 0, 0, 0 )
 		
 		self.cpkSideAGridColor_Setup = wx.ColourPickerCtrl( self.pnSetupTile, wx.ID_ANY, wx.Colour( 255, 0, 0 ), wx.DefaultPosition, wx.DefaultSize, wx.CLRP_DEFAULT_STYLE )
-		self.cpkSideAGridColor_Setup.SetToolTipString( u"Grid color for Side A.  Click to change." )
+		self.cpkSideAGridColor_Setup.SetToolTip( u"Grid color for Side A.  Click to change." )
 		
 		bSizer291.Add( self.cpkSideAGridColor_Setup, 0, wx.ALIGN_CENTER_VERTICAL|wx.LEFT, 5 )
 		
@@ -13636,7 +13636,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		self.Setup_SideBImagePanel = wx.Panel( self.pnSetupTile, Setup_ImageB, wx.DefaultPosition, wx.Size( 200,200 ), wx.DOUBLE_BORDER )
 		self.Setup_SideBImagePanel.SetForegroundColour( wx.Colour( 255, 255, 255 ) )
 		self.Setup_SideBImagePanel.SetBackgroundColour( wx.Colour( 202, 202, 255 ) )
-		self.Setup_SideBImagePanel.SetToolTipString( u"Image for side B" )
+		self.Setup_SideBImagePanel.SetToolTip( u"Image for side B" )
 		
 		sbSizer91.Add( self.Setup_SideBImagePanel, 0, 0, 0 )
 		
@@ -13654,7 +13654,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		bSizer301.Add( self.bZoomOutSideB1, 0, wx.ALIGN_CENTRE, 0 )
 		
 		self.cpkSideBGridColor_Setup = wx.ColourPickerCtrl( self.pnSetupTile, wx.ID_ANY, wx.Colour( 255, 0, 0 ), wx.DefaultPosition, wx.DefaultSize, wx.CLRP_DEFAULT_STYLE )
-		self.cpkSideBGridColor_Setup.SetToolTipString( u"Grid Color for Side B.  Click to change." )
+		self.cpkSideBGridColor_Setup.SetToolTip( u"Grid Color for Side B.  Click to change." )
 		
 		bSizer301.Add( self.cpkSideBGridColor_Setup, 0, wx.ALIGN_CENTER_VERTICAL|wx.LEFT, 5 )
 		
@@ -13671,7 +13671,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		
 		lbSetup_TilesetBoxChoices = []
 		self.lbSetup_TilesetBox = wx.ListBox( self.pnSetupTile, Setup_TilesetBox, wx.DefaultPosition, wx.Size( 225, 200 ), lbSetup_TilesetBoxChoices, wx.LB_SINGLE )
-		self.lbSetup_TilesetBox.SetToolTipString( u"Lists all tiles currently part of the active tileset" )
+		self.lbSetup_TilesetBox.SetToolTip( u"Lists all tiles currently part of the active tileset" )
 		
 		sbSizer76.Add( self.lbSetup_TilesetBox, 0, wx.ALL|wx.EXPAND, 5 )
 		
@@ -13770,7 +13770,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		
 		self.txTilesetName = wx.TextCtrl( self.pnTilesetProperties, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 150,-1 ), 0 )
 		self.txTilesetName.SetMaxLength( 0 ) 
-		self.txTilesetName.SetToolTipString( u"Enter a name for the tileset filename" )
+		self.txTilesetName.SetToolTip( u"Enter a name for the tileset filename" )
 		
 		bSizer33.Add( self.txTilesetName, 0, wx.LEFT, 5 )
 		
@@ -13785,7 +13785,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		
 		self.txTilesetID = wx.TextCtrl( self.pnTilesetProperties, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.txTilesetID.SetMaxLength( 0 ) 
-		self.txTilesetID.SetToolTipString( u"Enter the Set ID here.  This is also the folder name where the tiles are stored." )
+		self.txTilesetID.SetToolTip( u"Enter the Set ID here.  This is also the folder name where the tiles are stored." )
 		
 		bSizer34.Add( self.txTilesetID, 0, wx.LEFT, 3 )
 		
@@ -13808,7 +13808,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		
 		lbTileset_TilesetBoxChoices = []
 		self.lbTileset_TilesetBox = wx.ListBox( self.pnTilesetProperties, Tileset_TilesetBox, wx.DefaultPosition, wx.Size( 225, 200 ), lbTileset_TilesetBoxChoices, wx.LB_SINGLE )
-		self.lbTileset_TilesetBox.SetToolTipString( u"Lists all tiles currently part of the active tileset" )
+		self.lbTileset_TilesetBox.SetToolTip( u"Lists all tiles currently part of the active tileset" )
 		
 		sbSizer80.Add( self.lbTileset_TilesetBox, 1, wx.ALL|wx.EXPAND, 5 )
 		
@@ -13847,7 +13847,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		bSizer29.Add( bSizer537, 1, wx.EXPAND, 5 )
 		
 		self.cpkSideAGridColor_Tileset = wx.ColourPickerCtrl( self.pnTilesetProperties, Tileset_SideAGridColor, wx.Colour( 255, 0, 0 ), wx.DefaultPosition, wx.DefaultSize, wx.CLRP_DEFAULT_STYLE )
-		self.cpkSideAGridColor_Tileset.SetToolTipString( u"Grid color for Side A.  Click to change." )
+		self.cpkSideAGridColor_Tileset.SetToolTip( u"Grid color for Side A.  Click to change." )
 		
 		bSizer29.Add( self.cpkSideAGridColor_Tileset, 0, wx.ALIGN_CENTER_HORIZONTAL, 5 )
 		
@@ -13886,7 +13886,7 @@ class TilesetEditor2Base ( wx.Dialog ):
 		bSizer532 = wx.BoxSizer( wx.VERTICAL )
 		
 		self.cpkSideBGridColor_Tileset = wx.ColourPickerCtrl( self.pnTilesetProperties, Tileset_SideBGridColor, wx.Colour( 255, 0, 0 ), wx.DefaultPosition, wx.Size( -1,-1 ), wx.CLRP_DEFAULT_STYLE )
-		self.cpkSideBGridColor_Tileset.SetToolTipString( u"Grid Color for Side B.  Click to change." )
+		self.cpkSideBGridColor_Tileset.SetToolTip( u"Grid Color for Side B.  Click to change." )
 		
 		bSizer532.Add( self.cpkSideBGridColor_Tileset, 0, wx.ALIGN_CENTER_HORIZONTAL, 5 )
 		
@@ -14183,25 +14183,25 @@ class ReorderPagesBase ( wx.Dialog ):
 		
 		self.bMoveToTop = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/UpAll.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		self.bMoveToTop.Enable( False )
-		self.bMoveToTop.SetToolTipString( u"Move selected page to first position" )
+		self.bMoveToTop.SetToolTip( u"Move selected page to first position" )
 		
 		bSizer529.Add( self.bMoveToTop, 0, wx.ALL, 5 )
 		
 		self.bMoveUp = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/Up.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		self.bMoveUp.Enable( False )
-		self.bMoveUp.SetToolTipString( u"Move selected page up one position" )
+		self.bMoveUp.SetToolTip( u"Move selected page up one position" )
 		
 		bSizer529.Add( self.bMoveUp, 0, wx.ALL, 5 )
 		
 		self.bMoveDown = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/Down.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		self.bMoveDown.Enable( False )
-		self.bMoveDown.SetToolTipString( u"Move selected page down one position" )
+		self.bMoveDown.SetToolTip( u"Move selected page down one position" )
 		
 		bSizer529.Add( self.bMoveDown, 0, wx.ALL, 5 )
 		
 		self.bMoveToBottom = wx.BitmapButton( self, wx.ID_ANY, wx.Bitmap( u"artwork/DownAll.png", wx.BITMAP_TYPE_ANY ), wx.DefaultPosition, wx.DefaultSize, wx.BU_AUTODRAW )
 		self.bMoveToBottom.Enable( False )
-		self.bMoveToBottom.SetToolTipString( u"Move selected page to bottom position" )
+		self.bMoveToBottom.SetToolTip( u"Move selected page to bottom position" )
 		
 		bSizer529.Add( self.bMoveToBottom, 0, wx.ALL, 5 )
 		
@@ -14511,22 +14511,22 @@ class Spellbook5EBase ( wx.Dialog ):
 		bSizer585 = wx.BoxSizer( wx.HORIZONTAL )
 		
 		self.cbVerbal = wx.CheckBox( self, wx.ID_ANY, u"V", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbVerbal.SetToolTipString( u"Verbal Component?" )
+		self.cbVerbal.SetToolTip( u"Verbal Component?" )
 		
 		bSizer585.Add( self.cbVerbal, 0, wx.ALL, 5 )
 		
 		self.cbSomatic = wx.CheckBox( self, wx.ID_ANY, u"S", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbSomatic.SetToolTipString( u"Somatic Component?" )
+		self.cbSomatic.SetToolTip( u"Somatic Component?" )
 		
 		bSizer585.Add( self.cbSomatic, 0, wx.ALL, 5 )
 		
 		self.cbMaterial = wx.CheckBox( self, wx.ID_ANY, u"M", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbMaterial.SetToolTipString( u"Material Component?" )
+		self.cbMaterial.SetToolTip( u"Material Component?" )
 		
 		bSizer585.Add( self.cbMaterial, 0, wx.ALL, 5 )
 		
 		self.cbFocus = wx.CheckBox( self, wx.ID_ANY, u"F", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.cbFocus.SetToolTipString( u"Focus Component?" )
+		self.cbFocus.SetToolTip( u"Focus Component?" )
 		
 		bSizer585.Add( self.cbFocus, 0, wx.ALL, 5 )
 		
@@ -14715,7 +14715,7 @@ class Spellbook5EBase ( wx.Dialog ):
 		
 		self.bDeleteSpell = wx.Button( self, wx.ID_ANY, u"Delete Spell", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.bDeleteSpell.Enable( False )
-		self.bDeleteSpell.SetToolTipString( u"Deletes a user-defined spell" )
+		self.bDeleteSpell.SetToolTip( u"Deletes a user-defined spell" )
 		
 		bSizer578.Add( self.bDeleteSpell, 0, wx.ALL, 2 )
 		
