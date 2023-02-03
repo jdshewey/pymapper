@@ -9313,7 +9313,7 @@ class SymbolMarkerManagerDialog(PyMapperDialogs.SymbolManagerDialogCore):
     self.UpdateMarkerListbox()
     self.symbol_bmp = None
     self.marker_bmp = None
-    self.marker_base = wx.EmptyImage(100,100)
+    self.marker_base = wx.Image(100,100)
     self.marker_base.InitAlpha()
     for x in range(100):
       for y in range(100):
@@ -13601,7 +13601,7 @@ class PyMapperAppMain(wx.App):
     else:
       logging.critical("init_frame:  MapBuffer is NONE")
     #self.MapFogImage (wxImage) is the fog of war overlay on the player screen
-    self.MapFogImage = wx.EmptyImage(self.MapStruct.columns*gv.MapZoomFactor, 
+    self.MapFogImage = wx.Image(self.MapStruct.columns*gv.MapZoomFactor, 
                                     self.MapStruct.rows*gv.MapZoomFactor)
     self.MapPanelDC = wx.BufferedDC(None, self.MapBuffer)
     self.MapPanel.SetBackgroundStyle(wx.BG_STYLE_CUSTOM)
@@ -16325,7 +16325,7 @@ class PyMapperAppMain(wx.App):
         self.OnTilesetBrowser(event)
         
     #reset the Fog Mask
-    self.MapFogImage = wx.EmptyImage(self.MapStruct.rows*gv.MapZoomFactor, self.MapStruct.columns*gv.MapZoomFactor)
+    self.MapFogImage = wx.Image(self.MapStruct.rows*gv.MapZoomFactor, self.MapStruct.columns*gv.MapZoomFactor)
     
     #reset the undo list
     self.UndoList = []
