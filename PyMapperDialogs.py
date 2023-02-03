@@ -389,187 +389,187 @@ class PyMapperFrameCore ( wx.Frame ):
 		self.menubar = wx.MenuBar( 0 )
 		self.Menu_File = wx.Menu()
 		self.File_New = wx.MenuItem( self.Menu_File, mFileNew, u"New..."+ u"\t" + u"Ctrl+N", u"Create a new black map file", wx.ITEM_NORMAL )
-		self.Menu_File.AppendItem( self.File_New )
+		self.Menu_File.Append( self.File_New )
 		
 		self.File_New_Geomorph = wx.MenuItem( self.Menu_File, mFileNewGeomorph, u"New Geomorph...", wx.EmptyString, wx.ITEM_NORMAL )
-		self.Menu_File.AppendItem( self.File_New_Geomorph )
+		self.Menu_File.Append( self.File_New_Geomorph )
 		
 		self.Menu_File.AppendSeparator()
 		
 		self.File_Open = wx.MenuItem( self.Menu_File, mFileOpen, u"Open..."+ u"\t" + u"Ctrl+O", u"Open an existing map file", wx.ITEM_NORMAL )
-		self.Menu_File.AppendItem( self.File_Open )
+		self.Menu_File.Append( self.File_Open )
 		
 		self.File_Open_Geomorph = wx.MenuItem( self.Menu_File, mFileOpenGeomorph, u"Open Geomorph...", wx.EmptyString, wx.ITEM_NORMAL )
-		self.Menu_File.AppendItem( self.File_Open_Geomorph )
+		self.Menu_File.Append( self.File_Open_Geomorph )
 		
 		self.File_Save = wx.MenuItem( self.Menu_File, mFileSave, u"Save..."+ u"\t" + u"Ctrl+S", wx.EmptyString, wx.ITEM_NORMAL )
-		self.Menu_File.AppendItem( self.File_Save )
+		self.Menu_File.Append( self.File_Save )
 		
 		self.File_SaveAs = wx.MenuItem( self.Menu_File, mFileSaveAs, u"Save As...", wx.EmptyString, wx.ITEM_NORMAL )
-		self.Menu_File.AppendItem( self.File_SaveAs )
+		self.Menu_File.Append( self.File_SaveAs )
 		
 		self.Menu_File.AppendSeparator()
 		
 		self.File_ImportFile = wx.MenuItem( self.Menu_File, mFileImportFile, u"Import map file to a new page", u"Import existing map file to a new map page", wx.ITEM_NORMAL )
-		self.Menu_File.AppendItem( self.File_ImportFile )
+		self.Menu_File.Append( self.File_ImportFile )
 		
 		self.File_ImportBackground = wx.MenuItem( self.Menu_File, mFileImportBackground, u"Import Map Background...", u"Open an image to use as a map background", wx.ITEM_NORMAL )
-		self.Menu_File.AppendItem( self.File_ImportBackground )
+		self.Menu_File.Append( self.File_ImportBackground )
 		
 		self.Menu_File.AppendSeparator()
 		
 		self.FileRecentFiles = wx.Menu()
 		self.RecentFile1 = wx.MenuItem( self.FileRecentFiles, mFileRecentFile1, u"...", wx.EmptyString, wx.ITEM_NORMAL )
-		self.FileRecentFiles.AppendItem( self.RecentFile1 )
+		self.FileRecentFiles.Append( self.RecentFile1 )
 		
 		self.RecentFile2 = wx.MenuItem( self.FileRecentFiles, mFileRecentFile2, u"...", wx.EmptyString, wx.ITEM_NORMAL )
-		self.FileRecentFiles.AppendItem( self.RecentFile2 )
+		self.FileRecentFiles.Append( self.RecentFile2 )
 		
 		self.RecentFile3 = wx.MenuItem( self.FileRecentFiles, mFileRecentFile3, u"...", wx.EmptyString, wx.ITEM_NORMAL )
-		self.FileRecentFiles.AppendItem( self.RecentFile3 )
+		self.FileRecentFiles.Append( self.RecentFile3 )
 		
 		self.RecentFile4 = wx.MenuItem( self.FileRecentFiles, mFileRecentFile4, u"...", wx.EmptyString, wx.ITEM_NORMAL )
-		self.FileRecentFiles.AppendItem( self.RecentFile4 )
+		self.FileRecentFiles.Append( self.RecentFile4 )
 		
 		self.RecentFile5 = wx.MenuItem( self.FileRecentFiles, mFileRecentFile5, u"...", wx.EmptyString, wx.ITEM_NORMAL )
-		self.FileRecentFiles.AppendItem( self.RecentFile5 )
+		self.FileRecentFiles.Append( self.RecentFile5 )
 		
 		self.Menu_File.AppendSubMenu( self.FileRecentFiles, u"Recent Files" )
 		
 		self.File_Exit = wx.MenuItem( self.Menu_File, mFileExit, u"Exit..."+ u"\t" + u"Ctrl+Q", u"Exit pymapper", wx.ITEM_NORMAL )
-		self.Menu_File.AppendItem( self.File_Exit )
+		self.Menu_File.Append( self.File_Exit )
 		
 		self.menubar.Append( self.Menu_File, u"File" ) 
 		
 		self.Menu_Edit = wx.Menu()
 		self.Edit_Undo = wx.MenuItem( self.Menu_Edit, mEditUndo, u"Undo"+ u"\t" + u"Ctrl+Z", u"Undo the previous action", wx.ITEM_NORMAL )
 		self.Edit_Undo.SetBitmap( wx.Bitmap( u"artwork/undo.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Edit.AppendItem( self.Edit_Undo )
+		self.Menu_Edit.Append( self.Edit_Undo )
 		self.Edit_Undo.Enable( False )
 		
 		self.Edit_Cut = wx.MenuItem( self.Menu_Edit, mEditCut, u"Cut"+ u"\t" + u"Ctrl+X", u"Cut the tile out and place it in pymappers clipboard", wx.ITEM_NORMAL )
-		self.Menu_Edit.AppendItem( self.Edit_Cut )
+		self.Menu_Edit.Append( self.Edit_Cut )
 		self.Edit_Cut.Enable( False )
 		
 		self.Edit_Copy = wx.MenuItem( self.Menu_Edit, mEditCopy, u"Copy"+ u"\t" + u"Ctrl+C", u"Copy the selected tile and place it in pymappers clipboard", wx.ITEM_NORMAL )
-		self.Menu_Edit.AppendItem( self.Edit_Copy )
+		self.Menu_Edit.Append( self.Edit_Copy )
 		self.Edit_Copy.Enable( False )
 		
 		self.Edit_Paste = wx.MenuItem( self.Menu_Edit, mEditPaste, u"Paste"+ u"\t" + u"Ctrl+V", u"Paste the tile in pymappers clipboard to the map", wx.ITEM_NORMAL )
-		self.Menu_Edit.AppendItem( self.Edit_Paste )
+		self.Menu_Edit.Append( self.Edit_Paste )
 		self.Edit_Paste.Enable( False )
 		
 		self.Edit_SelectAll = wx.MenuItem( self.Menu_Edit, mEditSelectAll, u"Select All Tiles", wx.EmptyString, wx.ITEM_NORMAL )
-		self.Menu_Edit.AppendItem( self.Edit_SelectAll )
+		self.Menu_Edit.Append( self.Edit_SelectAll )
 		self.Edit_SelectAll.Enable( False )
 		
 		self.Edit_MapSize = wx.MenuItem( self.Menu_Edit, mEditMapSize, u"Change Map Size", u"Change the size of the map space", wx.ITEM_NORMAL )
 		self.Edit_MapSize.SetBitmap( wx.Bitmap( u"artwork/changegridsize.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Edit.AppendItem( self.Edit_MapSize )
+		self.Menu_Edit.Append( self.Edit_MapSize )
 		
 		self.menubar.Append( self.Menu_Edit, u"Edit" ) 
 		
 		self.Menu_Tilesets = wx.Menu()
 		self.Tileset_CreateMaster = wx.MenuItem( self.Menu_Tilesets, mTilesetCreateMaster, u"Create from master image...", u"Create a new tileset from a single composite image", wx.ITEM_NORMAL )
-		self.Menu_Tilesets.AppendItem( self.Tileset_CreateMaster )
+		self.Menu_Tilesets.Append( self.Tileset_CreateMaster )
 		self.Tileset_CreateMaster.Enable( False )
 		
 		self.Tileset_CreateResolution = wx.MenuItem( self.Menu_Tilesets, mTilesetCreateResolution, u"Create from image folder", u"Create new tileset from all images in a single folder", wx.ITEM_NORMAL )
-		self.Menu_Tilesets.AppendItem( self.Tileset_CreateResolution )
+		self.Menu_Tilesets.Append( self.Tileset_CreateResolution )
 		self.Tileset_CreateResolution.Enable( False )
 		
 		self.Tileset_EditTileset = wx.MenuItem( self.Menu_Tilesets, mTilesetEdit, u"Edit Tileset..."+ u"\t" + u"Ctrl+I", u"Edit tileset", wx.ITEM_NORMAL )
-		self.Menu_Tilesets.AppendItem( self.Tileset_EditTileset )
+		self.Menu_Tilesets.Append( self.Tileset_EditTileset )
 		
 		self.Tileset_TilesetBrowser = wx.MenuItem( self.Menu_Tilesets, mTilesetBrowser, u"Tileset Browser..."+ u"\t" + u"Ctrl+T", u"Open an existing tileset", wx.ITEM_NORMAL )
-		self.Menu_Tilesets.AppendItem( self.Tileset_TilesetBrowser )
+		self.Menu_Tilesets.Append( self.Tileset_TilesetBrowser )
 		
 		self.menubar.Append( self.Menu_Tilesets, u"Tilesets" ) 
 		
 		self.Menu_Print = wx.Menu()
 		self.Print_Map = wx.MenuItem( self.Menu_Print, mPrintMap, u"Print Map..."+ u"\t" + u"Ctrl+P", u"Print the map", wx.ITEM_NORMAL )
 		self.Print_Map.SetBitmap( wx.Bitmap( u"artwork/printer_small.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Print.AppendItem( self.Print_Map )
+		self.Menu_Print.Append( self.Print_Map )
 		
 		self.Print_Image = wx.MenuItem( self.Menu_Print, mPrintImage, u"Export Image..."+ u"\t" + u"F2", u"Save the map as a jpg or png image", wx.ITEM_NORMAL )
 		self.Print_Image.SetBitmap( wx.Bitmap( u"artwork/ExportImage.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Print.AppendItem( self.Print_Image )
+		self.Menu_Print.Append( self.Print_Image )
 		
 		self.Print_ChangeResolution = wx.MenuItem( self.Menu_Print, mPrintChangeResolution, u"Change Print Resolution", u"Print Resolution affects the output quality of the print image", wx.ITEM_NORMAL )
 		self.Print_ChangeResolution.SetBitmap( wx.Bitmap( u"artwork/PrintResolution.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Print.AppendItem( self.Print_ChangeResolution )
+		self.Menu_Print.Append( self.Print_ChangeResolution )
 		
 		self.menubar.Append( self.Menu_Print, u"Print" ) 
 		
 		self.Menu_View = wx.Menu()
 		self.View_Grid = wx.MenuItem( self.Menu_View, mViewGrid, u"View Grid?"+ u"\t" + u"Ctrl + G", u"Turn the grid background on or off.", wx.ITEM_CHECK )
 		self.View_Grid.SetBitmap( wx.NullBitmap )
-		self.Menu_View.AppendItem( self.View_Grid )
+		self.Menu_View.Append( self.View_Grid )
 		self.View_Grid.Check( True )
 		
 		self.View_FilterTags = wx.MenuItem( self.Menu_View, mViewFilterTags, u"Change Filter Tags"+ u"\t" + u"Ctrl+F", wx.EmptyString, wx.ITEM_CHECK )
 		self.View_FilterTags.SetBitmap( wx.NullBitmap )
-		self.Menu_View.AppendItem( self.View_FilterTags )
+		self.Menu_View.Append( self.View_FilterTags )
 		self.View_FilterTags.Check( True )
 		
 		self.View_Background = wx.MenuItem( self.Menu_View, mViewBackground, u"View Background?"+ u"\t" + u"Ctrl+ B", wx.EmptyString, wx.ITEM_CHECK )
 		self.View_Background.SetBitmap( wx.NullBitmap )
-		self.Menu_View.AppendItem( self.View_Background )
+		self.Menu_View.Append( self.View_Background )
 		
 		self.View_GridCoordinates = wx.MenuItem( self.Menu_View, mViewGridCoordinates, u"Show Grid Coordinates?", u"Shows grid coordinates on the map.", wx.ITEM_CHECK )
 		self.View_GridCoordinates.SetBitmap( wx.NullBitmap )
-		self.Menu_View.AppendItem( self.View_GridCoordinates )
+		self.Menu_View.Append( self.View_GridCoordinates )
 		
 		self.View_HighlightIcons = wx.MenuItem( self.Menu_View, mViewHighlightIcons, u"Highlight Map Icons?", u"Highlight the map icons on the map window?", wx.ITEM_CHECK )
 		self.View_HighlightIcons.SetBitmap( wx.NullBitmap )
-		self.Menu_View.AppendItem( self.View_HighlightIcons )
+		self.Menu_View.Append( self.View_HighlightIcons )
 		self.View_HighlightIcons.Check( True )
 		
 		self.View_DualTileDisplay = wx.MenuItem( self.Menu_View, mViewDualTileDisplay, u"Show both tile sides in Tile Window?", u"Show reverse side on tile window (on) or show on mouse hover (off)", wx.ITEM_CHECK )
 		self.View_DualTileDisplay.SetBitmap( wx.NullBitmap )
-		self.Menu_View.AppendItem( self.View_DualTileDisplay )
+		self.Menu_View.Append( self.View_DualTileDisplay )
 		self.View_DualTileDisplay.Check( True )
 		
 		self.View_OutlineTiles = wx.MenuItem( self.Menu_View, mViewOutlineTiles, u"Outline Tiles?", wx.EmptyString, wx.ITEM_CHECK )
-		self.Menu_View.AppendItem( self.View_OutlineTiles )
+		self.Menu_View.Append( self.View_OutlineTiles )
 		
 		self.View_ShowIconNamesOnMap = wx.MenuItem( self.Menu_View, mShowIconNamesOnMap, u"Show Icon Names on Map?", wx.EmptyString, wx.ITEM_CHECK )
-		self.Menu_View.AppendItem( self.View_ShowIconNamesOnMap )
+		self.Menu_View.Append( self.View_ShowIconNamesOnMap )
 		self.View_ShowIconNamesOnMap.Check( True )
 		
 		self.View_ViewConditionColors = wx.MenuItem( self.Menu_View, wx.ID_ANY, u"View Monster Condition Colors", wx.EmptyString, wx.ITEM_NORMAL )
 		self.View_ViewConditionColors.SetBitmap( wx.Bitmap( u"artwork/condition_colors.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_View.AppendItem( self.View_ViewConditionColors )
+		self.Menu_View.Append( self.View_ViewConditionColors )
 		
 		self.View_ZoomIn = wx.MenuItem( self.Menu_View, mViewZoomIn, u"Zoom In", wx.EmptyString, wx.ITEM_NORMAL )
 		self.View_ZoomIn.SetBitmap( wx.Bitmap( u"artwork/ZoomIn.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_View.AppendItem( self.View_ZoomIn )
+		self.Menu_View.Append( self.View_ZoomIn )
 		
 		self.View_ZoomOut = wx.MenuItem( self.Menu_View, mViewZoomOut, u"Zoom Out", wx.EmptyString, wx.ITEM_NORMAL )
 		self.View_ZoomOut.SetBitmap( wx.Bitmap( u"artwork/ZoomOut.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_View.AppendItem( self.View_ZoomOut )
+		self.Menu_View.Append( self.View_ZoomOut )
 		
 		self.View_ViewAll = wx.MenuItem( self.Menu_View, mViewViewAll, u"View All", wx.EmptyString, wx.ITEM_NORMAL )
 		self.View_ViewAll.SetBitmap( wx.Bitmap( u"artwork/select_all.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_View.AppendItem( self.View_ViewAll )
+		self.Menu_View.Append( self.View_ViewAll )
 		
 		self.View_TilesetLayerFilter = wx.MenuItem( self.Menu_View, mViewViewTilesetLayerFilter, u"Show Tileset/Layer Filter Dialog", u"Show a dialog to change display of layers and tilesets", wx.ITEM_NORMAL )
 		self.View_TilesetLayerFilter.SetBitmap( wx.Bitmap( u"artwork/Layers.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_View.AppendItem( self.View_TilesetLayerFilter )
+		self.Menu_View.Append( self.View_TilesetLayerFilter )
 		
 		self.Menu_View.AppendSeparator()
 		
 		self.View_SecondaryScreen = wx.MenuItem( self.Menu_View, mViewSecondaryScreen, u"Secondary Map Viewport", u"Open a secondary map view for player displays", wx.ITEM_NORMAL )
 		self.View_SecondaryScreen.SetBitmap( wx.Bitmap( u"artwork/screens.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_View.AppendItem( self.View_SecondaryScreen )
+		self.Menu_View.Append( self.View_SecondaryScreen )
 		
 		self.View_UpdateToFTP = wx.MenuItem( self.Menu_View, mViewUpdateToFTP, u"Update Map View to Remote Server"+ u"\t" + u"Ctrl+W", wx.EmptyString, wx.ITEM_NORMAL )
 		self.View_UpdateToFTP.SetBitmap( wx.Bitmap( u"artwork/UpdateFTP.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_View.AppendItem( self.View_UpdateToFTP )
+		self.Menu_View.Append( self.View_UpdateToFTP )
 		self.View_UpdateToFTP.Enable( False )
 		
 		self.View_UpdateFog = wx.MenuItem( self.Menu_View, mViewUpdateFog, u"Update Fog Display on Secondary"+ u"\t" + u"Ctrl+Y", wx.EmptyString, wx.ITEM_NORMAL )
-		self.Menu_View.AppendItem( self.View_UpdateFog )
+		self.Menu_View.Append( self.View_UpdateFog )
 		self.View_UpdateFog.Enable( False )
 		
 		self.menubar.Append( self.Menu_View, u"View" ) 
@@ -577,131 +577,131 @@ class PyMapperFrameCore ( wx.Frame ):
 		self.Menu_Options = wx.Menu()
 		self.Options_Program = wx.MenuItem( self.Menu_Options, mOptionsProgram, u"Program...", wx.EmptyString, wx.ITEM_NORMAL )
 		self.Options_Program.SetBitmap( wx.Bitmap( u"artwork/gear.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Options.AppendItem( self.Options_Program )
+		self.Menu_Options.Append( self.Options_Program )
 		
 		self.Options_Tilesets = wx.MenuItem( self.Menu_Options, mOptionsTilesets, u"Tilesets...", wx.EmptyString, wx.ITEM_NORMAL )
 		self.Options_Tilesets.SetBitmap( wx.Bitmap( u"artwork/edit_tileset.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Options.AppendItem( self.Options_Tilesets )
+		self.Menu_Options.Append( self.Options_Tilesets )
 		
 		self.Options_SymbolsMarkers = wx.MenuItem( self.Menu_Options, mOptionsSymbolsMarkers, u"Symbols and Markers...", u"Add and Delete built-in symbols and markers", wx.ITEM_NORMAL )
 		self.Options_SymbolsMarkers.SetBitmap( wx.Bitmap( u"artwork/SymbolMarker_icon.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Options.AppendItem( self.Options_SymbolsMarkers )
+		self.Menu_Options.Append( self.Options_SymbolsMarkers )
 		
 		self.Options_Text = wx.MenuItem( self.Menu_Options, mOptionsText, u"Text Annotations...", wx.EmptyString, wx.ITEM_NORMAL )
 		self.Options_Text.SetBitmap( wx.Bitmap( u"artwork/rename_icon.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Options.AppendItem( self.Options_Text )
+		self.Menu_Options.Append( self.Options_Text )
 		
 		self.Options_SelectMode = wx.MenuItem( self.Menu_Options, mOptionsSelectMode, u"Set Tile Select Mode?", wx.EmptyString, wx.ITEM_CHECK )
 		self.Options_SelectMode.SetBitmap( wx.NullBitmap )
-		self.Menu_Options.AppendItem( self.Options_SelectMode )
+		self.Menu_Options.Append( self.Options_SelectMode )
 		self.Options_SelectMode.Check( True )
 		
 		self.Options_inifile = wx.MenuItem( self.Menu_Options, mOptionsInifile, u"Save Settings File", wx.EmptyString, wx.ITEM_NORMAL )
-		self.Menu_Options.AppendItem( self.Options_inifile )
+		self.Menu_Options.Append( self.Options_inifile )
 		
 		self.Options_FTP = wx.MenuItem( self.Menu_Options, mOptionsFTP, u"FTP Settings...", wx.EmptyString, wx.ITEM_NORMAL )
 		self.Options_FTP.SetBitmap( wx.Bitmap( u"artwork/ftp_settings.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Options.AppendItem( self.Options_FTP )
+		self.Menu_Options.Append( self.Options_FTP )
 		
 		self.menubar.Append( self.Menu_Options, u"Options" ) 
 		
 		self.Menu_Maps = wx.Menu()
 		self.Maps_RandomDungeon = wx.MenuItem( self.Menu_Maps, mMapsRandomDungeon, u"Create Random Dungeon", u"Create random dungeon using geomorphs", wx.ITEM_NORMAL )
 		self.Maps_RandomDungeon.SetBitmap( wx.Bitmap( u"artwork/random_dungeon.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Maps.AppendItem( self.Maps_RandomDungeon )
+		self.Menu_Maps.Append( self.Maps_RandomDungeon )
 		
 		self.Maps_Isometric = wx.MenuItem( self.Menu_Maps, wx.ID_ANY, u"Isometric View", wx.EmptyString, wx.ITEM_NORMAL )
 		self.Maps_Isometric.SetBitmap( wx.Bitmap( u"artwork/isometric.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Maps.AppendItem( self.Maps_Isometric )
+		self.Menu_Maps.Append( self.Maps_Isometric )
 		
 		self.menubar.Append( self.Menu_Maps, u"Maps" ) 
 		
 		self.Menu_Reports = wx.Menu()
 		self.Reports_Manifests = wx.MenuItem( self.Menu_Reports, mReportsManifest, u"Tile Manifests...", u"Select to produce a list of tiles used in the map", wx.ITEM_NORMAL )
 		self.Reports_Manifests.SetBitmap( wx.Bitmap( u"artwork/Reports.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Reports.AppendItem( self.Reports_Manifests )
+		self.Menu_Reports.Append( self.Reports_Manifests )
 		
 		self.Reports_Tilesets = wx.MenuItem( self.Menu_Reports, mReportsTilesets, u"Tilesets Used...", u"Provide a list of tilesets used on the map", wx.ITEM_NORMAL )
 		self.Reports_Tilesets.SetBitmap( wx.Bitmap( u"artwork/TileOptions.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Reports.AppendItem( self.Reports_Tilesets )
+		self.Menu_Reports.Append( self.Reports_Tilesets )
 		
 		self.menubar.Append( self.Menu_Reports, u"Reports" ) 
 		
 		self.Menu_Dungeon = wx.Menu()
 		self.Dungeon_Load_d20_Files = wx.MenuItem( self.Menu_Dungeon, mDungeonLoadD20Files, u"Load Dungeon Resources", u"Load information related to monsters, traps, feats, etc.", wx.ITEM_NORMAL )
 		self.Dungeon_Load_d20_Files.SetBitmap( wx.Bitmap( u"artwork/D20_logo_small.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Dungeon.AppendItem( self.Dungeon_Load_d20_Files )
+		self.Menu_Dungeon.Append( self.Dungeon_Load_d20_Files )
 		
 		self.Dungeon_Load_DnD5_Files = wx.MenuItem( self.Menu_Dungeon, mDungeonLoadDnD5Files, u"Load 5E Resources", wx.EmptyString, wx.ITEM_NORMAL )
 		self.Dungeon_Load_DnD5_Files.SetBitmap( wx.Bitmap( u"artwork/5E_monster.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Dungeon.AppendItem( self.Dungeon_Load_DnD5_Files )
+		self.Menu_Dungeon.Append( self.Dungeon_Load_DnD5_Files )
 		
 		self.Menu_Dungeon.AppendSeparator()
 		
 		self.Dungeon_NPCgenerator = wx.MenuItem( self.Menu_Dungeon, mDungeonNPCGenerator, u"PF/3.5 NPC Generator", u"Generate Non Player Characters (NPC) for Pathfinder/3.5", wx.ITEM_NORMAL )
 		self.Dungeon_NPCgenerator.SetBitmap( wx.Bitmap( u"artwork/npc_icon_small.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Dungeon.AppendItem( self.Dungeon_NPCgenerator )
+		self.Menu_Dungeon.Append( self.Dungeon_NPCgenerator )
 		
 		self.Dungeon_Monster = wx.MenuItem( self.Menu_Dungeon, mDungeonMonster, u"PF / 3.5 Monsters", u"View/Edit Monsters", wx.ITEM_NORMAL )
 		self.Dungeon_Monster.SetBitmap( wx.Bitmap( u"artwork/pathfinder.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Dungeon.AppendItem( self.Dungeon_Monster )
+		self.Menu_Dungeon.Append( self.Dungeon_Monster )
 		
 		self.Menu_Dungeon.AppendSeparator()
 		
 		self.Dungeon_Monster5E = wx.MenuItem( self.Menu_Dungeon, mDungeonMonster5E, u"5E Monsters", u"View/Edit Monsters from the 5th Edition", wx.ITEM_NORMAL )
 		self.Dungeon_Monster5E.SetBitmap( wx.Bitmap( u"artwork/5E_monster.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Dungeon.AppendItem( self.Dungeon_Monster5E )
+		self.Menu_Dungeon.Append( self.Dungeon_Monster5E )
 		
 		self.Dungeon_NPC_5E = wx.MenuItem( self.Menu_Dungeon, mDungeonNPC_5E, u"5E NPC", u"View/Edit NPC's from the 5th Edition", wx.ITEM_NORMAL )
 		self.Dungeon_NPC_5E.SetBitmap( wx.Bitmap( u"artwork/npc_icon_small.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Dungeon.AppendItem( self.Dungeon_NPC_5E )
+		self.Menu_Dungeon.Append( self.Dungeon_NPC_5E )
 		
 		self.Dungeon_Spell_5E = wx.MenuItem( self.Menu_Dungeon, mDungeonSpell_5E, u"5E Spells", wx.EmptyString, wx.ITEM_NORMAL )
 		self.Dungeon_Spell_5E.SetBitmap( wx.Bitmap( u"artwork/Spell_5E_icon.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Dungeon.AppendItem( self.Dungeon_Spell_5E )
+		self.Menu_Dungeon.Append( self.Dungeon_Spell_5E )
 		
 		self.Menu_Dungeon.AppendSeparator()
 		
 		self.Dungeon_Encounters = wx.MenuItem( self.Menu_Dungeon, mDungeonEncounters, u"Encounters", u"View/Edit Encounters", wx.ITEM_NORMAL )
 		self.Dungeon_Encounters.SetBitmap( wx.Bitmap( u"artwork/torch_encounter.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Dungeon.AppendItem( self.Dungeon_Encounters )
+		self.Menu_Dungeon.Append( self.Dungeon_Encounters )
 		self.Dungeon_Encounters.Enable( False )
 		
 		self.Dungeon_Traps = wx.MenuItem( self.Menu_Dungeon, mDungeonTraps, u"Trap Designer", u"Create New Trap...", wx.ITEM_NORMAL )
 		self.Dungeon_Traps.SetBitmap( wx.Bitmap( u"artwork/trap.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Dungeon.AppendItem( self.Dungeon_Traps )
+		self.Menu_Dungeon.Append( self.Dungeon_Traps )
 		
 		self.Dungeon_Treasures = wx.MenuItem( self.Menu_Dungeon, mDungeonTreasures, u"Treasure Calculator", u"Select to bring up the treasure calculator.", wx.ITEM_NORMAL )
 		self.Dungeon_Treasures.SetBitmap( wx.Bitmap( u"artwork/treasure_icon_small.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Dungeon.AppendItem( self.Dungeon_Treasures )
+		self.Menu_Dungeon.Append( self.Dungeon_Treasures )
 		
 		self.Dungeon_Combat_Tracking = wx.MenuItem( self.Menu_Dungeon, mDungeonCombatTracking, u"Combat Tracking", u"Start the combat tracking dialog", wx.ITEM_NORMAL )
 		self.Dungeon_Combat_Tracking.SetBitmap( wx.Bitmap( u"artwork/npc.png", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Dungeon.AppendItem( self.Dungeon_Combat_Tracking )
+		self.Menu_Dungeon.Append( self.Dungeon_Combat_Tracking )
 		
 		self.Dungeon_DiceRoller = wx.MenuItem( self.Menu_Dungeon, mDungeonDiceRoller, u"Dice Roller"+ u"\t" + u"Ctrl + D", u"Activate the dice roller dialog", wx.ITEM_NORMAL )
 		self.Dungeon_DiceRoller.SetBitmap( wx.Bitmap( u"artwork/d20_dice.ico", wx.BITMAP_TYPE_ANY ) )
-		self.Menu_Dungeon.AppendItem( self.Dungeon_DiceRoller )
+		self.Menu_Dungeon.Append( self.Dungeon_DiceRoller )
 		
 		self.Dungeon_ShowIcons = wx.MenuItem( self.Menu_Dungeon, mDungeonShowIcons, u"Show Dungeon Icons?", wx.EmptyString, wx.ITEM_CHECK )
 		self.Dungeon_ShowIcons.SetBitmap( wx.NullBitmap )
-		self.Menu_Dungeon.AppendItem( self.Dungeon_ShowIcons )
+		self.Menu_Dungeon.Append( self.Dungeon_ShowIcons )
 		
 		self.Resources = wx.Menu()
 		self.Dungeon_Pathfinder_MagicItems = wx.MenuItem( self.Resources, mDungeonPathfinderMagicItems, u"Pathfinder Magic Items...", u"View magic items from the Pathfinder SRD", wx.ITEM_NORMAL )
-		self.Resources.AppendItem( self.Dungeon_Pathfinder_MagicItems )
+		self.Resources.Append( self.Dungeon_Pathfinder_MagicItems )
 		
 		self.Dungeon_Pathfinder_Monsters = wx.MenuItem( self.Resources, mDungeonPathfinderMonsters, u"Pathfinder Monsters...", u"View monsters from the Pathfinder SRD", wx.ITEM_NORMAL )
-		self.Resources.AppendItem( self.Dungeon_Pathfinder_Monsters )
+		self.Resources.Append( self.Dungeon_Pathfinder_Monsters )
 		
 		self.Dungeon_d20Spells = wx.MenuItem( self.Resources, mDungeonD20Spells, u"d20 Spells...", u"View spells from the d20 SRD", wx.ITEM_NORMAL )
-		self.Resources.AppendItem( self.Dungeon_d20Spells )
+		self.Resources.Append( self.Dungeon_d20Spells )
 		
 		self.Dungeon_d20Feats = wx.MenuItem( self.Resources, mDungeonD20Feats, u"d20 Feats...", u"View feats from the d20 SRD", wx.ITEM_NORMAL )
-		self.Resources.AppendItem( self.Dungeon_d20Feats )
+		self.Resources.Append( self.Dungeon_d20Feats )
 		
 		self.Dungeon_About = wx.MenuItem( self.Resources, mDungeonAbout, u"License and Credits...", u"View licensing and credits for d20 and Pathfinder resources", wx.ITEM_NORMAL )
-		self.Resources.AppendItem( self.Dungeon_About )
+		self.Resources.Append( self.Dungeon_About )
 		
 		self.Menu_Dungeon.AppendSubMenu( self.Resources, u"Resources" )
 		
@@ -709,25 +709,25 @@ class PyMapperFrameCore ( wx.Frame ):
 		
 		self.Menu_Help = wx.Menu()
 		self.Help_Contents = wx.MenuItem( self.Menu_Help, mHelpContents, u"Contents..."+ u"\t" + u"F1", wx.EmptyString, wx.ITEM_NORMAL )
-		self.Menu_Help.AppendItem( self.Help_Contents )
+		self.Menu_Help.Append( self.Help_Contents )
 		
 		self.Help_OpenTutorial = wx.MenuItem( self.Menu_Help, mHelpOpenTutorial, u"Open Tutorial...", wx.EmptyString, wx.ITEM_NORMAL )
-		self.Menu_Help.AppendItem( self.Help_OpenTutorial )
+		self.Menu_Help.Append( self.Help_OpenTutorial )
 		
 		self.Help_ShowTips = wx.MenuItem( self.Menu_Help, mHelpShowTips, u"Show Tips...", wx.EmptyString, wx.ITEM_NORMAL )
-		self.Menu_Help.AppendItem( self.Help_ShowTips )
+		self.Menu_Help.Append( self.Help_ShowTips )
 		
 		self.Help_KeyboardShortcuts = wx.MenuItem( self.Menu_Help, mHelpKeyboardShortcuts, u"Keyboard Shortcuts...", u"Show a list of keyboard shortcuts", wx.ITEM_NORMAL )
-		self.Menu_Help.AppendItem( self.Help_KeyboardShortcuts )
+		self.Menu_Help.Append( self.Help_KeyboardShortcuts )
 		
 		self.Help_ProgramFoundation = wx.MenuItem( self.Menu_Help, mHelpProgramFoundation, u"Development...", u"Show details about the software used to make PyMapper", wx.ITEM_NORMAL )
-		self.Menu_Help.AppendItem( self.Help_ProgramFoundation )
+		self.Menu_Help.Append( self.Help_ProgramFoundation )
 		
 		self.Help_RegisterProgram = wx.MenuItem( self.Menu_Help, mHelpRegisterProgram, u"Register Program...", wx.EmptyString, wx.ITEM_NORMAL )
-		self.Menu_Help.AppendItem( self.Help_RegisterProgram )
+		self.Menu_Help.Append( self.Help_RegisterProgram )
 		
 		self.Help_About = wx.MenuItem( self.Menu_Help, mHelpAbout, u"About...", wx.EmptyString, wx.ITEM_NORMAL )
-		self.Menu_Help.AppendItem( self.Help_About )
+		self.Menu_Help.Append( self.Help_About )
 		
 		self.menubar.Append( self.Menu_Help, u"Help" ) 
 		
@@ -1400,146 +1400,146 @@ class IconEditorBase ( wx.Frame ):
 		self.mMainMenu = wx.MenuBar( 0 )
 		self.mFile = wx.Menu()
 		self.mFileOpen = wx.MenuItem( self.mFile, wx.ID_ANY, u"Open..."+ u"\t" + u"CTRL+O", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mFile.AppendItem( self.mFileOpen )
+		self.mFile.Append( self.mFileOpen )
 		
 		self.mFileSave = wx.MenuItem( self.mFile, wx.ID_ANY, u"Save"+ u"\t" + u"CTRL+S", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mFile.AppendItem( self.mFileSave )
+		self.mFile.Append( self.mFileSave )
 		
 		self.mFileSaveAs = wx.MenuItem( self.mFile, wx.ID_ANY, u"Save As..."+ u"\t" + u"F12", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mFile.AppendItem( self.mFileSaveAs )
+		self.mFile.Append( self.mFileSaveAs )
 		
 		self.mFile.AppendSeparator()
 		
 		self.mFileViewHTML = wx.MenuItem( self.mFile, wx.ID_ANY, u"View as HTML", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mFile.AppendItem( self.mFileViewHTML )
+		self.mFile.Append( self.mFileViewHTML )
 		
 		self.mFile.AppendSeparator()
 		
 		self.mFileExit = wx.MenuItem( self.mFile, wx.ID_ANY, u"Exit"+ u"\t" + u"CTRL+Q", wx.EmptyString, wx.ITEM_NORMAL )
 		self.mFileExit.SetBitmap( wx.Bitmap( u"artwork/DeleteIcon.png", wx.BITMAP_TYPE_ANY ) )
-		self.mFile.AppendItem( self.mFileExit )
+		self.mFile.Append( self.mFileExit )
 		
 		self.mMainMenu.Append( self.mFile, u"File" ) 
 		
 		self.mEdit = wx.Menu()
 		self.mEditUndo = wx.MenuItem( self.mEdit, wx.ID_UNDO, u"Undo"+ u"\t" + u"CTRL+Z", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mEdit.AppendItem( self.mEditUndo )
+		self.mEdit.Append( self.mEditUndo )
 		
 		self.mEditRedo = wx.MenuItem( self.mEdit, wx.ID_REDO, u"Redo"+ u"\t" + u"CTRL+Y", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mEdit.AppendItem( self.mEditRedo )
+		self.mEdit.Append( self.mEditRedo )
 		
 		self.mEdit.AppendSeparator()
 		
 		self.mEditCut = wx.MenuItem( self.mEdit, wx.ID_CUT, u"Cut"+ u"\t" + u"CTRL+X", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mEdit.AppendItem( self.mEditCut )
+		self.mEdit.Append( self.mEditCut )
 		
 		self.mEditCopy = wx.MenuItem( self.mEdit, wx.ID_COPY, u"Copy"+ u"\t" + u"CTRL+C", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mEdit.AppendItem( self.mEditCopy )
+		self.mEdit.Append( self.mEditCopy )
 		
 		self.mEditPaste = wx.MenuItem( self.mEdit, wx.ID_PASTE, u"Paste"+ u"\t" + u"CTRL+V", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mEdit.AppendItem( self.mEditPaste )
+		self.mEdit.Append( self.mEditPaste )
 		
 		self.mEdit.AppendSeparator()
 		
 		self.mEditSelectAll = wx.MenuItem( self.mEdit, wx.ID_SELECTALL, u"Select All"+ u"\t" + u"CTRL+A", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mEdit.AppendItem( self.mEditSelectAll )
+		self.mEdit.Append( self.mEditSelectAll )
 		
 		self.mEdit.AppendSeparator()
 		
 		self.mEditEditDescription = wx.MenuItem( self.mEdit, EditDescriptionID, u"Edit Description", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mEdit.AppendItem( self.mEditEditDescription )
+		self.mEdit.Append( self.mEditEditDescription )
 		
 		self.mMainMenu.Append( self.mEdit, u"Edit" ) 
 		
 		self.mFormat = wx.Menu()
 		self.mFormatBold = wx.MenuItem( self.mFormat, wx.ID_ANY, u"Bold"+ u"\t" + u"CTRL+B", wx.EmptyString, wx.ITEM_CHECK )
-		self.mFormat.AppendItem( self.mFormatBold )
+		self.mFormat.Append( self.mFormatBold )
 		
 		self.mFormatItalic = wx.MenuItem( self.mFormat, wx.ID_ANY, u"Italic"+ u"\t" + u"CTRL+I", wx.EmptyString, wx.ITEM_CHECK )
-		self.mFormat.AppendItem( self.mFormatItalic )
+		self.mFormat.Append( self.mFormatItalic )
 		
 		self.mFormatUnderline = wx.MenuItem( self.mFormat, wx.ID_ANY, u"Underline"+ u"\t" + u"CTRL+U", wx.EmptyString, wx.ITEM_CHECK )
-		self.mFormat.AppendItem( self.mFormatUnderline )
+		self.mFormat.Append( self.mFormatUnderline )
 		
 		self.mFormat.AppendSeparator()
 		
 		self.mFormatLeftAlign = wx.MenuItem( self.mFormat, wx.ID_ANY, u"Left Align", wx.EmptyString, wx.ITEM_RADIO )
-		self.mFormat.AppendItem( self.mFormatLeftAlign )
+		self.mFormat.Append( self.mFormatLeftAlign )
 		
 		self.mFormatCenterAlign = wx.MenuItem( self.mFormat, wx.ID_ANY, u"Center Align", wx.EmptyString, wx.ITEM_RADIO )
-		self.mFormat.AppendItem( self.mFormatCenterAlign )
+		self.mFormat.Append( self.mFormatCenterAlign )
 		
 		self.mFormatRightAlign = wx.MenuItem( self.mFormat, wx.ID_ANY, u"Right Align", wx.EmptyString, wx.ITEM_RADIO )
-		self.mFormat.AppendItem( self.mFormatRightAlign )
+		self.mFormat.Append( self.mFormatRightAlign )
 		
 		self.mFormat.AppendSeparator()
 		
 		self.mFormatIndentMore = wx.MenuItem( self.mFormat, wx.ID_ANY, u"Indent More", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mFormat.AppendItem( self.mFormatIndentMore )
+		self.mFormat.Append( self.mFormatIndentMore )
 		
 		self.mFormatIndentLess = wx.MenuItem( self.mFormat, wx.ID_ANY, u"Indent Less", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mFormat.AppendItem( self.mFormatIndentLess )
+		self.mFormat.Append( self.mFormatIndentLess )
 		
 		self.mFormat.AppendSeparator()
 		
 		self.mFormatIncreaseParagraphSpacing = wx.MenuItem( self.mFormat, wx.ID_ANY, u"Increase Paragraph Spacing", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mFormat.AppendItem( self.mFormatIncreaseParagraphSpacing )
+		self.mFormat.Append( self.mFormatIncreaseParagraphSpacing )
 		
 		self.mFormatDecreaseParagraphSpacing = wx.MenuItem( self.mFormat, wx.ID_ANY, u"Decrease Paragraph Spacing", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mFormat.AppendItem( self.mFormatDecreaseParagraphSpacing )
+		self.mFormat.Append( self.mFormatDecreaseParagraphSpacing )
 		
 		self.mFormat.AppendSeparator()
 		
 		self.mFormatNormalLineSpacing = wx.MenuItem( self.mFormat, wx.ID_ANY, u"Normal Line Spacing", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mFormat.AppendItem( self.mFormatNormalLineSpacing )
+		self.mFormat.Append( self.mFormatNormalLineSpacing )
 		
 		self.mFormatHalfLineSpacing = wx.MenuItem( self.mFormat, wx.ID_ANY, u"1.5 Line Spacing", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mFormat.AppendItem( self.mFormatHalfLineSpacing )
+		self.mFormat.Append( self.mFormatHalfLineSpacing )
 		
 		self.mFormatDoubleLineSpacing = wx.MenuItem( self.mFormat, wx.ID_ANY, u"Double Line Spacing", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mFormat.AppendItem( self.mFormatDoubleLineSpacing )
+		self.mFormat.Append( self.mFormatDoubleLineSpacing )
 		
 		self.mFormat.AppendSeparator()
 		
 		self.mFormatFont = wx.MenuItem( self.mFormat, wx.ID_ANY, u"Font...", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mFormat.AppendItem( self.mFormatFont )
+		self.mFormat.Append( self.mFormatFont )
 		
 		self.mMainMenu.Append( self.mFormat, u"Format" ) 
 		
 		self.mPrint = wx.Menu()
 		self.mPrintPrint = wx.MenuItem( self.mPrint, wx.ID_ANY, u"Print..."+ u"\t" + u"CTRL+P", wx.EmptyString, wx.ITEM_NORMAL )
-		self.mPrint.AppendItem( self.mPrintPrint )
+		self.mPrint.Append( self.mPrintPrint )
 		
 		self.mMainMenu.Append( self.mPrint, u"Print" ) 
 		
 		self.mRpg = wx.Menu()
 		self.mRpgAddNPC = wx.MenuItem( self.mRpg, NPC_menuID, u"Add NPC...", wx.EmptyString, wx.ITEM_NORMAL )
 		self.mRpgAddNPC.SetBitmap( wx.Bitmap( u"artwork/npc_icon_small.png", wx.BITMAP_TYPE_ANY ) )
-		self.mRpg.AppendItem( self.mRpgAddNPC )
+		self.mRpg.Append( self.mRpgAddNPC )
 		
 		self.mRpgAddMonster = wx.MenuItem( self.mRpg, Monster_menuID, u"Add Monster...", wx.EmptyString, wx.ITEM_NORMAL )
 		self.mRpgAddMonster.SetBitmap( wx.Bitmap( u"artwork/monster_icon_small.png", wx.BITMAP_TYPE_ANY ) )
-		self.mRpg.AppendItem( self.mRpgAddMonster )
+		self.mRpg.Append( self.mRpgAddMonster )
 		
 		self.mRpg.AppendSeparator()
 		
 		self.mRpgAdd5ENPC = wx.MenuItem( self.mRpg, NPC5E_menuID, u"Add 5E NPC...", wx.EmptyString, wx.ITEM_NORMAL )
 		self.mRpgAdd5ENPC.SetBitmap( wx.Bitmap( u"artwork/npc.png", wx.BITMAP_TYPE_ANY ) )
-		self.mRpg.AppendItem( self.mRpgAdd5ENPC )
+		self.mRpg.Append( self.mRpgAdd5ENPC )
 		
 		self.mRpgAdd5EMonster = wx.MenuItem( self.mRpg, Monster5E_menuID, u"Add 5E Monster", wx.EmptyString, wx.ITEM_NORMAL )
 		self.mRpgAdd5EMonster.SetBitmap( wx.Bitmap( u"artwork/5E_monster.png", wx.BITMAP_TYPE_ANY ) )
-		self.mRpg.AppendItem( self.mRpgAdd5EMonster )
+		self.mRpg.Append( self.mRpgAdd5EMonster )
 		
 		self.mRpg.AppendSeparator()
 		
 		self.mRpgAddTrap = wx.MenuItem( self.mRpg, Trap_menuID, u"Add Trap...", wx.EmptyString, wx.ITEM_NORMAL )
 		self.mRpgAddTrap.SetBitmap( wx.Bitmap( u"artwork/trap.png", wx.BITMAP_TYPE_ANY ) )
-		self.mRpg.AppendItem( self.mRpgAddTrap )
+		self.mRpg.Append( self.mRpgAddTrap )
 		
 		self.mRpgAddTreasure = wx.MenuItem( self.mRpg, Treasure_menuID, u"Add Treasure...", wx.EmptyString, wx.ITEM_NORMAL )
 		self.mRpgAddTreasure.SetBitmap( wx.Bitmap( u"artwork/treasure_icon_small.png", wx.BITMAP_TYPE_ANY ) )
-		self.mRpg.AppendItem( self.mRpgAddTreasure )
+		self.mRpg.Append( self.mRpgAddTreasure )
 		
 		self.mMainMenu.Append( self.mRpg, u"RPG Items" ) 
 		
