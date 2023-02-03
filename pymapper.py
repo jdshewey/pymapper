@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #-----------------------------------------------------------------------------
-# Name:        PyMapper.py
+# Name:        pymapper.py
 # Purpose:     Dungeon Tiles PyMapper
 #
 # Author:      Michael Seely, P.E.
@@ -84,7 +84,7 @@ TrapIcon = None
 MonsterIcon = None 
 ImageNotFound = None
 
-VERSION = '9.6'
+VERSION = '9.7'
 
 files_wildcard = "Map file (*.map)|*.map|Geomorph file (*.pgf)|*.pgf"
 map_wildcard = "Map file (*.map)|*.map"
@@ -15119,7 +15119,7 @@ class PyMapperAppMain(wx.App):
     if (marker.shape == 'Circle'):
       logging.debug("Creating circle mask")
       bitmapPath = os.path.join(folderPath, 'circle_template.png')
-      bitmap_mask = wx.Mask(wx.Bitmap(bitmapPath, wx.BITMAP_TYPE_PNG))
+      bitmap_mask = wx.Mask(wx.Bitmap(bitmapPath, wx.BITMAP_TYPE_PNG), wx.BLACK)
       bitmap.SetMask(bitmap_mask)
       dc = wx.MemoryDC(bitmap)
       pen = wx.Pen(marker.outlineColor,5)
@@ -15132,12 +15132,12 @@ class PyMapperAppMain(wx.App):
       (textX, textY) = dc.GetTextExtent(marker.name)
       offsetX = max(0, (50-textX/2))
       offsetY = max(0, (50-textY/2))
-      dc.DrawText(marker.name, offsetX, offsetY)
+#      dc.DrawText(marker.name, offsetX, offsetY)
       logging.debug("Circle image complete")
     elif (marker.shape == 'Triangle'):
       logging.debug("Creating triangle mask")
       bitmapPath = os.path.join(folderPath, 'triangle_template.png')
-      bitmap_mask = wx.Mask(wx.Bitmap(bitmapPath, wx.BITMAP_TYPE_PNG))
+      bitmap_mask = wx.Mask(wx.Bitmap(bitmapPath, wx.BITMAP_TYPE_PNG), wx.BLACK)
       bitmap.SetMask(bitmap_mask)
       pen = wx.Pen(marker.outlineColor,5)
       brush = wx.Brush(marker.fillColor)
@@ -15153,12 +15153,12 @@ class PyMapperAppMain(wx.App):
       (textX, textY) = dc.GetTextExtent(marker.name)
       offsetX = max(0, (50-textX/2))
       offsetY = max(0, (70-textY/2))
-      dc.DrawText(marker.name, offsetX, offsetY)
+#      dc.DrawText(marker.name, offsetX, offsetY)
       logging.debug("triangle image complete")
     elif (marker.shape == 'Square'):
       logging.debug("Creating square mask")
       bitmapPath = os.path.join(folderPath, 'square_template.png')
-      bitmap_mask = wx.Mask(wx.Bitmap(bitmapPath, wx.BITMAP_TYPE_PNG))
+      bitmap_mask = wx.Mask(wx.Bitmap(bitmapPath, wx.BITMAP_TYPE_PNG), wx.BLACK)
       bitmap.SetMask(bitmap_mask)
       pen = wx.Pen(marker.outlineColor,5)
       brush = wx.Brush(marker.fillColor)
@@ -15171,12 +15171,12 @@ class PyMapperAppMain(wx.App):
       (textX, textY) = dc.GetTextExtent(marker.name)
       offsetX = max(0, (50-textX/2))
       offsetY = max(0, (50-textY/2))
-      dc.DrawText(marker.name, offsetX, offsetY)
+#      dc.DrawText(marker.name, offsetX, offsetY)
       logging.debug("square image complete")
     elif (marker.shape == 'InvTriangle'):
       logging.debug("Creating InvTriangle mask")
       bitmapPath = os.path.join(folderPath, 'invert_triangle_template.png')
-      bitmap_mask = wx.Mask(wx.Bitmap(bitmapPath, wx.BITMAP_TYPE_PNG))
+      bitmap_mask = wx.Mask(wx.Bitmap(bitmapPath, wx.BITMAP_TYPE_PNG), wx.BLACK)
       bitmap.SetMask(bitmap_mask)
       pen = wx.Pen(marker.outlineColor,5)
       brush = wx.Brush(marker.fillColor)
@@ -15192,12 +15192,12 @@ class PyMapperAppMain(wx.App):
       (textX, textY) = dc.GetTextExtent(marker.name)
       offsetX = max(0, (50-textX/2))
       offsetY = max(0, (30-textY/2))
-      dc.DrawText(marker.name, offsetX, offsetY)
+#      dc.DrawText(marker.name, offsetX, offsetY)
       logging.debug("invtriangle image complete")
     elif (marker.shape == 'Diamond'):
       logging.debug("Creating diamond mask")
       bitmapPath = os.path.join(folderPath, 'diamond_template.png')
-      bitmap_mask = wx.Mask(wx.Bitmap(bitmapPath, wx.BITMAP_TYPE_PNG))
+      bitmap_mask = wx.Mask(wx.Bitmap(bitmapPath, wx.BITMAP_TYPE_PNG), wx.BLACK)
       bitmap.SetMask(bitmap_mask)
       pen = wx.Pen(marker.outlineColor,5)
       brush = wx.Brush(marker.fillColor)
@@ -15214,12 +15214,12 @@ class PyMapperAppMain(wx.App):
       (textX, textY) = dc.GetTextExtent(marker.name)
       offsetX = max(0, (50-textX/2))
       offsetY = max(0, (50-textY/2))
-      dc.DrawText(marker.name, offsetX, offsetY)
+#      dc.DrawText(marker.name, offsetX, offsetY)
       logging.debug("diamond image complete")
     elif (marker.shape == 'Hexagon'):
       logging.debug("Creating hexagon mask")
       bitmapPath = os.path.join(folderPath, 'hexagon_template.png')
-      bitmap_mask = wx.Mask(wx.Bitmap(bitmapPath, wx.BITMAP_TYPE_PNG))
+      bitmap_mask = wx.Mask(wx.Bitmap(bitmapPath, wx.BITMAP_TYPE_PNG), wx.BLACK)
       bitmap.SetMask(bitmap_mask)
       pen = wx.Pen(marker.outlineColor,5)
       brush = wx.Brush(marker.fillColor)
@@ -15238,7 +15238,7 @@ class PyMapperAppMain(wx.App):
       (textX, textY) = dc.GetTextExtent(marker.name)
       offsetX = max(0, (50-textX/2))
       offsetY = max(0, (50-textY/2))
-      dc.DrawText(marker.name, offsetX, offsetY)
+#      dc.DrawText(marker.name, offsetX, offsetY)
       logging.debug("hexagon image complete")
     dc.SelectObject(wx.NullBitmap)
     logging.debug("Returning bitmap")
