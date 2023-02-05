@@ -134,10 +134,10 @@ class TilesetBrowserDialog(PyMapperDialogs.TilesetBrowserBase):
       index = self.lsTilesetList.InsertItem(listitem)
       listitem.SetId(index)
 
-      self.lsTilesetList.SetStringItem(index, 1, tileset.SetID)
-      self.lsTilesetList.SetStringItem(index, 2, str(tileset.copies))
-      self.lsTilesetList.SetStringItem(index, 3, str(tileset.loaded))
-      self.lsTilesetList.SetStringItem(index, 4, tileset.filename)
+      self.lsTilesetList.SetItem(index, 1, tileset.SetID)
+      self.lsTilesetList.SetItem(index, 2, str(tileset.copies))
+      self.lsTilesetList.SetItem(index, 3, str(tileset.loaded))
+      self.lsTilesetList.SetItem(index, 4, tileset.filename)
       if (tileset.loaded):
         listitem.SetBackgroundColour(self.LoadedColor)
       self.lsTilesetList.SetItem(listitem)
@@ -174,7 +174,7 @@ class TilesetBrowserDialog(PyMapperDialogs.TilesetBrowserBase):
     #add a copy to the available tilesets
     self.tilesets[self.selected_layer].copies += 1
     self.bSubtractTileset.Enable(True)
-    self.lsTilesetList.SetStringItem(self.selected_layer, 2, str(self.tilesets[self.selected_layer].copies))
+    self.lsTilesetList.SetItem(self.selected_layer, 2, str(self.tilesets[self.selected_layer].copies))
     if (self.lsTilesetList.GetItemBackgroundColour(self.selected_layer) == self.LoadedColor):
       self.lsTilesetList.SetItemTextColour(self.selected_layer, self.LoadedColorText)
     elif (self.lsTilesetList.GetItemBackgroundColour(self.selected_layer) == self.LoadQueueColor):
@@ -191,7 +191,7 @@ class TilesetBrowserDialog(PyMapperDialogs.TilesetBrowserBase):
     if (self.tilesets[self.selected_layer].copies <= 0):
       self.tilesets[self.selected_layer].copies = 0
       self.bSubtractTileset.Enable(False)
-    self.lsTilesetList.SetStringItem(self.selected_layer, 2, str(self.tilesets[self.selected_layer].copies))
+    self.lsTilesetList.SetItem(self.selected_layer, 2, str(self.tilesets[self.selected_layer].copies))
     if (self.lsTilesetList.GetItemBackgroundColour(self.selected_layer) == self.LoadedColor):
       self.lsTilesetList.SetItemTextColour(self.selected_layer, self.LoadedColorText)
     elif (self.lsTilesetList.GetItemBackgroundColour(self.selected_layer) == self.LoadQueueColor):
@@ -9710,15 +9710,15 @@ class LayerDisplayDialog(PyMapperDialogs.LayerDisplayDialogBase):
       app.frame.cxLayerSelector.Append(layer.name)
       ActiveIndex = self.lcActiveLayer.InsertItem(sys.maxsize, layer.name)
       if (layer.activeLayer):
-        self.lcActiveLayer.SetStringItem(ActiveIndex, 1, 'Active')
+        self.lcActiveLayer.SetItem(ActiveIndex, 1, 'Active')
       
       DisplayIndex = self.lcLayerDisplay.InsertItem(sys.maxsize, layer.name)
       if (layer.display):
-        self.lcLayerDisplay.SetStringItem(DisplayIndex, 1, 'On')
+        self.lcLayerDisplay.SetItem(DisplayIndex, 1, 'On')
       else:
-        self.lcLayerDisplay.SetStringItem(DisplayIndex, 1, 'Off')
+        self.lcLayerDisplay.SetItem(DisplayIndex, 1, 'Off')
       value = str(int(layer.opacity*100)) + "%"
-      self.lcLayerDisplay.SetStringItem(DisplayIndex, 2, value)
+      self.lcLayerDisplay.SetItem(DisplayIndex, 2, value)
     self.lcActiveLayer.SetItemState(gv.ActiveLayer, wx.LIST_STATE_SELECTED, wx.LIST_STATE_SELECTED)
     if (len(gv.LayerList) == 1):
       self.bLayerDown.Enable(False)
