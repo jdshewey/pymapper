@@ -9708,11 +9708,11 @@ class LayerDisplayDialog(PyMapperDialogs.LayerDisplayDialogBase):
     app.frame.cxLayerSelector.Clear()
     for layer in gv.LayerList:
       app.frame.cxLayerSelector.Append(layer.name)
-      ActiveIndex = self.lcActiveLayer.InsertStringItem(sys.maxint, layer.name)
+      ActiveIndex = self.lcActiveLayer.InsertStringItem(sys.maxsize, layer.name)
       if (layer.activeLayer):
         self.lcActiveLayer.SetStringItem(ActiveIndex, 1, 'Active')
       
-      DisplayIndex = self.lcLayerDisplay.InsertStringItem(sys.maxint, layer.name)
+      DisplayIndex = self.lcLayerDisplay.InsertStringItem(sys.maxsize, layer.name)
       if (layer.display):
         self.lcLayerDisplay.SetStringItem(DisplayIndex, 1, 'On')
       else:
